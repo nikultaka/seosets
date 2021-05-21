@@ -13,6 +13,9 @@
       form .error {
         color: #ff0000;
       }
+      #CloneModal {
+        z-index: 99999999;
+      }
     </style>
 
     <!-- Button trigger modal -->
@@ -49,7 +52,7 @@
                             <th scope="col">SEO Set</th>
                             <th scope="col">Author name</th>
                             <th scope="col">Status</th>
-                            <th scope="col">Edit SEO Set</th>
+                            <th scope="col">Action</th>
                           </tr>
 
                           <?php
@@ -59,7 +62,7 @@
                               <?php echo "<td> $pages->post_title </td> 
                                 <td> $pages->user_name </td> 
                                 <td>" . ucfirst($pages->post_status) . " </td>" ?>
-                              <td><a href="javascript:void(0)" style="float: right;" data-id="<?php echo $pages->ID ?>">
+                              <td><a href="javascript:void(0)" data-id="<?php echo $pages->ID ?>">
                               <i class="fa fa-pencil-square" aria-hidden="true"></i></a></td>
                             <?php
                           }
