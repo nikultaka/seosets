@@ -39,10 +39,18 @@ function loadclonepagestable() {
 
         ],
         "order": [[0, "asc"]],
-        "columnDefs": [{
-            "targets": [6, 7, 8],
-            "orderable": false
-        }]
+        "columnDefs": [
+            {
+                "targets": [6, 7, 8],
+                "orderable": false
+            },
+            {
+                'targets': 0,
+                'checkboxes': {
+                    'selectRow': true
+                }
+            }
+        ]
     });
     $("#loader").removeClass('loader');
 }

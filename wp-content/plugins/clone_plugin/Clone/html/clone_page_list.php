@@ -11,6 +11,9 @@
 <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
 
+<link type="text/css" href="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.12/css/dataTables.checkboxes.css" rel="stylesheet" />
+<script type="text/javascript" src="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.12/js/dataTables.checkboxes.min.js"></script>
+
 <div id="loader"></div>
 <div class="row mt-5">
 	<div class="col-md-8">
@@ -50,7 +53,7 @@
 		<diV id="pages_dropdown_id">
 			<form id="dropdown_form">
 				<select class="" name="pages_filter_dropdown" id="pages_filter_dropdown">
-					<option value="">--Select SEO SETS--</option>
+					<option value="">Select SEO SETS</option> 
 					<?php
 					foreach ($pagessql as $pages) { ?>
 						<option value="<?php echo $pages->page_insert_id ?>"><?php echo $pages->clonename ?></option>
@@ -70,9 +73,9 @@
 		<th>ID</th>
 		<th width=15%;>Name</th>
 		<th>Status</th>
-		<th>Author name</th>
-		<th>Clone name</th>
-		<th>Date & time</th>
+		<th>Author</th>
+		<th>SEO</th>
+		<th>Date</th>
 		<th>Delete</th>
 		<th>Update Status</th>
         <th width=20%;>
