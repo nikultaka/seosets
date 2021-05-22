@@ -13,7 +13,7 @@ function custom_clone_menu()
         'seo-sets', // slug
         'display_clone_set' // callback
     );
-
+  
     add_submenu_page(
         'seo-sets', // parent slug
         'SEO Pages', // page title
@@ -82,6 +82,19 @@ function display_clone_pages()
 class Controller
 {
 
+    public function new_attachment( $att_id ){
+        // the post this was sideloaded into is the attachments parent!
+
+        // fetch the attachment post
+        $att = get_post( $att_id );
+
+        // grab it's parent
+        $post_id = $att->post_parent;
+
+        // set the featured post
+        set_post_thumbnail( $post_id, $att_id );
+        return $post_id;
+    }
     public function insert_clone()
     {
         global $wpdb;
@@ -195,11 +208,18 @@ class Controller
                     update_post_meta($page_insert_id, '_yoast_wpseo_metadesc', $all_meta_content);
 
                     //image {{tag}}
-                    update_post_meta($page_insert_id, '_wp_attached_file', $_wp_attached_file);
-                    update_post_meta($page_insert_id, '_wp_attachment_metadata', $_wp_attachment_metadata);
 
-                    update_post_meta($page_insert_id, '_wp_attachment_image_alt', $image_alt);
-                    update_post_meta($page_insert_id, '_thumbnail_id', $thumbnail_id);
+                    if(!empty($img_meta_values)) {
+                        $imageUrl = wp_upload_dir()['baseurl'].'/'.$_wp_attached_file[0]; 
+                        $lastImageID = media_sideload_image($imageUrl,$thumbnail_id,"",'id');   
+                        set_post_thumbnail($page_insert_id,$lastImageID);
+                        update_post_meta($lastImageID, '_wp_attachment_image_alt',$image_alt);
+
+                        /*update_post_meta($page_insert_id, '_wp_attached_file', $_wp_attached_file);
+                        update_post_meta($page_insert_id, '_wp_attachment_metadata', $_wp_attachment_metadata);
+                        update_post_meta($page_insert_id, '_wp_attachment_image_alt',$image_alt);
+                        update_post_meta($page_insert_id, '_thumbnail_id', $thumbnail_id); */
+                    }
 
                     $data['status'] = 1;
                     $data['msg'] = "Clone created successfully";
