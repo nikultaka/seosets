@@ -95,8 +95,10 @@ class Controller
         set_post_thumbnail( $post_id, $att_id );
         return $post_id;
     }
+
     public function insert_clone()
-    {
+    {   
+        
         global $wpdb;
         $data['status'] = 0;
         $data['msg'] = "Please enter all details";
@@ -119,7 +121,9 @@ class Controller
             $newjsonString = substr($newjsonString, 0, -1);
             $newjsonString .= ']';
         }
-        $decode_clone_tags = json_decode($newjsonString, true);
+
+        $decode_clone_tags = json_decode($newjsonString,true);
+
         // $decode_clone_tags = explode(",",$post_id);
         $pages_id = $_POST['pages'];
 
@@ -141,8 +145,9 @@ class Controller
             $meta_wpseo_metadesc = $meta_values['_yoast_wpseo_metadesc'];
             $implode_meta_wpseo_metadesc = implode(" ", $meta_wpseo_metadesc);
             $implode_meta_wpseo_title = implode(" ", $meta_wpseo_title);
-
+            
             if ($decode_clone_tags != '' && $decode_clone_tags != NULL) {
+                
                 $page_insert_data = array();
                 foreach ($decode_clone_tags as  $create_tags_name_page) {
                     $all_pages_content  = $content_post;
@@ -220,9 +225,6 @@ class Controller
                         update_post_meta($page_insert_id, '_wp_attachment_image_alt',$image_alt);
                         update_post_meta($page_insert_id, '_thumbnail_id', $thumbnail_id); */
                     }
-
-                    $data['status'] = 1;
-                    $data['msg'] = "Clone created successfully";
                 }
 
                 $all_pages_insert_id = implode(",", $page_insert_data);
@@ -234,10 +236,15 @@ class Controller
                     'pages_status'  => $pages_status,
                     'page_insert_id' => $all_pages_insert_id
                 ));
-                $insert_post_parent_sql = "UPDATE " . $pages_table_name . "
-                                     SET post_parent = " . $img_post_parent_id . "
-                                     WHERE  " . $pages_table_name . ".ID IN(" . $all_pages_insert_id . ")";
-                $insert_post_parent_sql_result = $wpdb->get_results($insert_post_parent_sql);
+
+                if($insertsql){
+                    $data['status'] = 1;
+                    $data['msg'] = "Clone created successfully";
+                }
+                // $insert_post_parent_sql = "UPDATE " . $pages_table_name . "
+                //                      SET post_parent = " . $img_post_parent_id . "
+                //                      WHERE  " . $pages_table_name . ".ID IN(" . $all_pages_insert_id . ")";
+                // $insert_post_parent_sql_result = $wpdb->get_results($insert_post_parent_sql);
             }
         }
         echo json_encode($data);
@@ -565,11 +572,12 @@ class Controller
         }
         $columns = array(
             0 => 'posts.id',
-            1 => 'posts.post_title',
-            2 => 'posts.post_status',
-            3 => 'posts.user_name',
-            4 => 'clone.clonename',
-            5 => 'posts.post_date'
+            1 => 'posts.id',
+            2 => 'posts.post_title',
+            3 => 'posts.post_status',
+            4 => 'posts.user_name',
+            5 => 'clone.clonename',
+            6 => 'posts.post_date'
         );
 
         if (isset($requestData['order'][0]['column']) && $requestData['order'][0]['column'] != '') {
@@ -602,9 +610,11 @@ class Controller
         $list_data = $wpdb->get_results($result_sql, "OBJECT");
         $arr_data = array();
         $arr_data = $result;
-        
+
         $count = 1;
         foreach ($list_data as $row) {
+            //$temp['select_all'] = "<input type='hidden' value='".$row->ID."'>";
+            $temp['select_all'] = $row->ID;
             $temp['id'] = $count;
             $temp['clonepagename'] = $row->post_title;
             if (strtolower($row->post_status) == 'publish') {
@@ -633,7 +643,7 @@ class Controller
                                data-placement="top" title="' . $status_change . '" ' . $switch_status . ' data-id="' . $row->ID . '" id="update_status' . $count . '">
                                <label class="custom-control-label" for="update_status' . $count . '"></label>
                                </div>';
-            $temp['select_all'] = '<input type="checkbox"  class="select_all_chacked" name="select_all_chacked[]" value="'. $row->ID .'">';
+            // $temp['select_all'] = '<input type="checkbox"  class="select_all_chacked" name="select_all_chacked[]" value="'. $row->ID .'">';
             $data[] = $temp;
 
             $count++;
@@ -687,28 +697,24 @@ class Controller
         $status_changed = wp_update_post($update_post_status);
     }
 
-
-
     function delete_selected_pages_record()
     {
         global $wpdb;
         $result['status'] = 0;
         $result['msg'] = "Error page not delete";
         $delete_Id = $_POST['del_id'];
-        $str_deleteId = implode(",", $delete_Id);
-        $on1 = ["on,", ",on", "on"];
-        $on2   = ["", "", ""];
-        $deleteId = str_replace($on1, $on2, $str_deleteId);
+        
+        $str_deleteId = implode(",", $delete_Id);        
         $table_name = $wpdb->prefix . "posts";
         $clone_table_name = $wpdb->prefix . "clone";
 
-        if ($deleteId != '') {
-            $delete_sql = $wpdb->get_results("DELETE FROM " . $table_name . " WHERE " . $table_name . ".ID IN($deleteId)");
-            $delete_clonename_sql = $wpdb->get_results("DELETE FROM " . $clone_table_name . " WHERE " . $clone_table_name . ".page_insert_id IN($deleteId)");
-
+        if ($str_deleteId != '') {
+            $delete_sql = $wpdb->get_results("DELETE FROM " . $table_name . " WHERE " . $table_name . ".ID IN($str_deleteId)");
+            $delete_clonename_sql = $wpdb->get_results("DELETE FROM " . $clone_table_name . " WHERE " . $clone_table_name . ".page_insert_id IN($str_deleteId)");
             $result['status'] = 1;
             $result['msg'] = "Your record has been deleted.";
         }
+
         echo json_encode($result);
         exit();
     }

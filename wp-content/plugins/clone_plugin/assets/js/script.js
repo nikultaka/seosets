@@ -6,6 +6,7 @@ $(document).ready(function () {
         $('#formdata')[0].reset();
         $('#seo_search').val('');
     });
+
     $("#formdata").validate({
         rules: {
             clonename: "required",
@@ -127,6 +128,7 @@ function record_delete(id, page_insert_id) {
                         )
                         $("#loader").removeClass('loader');
                     }
+                    loaddatatable();
                 }
             });
             
@@ -263,7 +265,7 @@ $("#filter_pagination_clone a").click(function () {
 });
 
 // $("#menu a").click(function () {
-    $(document).on("click","#menu a",function(){
+$(document).on("click","#menu a",function(){
     var id = $(this).data('id');
     $("#loader").addClass('loader');
     $.ajax({

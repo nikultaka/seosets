@@ -62,14 +62,42 @@
 					?>
 				</select>
 				<button type="button" class="btn btn-info btn-sm" name="pages_filtered_id" id="pages_filtered_id">Find Pages</button>
-				<button type="button" class="btn btn-secondary btn-sm " name="pages_un_filtered_id" id="pages_un_filtered_id">Clear Filter</button>
+				<button type="button" class="btn btn-secondary btn-sm " onclick="loadclonepagestable();" name="pages_un_filtered_id" id="pages_un_filtered_id">Clear Filter</button>
 			</form>
 		</div>
 	</div>
 </div>
 
+<!-- mass update and delete button -->
+
+	<div class="row">
+		<div class="col-md-2" style="margin-bottom: 5px;">
+				<button  class='btn btn-danger btn-sm' id="select_all_delete">Mass Delete</button> 
+		</div>
+		<!-- <div class="col-md-4">
+			<div class="custom-control custom-switch"  id="hide_status">
+							<input type="checkbox" class="custom-control-input change_selected_status" data-toggle="tooltip" title="Change POST status" checked id="change_selected_status">
+							<label class="custom-control-label" for="change_selected_status"></label>
+			</div>
+		</div> -->
+		<!-- <div class="col-md-2" style="margin-bottom: 5px;">
+				<button  class='btn btn-info btn-sm' id="change_selected_status">Mass Update</button> 
+		</div> -->
+		<div class="dropdown" id="change_status">
+			<button class="btn btn-info btn-sm  dropdown-toggle" type="button" id="change_selected_status" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Mass Update
+			</button>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" href="javascript:void(0)" data-id="1">Published</a>
+				<a class="dropdown-item" href="javascript:void(0)" data-id="0">Draft</a>
+			</div>
+		</div>
+	</div>
+
+<!-- dataTable -->
 <table class="table" id="clone_pages_data-table" style="width: 100%;">
 	<thead>
+	    <th><input type="checkbox" name="select_all" value="1" id="example-select-all"></th>
 		<th>ID</th>
 		<th width=15%;>Name</th>
 		<th>Status</th>
@@ -78,15 +106,16 @@
 		<th>Date</th>
 		<th>Delete</th>
 		<th>Update Status</th>
-        <th width=20%;>
+        <!-- <th width=20%;>
 		<input type="checkbox" data-toggle="tooltip" title="Select All"  id="select_all" class="select_all" name="select_all[]">
-		<button  class='btn btn-danger btn-sm' id="select_all_delete"><i class='fa fa-trash' aria-hidden='true'></i></button>
+		<!-- <button  class='btn btn-danger btn-sm' id="select_all_delete"><i class='fa fa-trash' aria-hidden='true'></i></button>
 		<div class="custom-control custom-switch" style="float: right; margin-right: 20px;" id="hide_status">
 			    <input type="checkbox" class="custom-control-input change_selected_status" data-toggle="tooltip" title="Change POST status" checked id="change_selected_status">
   				<label class="custom-control-label" for="change_selected_status"></label>
-		</div>
-		</th>
+		</div> -->
+		<!-- </th>  -->
 	</thead>
+	<tbody></tbody>
 </table>
 
 <script type="text/javascript">
