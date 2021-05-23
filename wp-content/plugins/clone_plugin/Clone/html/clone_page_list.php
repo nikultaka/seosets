@@ -71,8 +71,8 @@
 <!-- mass update and delete button -->
 
 	<div class="row">
-		<div class="col-md-2" style="margin-bottom: 5px;">
-				<button  class='btn btn-danger btn-sm' id="select_all_delete">Mass Delete</button> 
+		<div class="col-md-6 pull-right">
+				<button  class='btn btn-danger btn-sm pull-right' id="select_all_delete">Mass Delete</button> 
 		</div>
 		<!-- <div class="col-md-4">
 			<div class="custom-control custom-switch"  id="hide_status">
@@ -83,7 +83,7 @@
 		<!-- <div class="col-md-2" style="margin-bottom: 5px;">
 				<button  class='btn btn-info btn-sm' id="change_selected_status">Mass Update</button> 
 		</div> -->
-		<div class="dropdown" id="change_status">
+		<div class="col-md-6 pull-left dropdown" id="change_status">
 			<button class="btn btn-info btn-sm  dropdown-toggle" type="button" id="change_selected_status" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			Mass Update
 			</button>
@@ -93,6 +93,7 @@
 			</div>
 		</div>
 	</div>
+	<br>
 
 <!-- dataTable -->
 <table class="table" id="clone_pages_data-table" style="width: 100%;">
