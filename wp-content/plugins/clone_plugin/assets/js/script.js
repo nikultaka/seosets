@@ -90,7 +90,8 @@ function loaddatatable() {
     $("#loader").removeClass('loader');
 }
 
-function record_delete(id, page_insert_id) {
+function record_delete(id, page_insert_id,get_post_thumbnail_id) {
+    // alert(get_post_thumbnail_id);
     Swal.fire({
         title: 'Are you sure?',
         text: "You are sure to delete this record !",
@@ -108,6 +109,7 @@ function record_delete(id, page_insert_id) {
                 data: {
                     id: id,
                     page_insert_id: page_insert_id,
+                    get_post_thumbnail_id :get_post_thumbnail_id,
                     action: "Controller::delete_record"
                 },
                 success: function (responce) {
