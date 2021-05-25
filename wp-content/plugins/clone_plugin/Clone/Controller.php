@@ -406,19 +406,21 @@ class Controller
         $table_name = $wpdb->prefix . "clone";
         $pages_table_name = $wpdb->prefix . "posts";
         $meta_table_name = $wpdb->prefix . "postmeta";
-
         $result['status'] = 0;
         $result['msg'] = "Error ! DELETE UNsucessfully";
+
+        if(!empty($array_page_insert_id)){
+            foreach($array_page_insert_id as $all_pages_thumbnail_id){
+                   $get_post_thumbnail_id = get_post_thumbnail_id($all_pages_thumbnail_id);
+                   $delete_img_sql = $wpdb->get_results("DELETE FROM " . $pages_table_name . " WHERE ID = ".$get_post_thumbnail_id." ");
+               }
+           }
+
         $delete_sql = $wpdb->delete($table_name, array('id' => $deleteId));
         $delete_pages_sql = $wpdb->get_results("DELETE FROM " . $pages_table_name . " WHERE " . $pages_table_name . ".ID IN($page_insert_id)");
         $meta_delete_pages_sql = $wpdb->get_results("DELETE FROM " . $meta_table_name . " WHERE " . $meta_table_name . ".post_id IN($page_insert_id)");
         
-        if(!empty($array_page_insert_id)){
-         foreach($array_page_insert_id as $all_pages_thumbnail_id){
-                $get_post_thumbnail_id = get_post_thumbnail_id($all_pages_thumbnail_id);
-                $delete_img_sql = $wpdb->get_results("DELETE FROM " . $pages_table_name . " WHERE " . $pages_table_name . ".ID IN($get_post_thumbnail_id)");
-            }
-        }
+      
         if ($delete_pages_sql) {
             $result['status'] = 1;
             $result['msg'] = "Clone deleted sucessfully";
