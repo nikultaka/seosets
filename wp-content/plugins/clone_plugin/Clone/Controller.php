@@ -100,6 +100,7 @@ class Controller
     {   
         
         global $wpdb;
+        global $wp_rewrite;
         $data['status'] = 0;
         $data['msg'] = "Please enter all details";
         $clonename = $_POST['clonename'];
@@ -151,6 +152,7 @@ class Controller
                 $get_img_title_Description = $wpdb->get_results($get_img_title_Description_sql);
                 $get_img_title = $get_img_title_Description[0]->post_title;
                 $get_img_Description = $get_img_title_Description[0]->post_content;
+                $get_post_permalink = get_permalink($value);
 
                 foreach ($decode_clone_tags as  $create_tags_name_page) {                
                     $all_pages_content  = $content_post;
@@ -161,6 +163,7 @@ class Controller
                     $replace_title = $all_pages_title;
                     $image_alt = $image_alt_content;
                     $new_image_img = $get_img_title;
+                    $new_get_post_permalink = $get_post_permalink;
                     // $created_pages_id = array();
                     $new_image_Description = $get_img_Description;
 
@@ -182,6 +185,11 @@ class Controller
                         $new_image_img = str_replace('{{' . $imagekey . '}}', $imagevalue, $new_image_img);
                         $new_image_Description = str_replace('{{' . $imagekey . '}}', $imagevalue, $new_image_Description);
                     }
+                    foreach ($create_tags_name_page as $permalinkkey => $permalinkvalue) {
+                        $new_get_post_permalink = str_replace('1t1' . $permalinkkey . '1t1', $permalinkvalue, $new_get_post_permalink);
+                        $new_get_post_permalink = str_replace('http://localhost/clone_wordpress/', '', $new_get_post_permalink);
+                    }                
+                    
                     $new_title_post = $get_post->post_title . ' - ' . $pages_title_name;
 
                     $post_login_data = wp_get_current_user();
@@ -190,6 +198,7 @@ class Controller
                         // Create post type is publish
                         $my_post = array(
                             'post_type'     => 'page',
+                            'post_name'     => $new_get_post_permalink,
                             'post_title'    =>  $titleContainsTag == '0' ? $new_title_post : $replace_title,
                             'post_content'  => $replace_content,
                             'post_author'   => $post_author,
@@ -210,17 +219,17 @@ class Controller
                     $_wp_attached_file = $img_meta_values['_wp_attached_file'];
                     $_wp_attachment_metadata = $img_meta_values['_wp_attachment_metadata'];
 
-
                     // Insert the post into the database
                     $page_insert_id = wp_insert_post($my_post);              
-            
                     $all_post_id[] = $page_insert_id;
-                    $page_insert_data_id = explode(",",$page_insert_id);
-                                        
+                    $page_insert_data_id = explode(",",$page_insert_id);                    
                     update_post_meta($page_insert_id, 'my_clone_meta_key', 1);
                     update_post_meta($page_insert_id, '_yoast_wpseo_title', $all_meta_title);
                     update_post_meta($page_insert_id, '_yoast_wpseo_metadesc', $all_meta_content);
-                    
+
+                    if(!empty($new_get_post_permalink)){
+                        $wp_rewrite->set_permalink_structure($new_get_post_permalink);
+                    }
 
                     //image {{tag}}
                     
@@ -285,7 +294,7 @@ class Controller
     {
         global $wpdb;
         $requestData = $_POST;
-
+     
         $data = array();
         $table_name = $wpdb->prefix . "clone";
         $user_table_data = $wpdb->prefix . "users";
