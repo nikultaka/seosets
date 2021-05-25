@@ -20,9 +20,8 @@
 
     <!-- Button trigger modal -->
 
-
     <!-- Modal -->
-    <div id="loader"></div>
+    <div id="loader" style="z-index:9999999999;"></div>
     <div class="modal fade bd-example-modal-xl" id="CloneModal" tabindex="-1" role="dialog" aria-labelledby="CloneModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
@@ -39,8 +38,13 @@
               <div class="row">
 
                 <div class="col-sm-6">
-                  <div style="float: right;">
-                    <input type="text" id="seo_search" name="seo_search" placeholder="Search SEO SETS">
+                <div class="form-group">
+                    <label for="clonename">Clone name</label>
+                    <div class="col-xs-6"><input type="text" class="form-control" name="clonename" id="clonename" placeholder="Enter Clone Name"></div>
+                  </div>
+
+                  <div style="float: left;">
+                    <input type="text" id="seo_search" name="seo_search" placeholder="Search Pages">
                   </div>
 
                   <div id="seo_search_table">
@@ -49,10 +53,10 @@
                         <table class="table table-hover table-sm">
                           <tr>
                             <th scope="col"></th>
-                            <th scope="col">SEO Set</th>
-                            <th scope="col">Author name</th>
+                            <th scope="col">Pages</th>
+                            <th scope="col">Author</th>
                             <th scope="col">Status</th>
-                            <th scope="col">Action</th>
+                            <th scope="col">Edit Page</th>
                           </tr>
 
                           <?php
@@ -77,9 +81,11 @@
 
                 </div>
                 <div class="col-sm-6">
-                  <div class="form-group">
-                    <label for="clonename">Clone name</label>
-                    <div class="col-xs-6"><input type="text" class="form-control" name="clonename" id="clonename" placeholder="Enter Clone Name"></div>
+                <div class="form-group">
+                    <label for="tags">Tags example</label>
+                    <textarea disabled class="form-control" name="clone_tags" id="clone_tags" rows="4">
+                    {"city":"city1","name":"Nikul1","title":"title1","seotitle":"seotitle1"}
+                    </textarea>
                   </div>
 
                   <div class="form-group">
@@ -112,7 +118,7 @@
 
     <div class="row">
       <div class="col-md-2">
-        <button type="button" class="btn btn-primary mt-5 mb-3" data-toggle="modal" style="float:left" data-target="#CloneModal">Add Clone </button>
+        <button type="button" class="btn btn-primary btn-sm mt-5 mb-3" data-toggle="modal" style="float:left" data-target="#CloneModal">Add SEO Set</button>
       </div>
       <div class="col-md-10">
         <nav id="clonename_pagination">

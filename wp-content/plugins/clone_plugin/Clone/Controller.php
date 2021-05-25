@@ -132,13 +132,13 @@ class Controller
 
             //copy selected page content
             $get_post = get_post($value);
-
             $meta_values = get_post_meta($value);
             $thumbnail_id = get_post_thumbnail_id($value);
-
             $img_post_parent_id = wp_get_post_parent_id($thumbnail_id);
             $image_alt_content = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+            // $image_alt_content = get_post_meta($thumbnail_id);
 
+            
             $title_post = $get_post->post_title;
             $content_post = $get_post->post_content;
             $meta_wpseo_title = $meta_values['_yoast_wpseo_title'];
@@ -147,9 +147,12 @@ class Controller
             $implode_meta_wpseo_title = implode(" ", $meta_wpseo_title);
             
             if ($decode_clone_tags != '' && $decode_clone_tags != NULL) {
-                
-                $page_insert_data = array();
-                foreach ($decode_clone_tags as  $create_tags_name_page) {
+                $get_img_title_Description_sql = "SELECT posts.* FROM " . $pages_table_name . " as posts WHERE id = ".$thumbnail_id."";
+                $get_img_title_Description = $wpdb->get_results($get_img_title_Description_sql);
+                $get_img_title = $get_img_title_Description[0]->post_title;
+                $get_img_Description = $get_img_title_Description[0]->post_content;
+
+                foreach ($decode_clone_tags as  $create_tags_name_page) {                
                     $all_pages_content  = $content_post;
                     $all_meta_content = $implode_meta_wpseo_metadesc;
                     $all_meta_title = $implode_meta_wpseo_title;
@@ -157,6 +160,9 @@ class Controller
                     $replace_content = $all_pages_content;
                     $replace_title = $all_pages_title;
                     $image_alt = $image_alt_content;
+                    $new_image_img = $get_img_title;
+                    // $created_pages_id = array();
+                    $new_image_Description = $get_img_Description;
 
                     foreach ($create_tags_name_page as $sagkey => $sagvalue) {
                         // replace {{}} tags content
@@ -173,13 +179,14 @@ class Controller
                     }
                     foreach ($create_tags_name_page as $imagekey => $imagevalue) {
                         $image_alt = str_replace('{{' . $imagekey . '}}', $imagevalue, $image_alt);
+                        $new_image_img = str_replace('{{' . $imagekey . '}}', $imagevalue, $new_image_img);
+                        $new_image_Description = str_replace('{{' . $imagekey . '}}', $imagevalue, $new_image_Description);
                     }
                     $new_title_post = $get_post->post_title . ' - ' . $pages_title_name;
 
                     $post_login_data = wp_get_current_user();
                     $post_author = $post_login_data->ID;
                     if ($pages_status == "publish") {
-
                         // Create post type is publish
                         $my_post = array(
                             'post_type'     => 'page',
@@ -187,10 +194,9 @@ class Controller
                             'post_content'  => $replace_content,
                             'post_author'   => $post_author,
                             'post_status'   => 'publish',
-
                         );
                     } else {
-                        // Create post object
+                        // Create post type is draft
                         $my_post = array(
                             'post_type'     => 'page',
                             'post_title'    => $titleContainsTag == '0' ? $new_title_post : $replace_title,
@@ -200,51 +206,73 @@ class Controller
                         );
                     }
                     $pages_title_name++;
-
                     $img_meta_values = get_post_meta($thumbnail_id);
                     $_wp_attached_file = $img_meta_values['_wp_attached_file'];
                     $_wp_attachment_metadata = $img_meta_values['_wp_attachment_metadata'];
 
+
                     // Insert the post into the database
-                    $page_insert_id = wp_insert_post($my_post);
-                    $page_insert_data[] = $page_insert_id;
+                    $page_insert_id = wp_insert_post($my_post);              
+            
+                    $all_post_id[] = $page_insert_id;
+                    $page_insert_data_id = explode(",",$page_insert_id);
+                                        
                     update_post_meta($page_insert_id, 'my_clone_meta_key', 1);
                     update_post_meta($page_insert_id, '_yoast_wpseo_title', $all_meta_title);
                     update_post_meta($page_insert_id, '_yoast_wpseo_metadesc', $all_meta_content);
+                    
 
                     //image {{tag}}
+                    
+                    // if(!empty($img_meta_values)) {
+                    //     $imageUrl = wp_upload_dir()['baseurl'].'/'.$_wp_attached_file[0]; 
+                    //     $lastImageID = media_sideload_image($imageUrl,$thumbnail_id,"",'id');   
+                    //     set_post_thumbnail($page_insert_id,$lastImageID);
+                    //     update_post_meta($lastImageID, '_wp_attachment_image_alt',$image_alt);
 
-                    if(!empty($img_meta_values)) {
-                        $imageUrl = wp_upload_dir()['baseurl'].'/'.$_wp_attached_file[0]; 
-                        $lastImageID = media_sideload_image($imageUrl,$thumbnail_id,"",'id');   
-                        set_post_thumbnail($page_insert_id,$lastImageID);
-                        update_post_meta($lastImageID, '_wp_attachment_image_alt',$image_alt);
+                    //     /*update_post_meta($page_insert_id, '_wp_attached_file', $_wp_attached_file);
+                    //     update_post_meta($page_insert_id, '_wp_attachment_metadata', $_wp_attachment_metadata);
+                    //     update_post_meta($page_insert_id, '_wp_attachment_image_alt',$image_alt);
+                    //     update_post_meta($page_insert_id, '_thumbnail_id', $thumbnail_id); */
+                    // }
 
-                        /*update_post_meta($page_insert_id, '_wp_attached_file', $_wp_attached_file);
-                        update_post_meta($page_insert_id, '_wp_attachment_metadata', $_wp_attachment_metadata);
-                        update_post_meta($page_insert_id, '_wp_attachment_image_alt',$image_alt);
-                        update_post_meta($page_insert_id, '_thumbnail_id', $thumbnail_id); */
+                    if($image_alt_content == '' && $image_alt_content == null){
+                        update_post_meta($page_insert_id, '_thumbnail_id', $thumbnail_id); 
+                    }else{
+                        if(!empty($img_meta_values)) {
+                                $imageUrl = wp_upload_dir()['baseurl'].'/'.$_wp_attached_file[0]; 
+                                $lastImageID = media_sideload_image($imageUrl,$thumbnail_id,"",'id');    
+                                set_post_thumbnail($page_insert_id,$lastImageID);
+                                update_post_meta($lastImageID, '_wp_attachment_image_alt',$image_alt);
+                        }
                     }
-                }
 
-                $all_pages_insert_id = implode(",", $page_insert_data);
-                // insert new page in database
-                $insertsql = $wpdb->insert($table_name, array(
-                    'clonename' => $clonename,
-                    'pages'     => $pages,
-                    'tags'      => $clone_tags,
-                    'pages_status'  => $pages_status,
-                    'page_insert_id' => $all_pages_insert_id
-                ));
+                    if(!empty($image_alt_content)){
+                        foreach($page_insert_data_id as $all_pages_thumbnail_id){
+                            $get_post_thumbnail_id = get_post_thumbnail_id($all_pages_thumbnail_id);
+
+                            $update_img_title_Description_sql = " UPDATE " . $pages_table_name . " SET
+                                                                post_content   = '".$new_image_Description ."',
+                                                                post_title = '". $new_image_img ."'
+                                                                WHERE  " . $pages_table_name . ".ID = ".$get_post_thumbnail_id."" ;
+                            $update_img_title_Description_result = $wpdb->get_results($update_img_title_Description_sql);
+                        }
+                    }
+            }
+            $all_pages_insert_id = implode(",", $all_post_id);       
+            // insert new page in database
+            $insertsql = $wpdb->insert($table_name, array(
+                'clonename' => $clonename,
+                'pages'     => $pages,
+                'tags'      => $clone_tags,
+                'pages_status'  => $pages_status,
+                'page_insert_id' => $all_pages_insert_id
+            ));    
 
                 if($insertsql){
                     $data['status'] = 1;
                     $data['msg'] = "Clone created successfully";
                 }
-                // $insert_post_parent_sql = "UPDATE " . $pages_table_name . "
-                //                      SET post_parent = " . $img_post_parent_id . "
-                //                      WHERE  " . $pages_table_name . ".ID IN(" . $all_pages_insert_id . ")";
-                // $insert_post_parent_sql_result = $wpdb->get_results($insert_post_parent_sql);
             }
         }
         echo json_encode($data);

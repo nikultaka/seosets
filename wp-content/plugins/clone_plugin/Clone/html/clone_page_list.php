@@ -14,7 +14,7 @@
 <link type="text/css" href="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.12/css/dataTables.checkboxes.css" rel="stylesheet" />
 <script type="text/javascript" src="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.12/js/dataTables.checkboxes.min.js"></script>
 
-<div id="loader"></div>
+<div id="loader" style="z-index:9999999999;"></div>
 <div class="row mt-5">
 	<div class="col-md-8">
 		<nav id="pagination">
@@ -74,15 +74,7 @@
 		<div class="col-md-6 pull-right">
 				<button  class='btn btn-danger btn-sm pull-right' id="select_all_delete">Mass Delete</button> 
 		</div>
-		<!-- <div class="col-md-4">
-			<div class="custom-control custom-switch"  id="hide_status">
-							<input type="checkbox" class="custom-control-input change_selected_status" data-toggle="tooltip" title="Change POST status" checked id="change_selected_status">
-							<label class="custom-control-label" for="change_selected_status"></label>
-			</div>
-		</div> -->
-		<!-- <div class="col-md-2" style="margin-bottom: 5px;">
-				<button  class='btn btn-info btn-sm' id="change_selected_status">Mass Update</button> 
-		</div> -->
+
 		<div class="col-md-6 pull-left dropdown" id="change_status">
 			<button class="btn btn-info btn-sm  dropdown-toggle" type="button" id="change_selected_status" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			Mass Update
@@ -107,14 +99,6 @@
 		<th>Date</th>
 		<th>Delete</th>
 		<th>Update Status</th>
-        <!-- <th width=20%;>
-		<input type="checkbox" data-toggle="tooltip" title="Select All"  id="select_all" class="select_all" name="select_all[]">
-		<!-- <button  class='btn btn-danger btn-sm' id="select_all_delete"><i class='fa fa-trash' aria-hidden='true'></i></button>
-		<div class="custom-control custom-switch" style="float: right; margin-right: 20px;" id="hide_status">
-			    <input type="checkbox" class="custom-control-input change_selected_status" data-toggle="tooltip" title="Change POST status" checked id="change_selected_status">
-  				<label class="custom-control-label" for="change_selected_status"></label>
-		</div> -->
-		<!-- </th>  -->
 	</thead>
 	<tbody></tbody>
 </table>
