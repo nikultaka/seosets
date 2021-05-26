@@ -83,7 +83,7 @@
                 <div class="col-sm-6">
                 <div class="form-group">
                     <label for="tags">Tags example</label>
-                    <textarea disabled class="form-control" name="clone_tags" id="clone_tags" rows="4">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem &#13;&#10;Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem&#13;&#10;Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem&#13;&#10;Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem&#13;&#10;Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem 
+                    <textarea disabled class="form-control" name="clone_tags1" id="clone_tags1" rows="4">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem &#13;&#10;Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem&#13;&#10;Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem&#13;&#10;Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem&#13;&#10;Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem 
                     </textarea>
                   </div>
 

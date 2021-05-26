@@ -1,20 +1,21 @@
 $(document).ready(function () {
     $('#select_all_delete').hide();
     $('#change_selected_status').hide();
+    
     $(".tooltip-tiny").tooltip({
         delay: { show: 0, hide: 2000 }
     })
-    
     $('[data-toggle="tooltip"]').tooltip();
   //  loadclonepagestable();
-    var table =  $('#clone_pages_data-table').dataTable({
+    var table =  $('#clone_pages_data-table').DataTable({
         "paging": true,
-        // "aLengthMenu": [[100, 300, 500, -1], [100, 300, 500, "All"]],
-        "pageLength": 100,
+        "aLengthMenu": [[100, 500, 1000], [100,500, 1000]],
+        // "pageLength": 100,   
         "bProcessing": true,
         "serverSide": true,
         "bDestroy": true,
-
+        stateSave: true,
+        
         "ajax": {
             url: pageajaxurl,
             type: "post",
@@ -53,8 +54,10 @@ $(document).ready(function () {
         ],
     });
 
-    $('#example-select-all').on('click', function(){
-        $('input[name="id[]"]').prop('checked', this.checked);
+    
+    $('#example-select-all').on('change', function(){        
+        var cells = table.cells( ).nodes();
+        $( cells ).find(':checkbox').prop('checked', $(this).is(':checked'));
      });
 
      $('#clone_pages_data-table tbody').on('change', 'input[name="id[]"]', function(){
@@ -74,11 +77,12 @@ function loadclonepagestable() {
     $("#loader").addClass('loader');
      $('#clone_pages_data-table').dataTable({
         "paging": true,
-        // "aLengthMenu": [[100, 300, 500, -1], [100, 300, 500, "All"]],
+        "aLengthMenu": [[100, 500, 1000], [100,500, 1000]],
         "pageLength": 100,
         "bProcessing": true,
         "serverSide": true,
         "bDestroy": true,
+        stateSave: true,
 
         "ajax": {
             url: pageajaxurl,
@@ -195,7 +199,7 @@ $("#pages_filtered_id").click(function () {
     $("#loader").addClass('loader');
     $('#clone_pages_data-table').dataTable({
         "paging": true,
-        "aLengthMenu": [[100, 300, 500], [100, 300, 500]],
+        "aLengthMenu": [[100, 500, 1000], [100,500, 1000]],
         "pageLength": 100,
         "bProcessing": true,
         "serverSide": true,
@@ -245,7 +249,7 @@ $("#filter_pagination a").click(function () {
     $("#loader").addClass('loader');
     $('#clone_pages_data-table').dataTable({
         "paging": true,
-        "aLengthMenu": [[100, 300, 500], [100, 300, 500]],
+        "aLengthMenu": [[100, 500, 1000], [100,500, 1000]],
         "pageLength": 100,
         "bProcessing": true,
         "serverSide": true,
@@ -292,7 +296,6 @@ $("#filter_pagination a").click(function () {
 
 
 $('#clone_pages_data-table').on('change', 'input[name ="select_all"]', function(){
-
     if ($(this).prop("checked") == true) {
                 $('#select_all_delete').show();
                 $('#change_selected_status').show();
@@ -304,7 +307,7 @@ $('#clone_pages_data-table').on('change', 'input[name ="select_all"]', function(
 
 $('#clone_pages_data-table').on('change', 'input[name ="id[]"]', function(){
     var checked_checkbox_lan = $('input[name="id[]"]:checked').length;  
-    if( checked_checkbox_lan > 1){
+    if( checked_checkbox_lan > 0){
         $('#select_all_delete').show();
         $('#change_selected_status').show();
     }else{

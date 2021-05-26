@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
     $('#CloneModal').modal('hide');
     loaddatatable();
@@ -40,11 +42,12 @@ $(document).ready(function () {
                     } else {
                         Swal.fire({
                             icon: 'error',
-                            title: 'Oops...',
-                            text: data.msg,
+                            title: data.msg,
                             showConfirmButton: false,
-                            timer: 1500
-                        })
+                            timer: 1500,
+
+                        },
+                        );
                         $("#loader").removeClass('loader');
                     }
                 }
@@ -118,8 +121,9 @@ function record_delete(id, page_insert_id,get_post_thumbnail_id) {
                         Swal.fire(
                             'Deleted!',
                             data.msg,
-                            'success'
-                        )
+                            'success',
+                           { className: "swal-modal"}
+                           );
                         $("#loader").removeClass('loader');
                         loaddatatable();
                     } else {

@@ -102,18 +102,27 @@ class Controller
         global $wpdb;
         global $wp_rewrite;
         $data['status'] = 0;
-        $data['msg'] = "Please enter all details";
+        $data['msg'] = "Please enter valid details";
         $clonename = $_POST['clonename'];
         $pages = implode(",", $_POST['pages']);
         $clone_tags = $_POST['clone_tags'];
+        //echo $clone_tags;exit;
+        $remove_space_clone_tags = str_replace(" ", "", $clone_tags);
+        // $remove_space_clone_tags = str_replace("<br/>", "", $remove_space_clone_tags);
+        // $remove_space_clone_tags = str_replace("\n", "", $remove_space_clone_tags);
+        // $remove_space_clone_tags = str_replace("\r", "", $remove_space_clone_tags);
+        
+        // $clone_tages_string = str_replace("}", "}\n", $remove_space_clone_tags);
+        // $new_clone_tags_string = nl2br($clone_tages_string); 
+        
         $pages_status = $_POST['pages_status'];
         $table_name = $wpdb->prefix . "clone";
         $pages_table_name = $wpdb->prefix . "posts";
-
+        
         // decode tags content                          
-        $jsonData = stripslashes(html_entity_decode($clone_tags));
+        $jsonData = stripslashes(html_entity_decode($remove_space_clone_tags));
         $explodedData = explode(PHP_EOL, $jsonData);
-
+        
         if (!empty($explodedData)) {
             $newjsonString = '[';
             foreach ($explodedData as $explodeKey => $explodeValue) {
@@ -163,8 +172,7 @@ class Controller
                     $replace_title = $all_pages_title;
                     $image_alt = $image_alt_content;
                     $new_image_img = $get_img_title;
-                    $new_get_post_permalink = $get_post_permalink;
-                    // $created_pages_id = array();
+                    $new_post_permalink = $get_post_permalink;
                     $new_image_Description = $get_img_Description;
 
                     foreach ($create_tags_name_page as $sagkey => $sagvalue) {
@@ -186,8 +194,8 @@ class Controller
                         $new_image_Description = str_replace('{{' . $imagekey . '}}', $imagevalue, $new_image_Description);
                     }
                     foreach ($create_tags_name_page as $permalinkkey => $permalinkvalue) {
-                        $new_get_post_permalink = str_replace('1t1' . $permalinkkey . '1t1', $permalinkvalue, $new_get_post_permalink);
-                        $new_get_post_permalink = str_replace('http://localhost/clone_wordpress/', '', $new_get_post_permalink);
+                        $new_post_permalink = str_replace('1t1' . $permalinkkey . '1t1', $permalinkvalue, $new_post_permalink);
+                        $new_post_permalink = str_replace('http://localhost/clone_wordpress/', '', $new_post_permalink);
                     }                
                     
                     $new_title_post = $get_post->post_title . ' - ' . $pages_title_name;
@@ -198,7 +206,7 @@ class Controller
                         // Create post type is publish
                         $my_post = array(
                             'post_type'     => 'page',
-                            'post_name'     => $new_get_post_permalink,
+                            'post_name'     => $new_post_permalink,
                             'post_title'    =>  $titleContainsTag == '0' ? $new_title_post : $replace_title,
                             'post_content'  => $replace_content,
                             'post_author'   => $post_author,
@@ -208,6 +216,7 @@ class Controller
                         // Create post type is draft
                         $my_post = array(
                             'post_type'     => 'page',
+                            'post_name'     => $new_post_permalink,
                             'post_title'    => $titleContainsTag == '0' ? $new_title_post : $replace_title,
                             'post_content'  => $replace_content,
                             'post_status'   => 'draft',
@@ -227,9 +236,9 @@ class Controller
                     update_post_meta($page_insert_id, '_yoast_wpseo_title', $all_meta_title);
                     update_post_meta($page_insert_id, '_yoast_wpseo_metadesc', $all_meta_content);
 
-                    if(!empty($new_get_post_permalink)){
-                        $wp_rewrite->set_permalink_structure($new_get_post_permalink);
-                    }
+                    // if(!empty($new_post_permalink)){
+                    //     $wp_rewrite->set_permalink_structure($new_post_permalink);
+                    // }
 
                     //image {{tag}}
                     
@@ -362,7 +371,7 @@ class Controller
         $arr_data = array();
         $arr_data = $result;
         $count = 1;
-
+        
         foreach ($list_data as $row) {
             $temp['id'] = $count;
             $temp['clonename'] = $row->clonename;

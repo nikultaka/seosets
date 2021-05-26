@@ -7,6 +7,15 @@ a, a:hover, a:focus, a:active {
     outline: none;
     background: none;
 }
+.swal2-overlay {
+    background-color: rgba(43, 165, 137, 0.45);
+  }
+.swal2-container {
+    display: -webkit-box;
+    display: flex;
+    position: fixed;
+    z-index: 999999999999999;
+}
 #clonename_pagination{
     margin: 50px 0px 0px 0px;
 }
