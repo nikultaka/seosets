@@ -161,7 +161,8 @@ class Controller
                 $get_img_title_Description = $wpdb->get_results($get_img_title_Description_sql);
                 $get_img_title = $get_img_title_Description[0]->post_title;
                 $get_img_Description = $get_img_title_Description[0]->post_content;
-                $get_post_permalink = get_permalink($value);
+                $postData = get_post($value); 
+                $get_post_permalink = $postData->post_name;
 
                 foreach ($decode_clone_tags as  $create_tags_name_page) {                
                     $all_pages_content  = $content_post;
@@ -193,9 +194,10 @@ class Controller
                         $new_image_img = str_replace('{{' . $imagekey . '}}', $imagevalue, $new_image_img);
                         $new_image_Description = str_replace('{{' . $imagekey . '}}', $imagevalue, $new_image_Description);
                     }
+
+
                     foreach ($create_tags_name_page as $permalinkkey => $permalinkvalue) {
-                        $new_post_permalink = str_replace('1t1' . $permalinkkey . '1t1', $permalinkvalue, $new_post_permalink);
-                        $new_post_permalink = str_replace('http://localhost/clone_wordpress/', '', $new_post_permalink);
+                        $new_post_permalink = str_replace('1t1' . $permalinkkey . '1t1', $permalinkvalue, $new_post_permalink);  
                     }                
                     
                     $new_title_post = $get_post->post_title . ' - ' . $pages_title_name;
