@@ -98,7 +98,7 @@ class Controller
 
     public function insert_clone()
     {   
-        
+        set_time_limit(0);
         global $wpdb;
         global $wp_rewrite;
         $data['status'] = 0;

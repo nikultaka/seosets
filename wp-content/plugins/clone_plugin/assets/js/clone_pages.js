@@ -15,7 +15,12 @@ $(document).ready(function () {
         "serverSide": true,
         "bDestroy": true,
         stateSave: true,
-        
+        "drawCallback": function( settings ) {
+            console.log("testing draw");
+            if($('#example-select-all').is(':checked')) {
+                $(document).find('.checkall').prop('checked',true);      
+            }
+        },
         "ajax": {
             url: pageajaxurl,
             type: "post",
@@ -44,7 +49,7 @@ $(document).ready(function () {
             'orderable': false,
             'className': 'dt-body-center',
             'render': function (data, type, full, meta){
-                return '<input type="checkbox" name="id[]" value="' + $('<div/>').text(data).html() + '">';
+                return '<input type="checkbox" class="checkall" name="id[]" value="' + $('<div/>').text(data).html() + '">';
             }
          },
          {
@@ -57,8 +62,13 @@ $(document).ready(function () {
     
     $('#example-select-all').on('change', function(){        
         var cells = table.cells( ).nodes();
-        $( cells ).find(':checkbox').prop('checked', $(this).is(':checked'));
-     });
+        $( cells ).find('.checkall').prop('checked',true);  
+     });      
+
+    $('#clone_pages_data-table').on( 'page.dt', function () {
+        //var cells = table.cells( ).nodes();
+        //$( cells ).find('.checkall').prop('checked', $(this).is(':checked'));  
+    }); 
 
      $('#clone_pages_data-table tbody').on('change', 'input[name="id[]"]', function(){
         // If checkbox is not checked
