@@ -10,10 +10,10 @@ function custom_clone_menu()
         'SEO Sets', // page title
         'SEO Sets', // menu title
         'manage_options', // capability
-        'seo-sets', // slug
+        'seo-sets', // slug 
         'display_clone_set' // callback
     );
-  
+
     add_submenu_page(
         'seo-sets', // parent slug
         'SEO Pages', // page title
@@ -106,6 +106,8 @@ class Controller
         $clonename = $_POST['clonename'];
         $pages = implode(",", $_POST['pages']);
         $clone_tags = $_POST['clone_tags'];
+        $pages_image = $_POST['pages_image'];
+        $first_image = '';
         //echo $clone_tags;exit;
         $remove_space_clone_tags = str_replace(" ", "", $clone_tags);
         // $remove_space_clone_tags = str_replace("<br/>", "", $remove_space_clone_tags);
@@ -238,32 +240,31 @@ class Controller
                     update_post_meta($page_insert_id, '_yoast_wpseo_title', $all_meta_title);
                     update_post_meta($page_insert_id, '_yoast_wpseo_metadesc', $all_meta_content);
 
-                    // if(!empty($new_post_permalink)){
-                    //     $wp_rewrite->set_permalink_structure($new_post_permalink);
-                    // }
 
-                    //image {{tag}}
-                    
-                    // if(!empty($img_meta_values)) {
-                    //     $imageUrl = wp_upload_dir()['baseurl'].'/'.$_wp_attached_file[0]; 
-                    //     $lastImageID = media_sideload_image($imageUrl,$thumbnail_id,"",'id');   
-                    //     set_post_thumbnail($page_insert_id,$lastImageID);
-                    //     update_post_meta($lastImageID, '_wp_attachment_image_alt',$image_alt);
+                    //echo 'sdsds'.$image_alt_content;
+                    //die;
 
-                    //     /*update_post_meta($page_insert_id, '_wp_attached_file', $_wp_attached_file);
-                    //     update_post_meta($page_insert_id, '_wp_attachment_metadata', $_wp_attachment_metadata);
-                    //     update_post_meta($page_insert_id, '_wp_attachment_image_alt',$image_alt);
-                    //     update_post_meta($page_insert_id, '_thumbnail_id', $thumbnail_id); */
-                    // }
-
-                    if($image_alt_content == '' && $image_alt_content == null){
+                    if($image_alt_content == '' && $image_alt_content == null) {
                         update_post_meta($page_insert_id, '_thumbnail_id', $thumbnail_id); 
-                    }else{
-                        if(!empty($img_meta_values)) {
+                    } else {
+                        if(!empty($img_meta_values)) {  
+
+                            
+                            if($pages_image == "1") {
                                 $imageUrl = wp_upload_dir()['baseurl'].'/'.$_wp_attached_file[0]; 
                                 $lastImageID = media_sideload_image($imageUrl,$thumbnail_id,"",'id');    
                                 set_post_thumbnail($page_insert_id,$lastImageID);
                                 update_post_meta($lastImageID, '_wp_attachment_image_alt',$image_alt);
+                            } else {
+                                if($first_image == '') {
+                                    $imageUrl = wp_upload_dir()['baseurl'].'/'.$_wp_attached_file[0]; 
+                                    $lastImageID = media_sideload_image($imageUrl,$thumbnail_id,"",'id');    
+                                    $first_image = $lastImageID; 
+                                }
+                                set_post_thumbnail($page_insert_id,$first_image);
+                                update_post_meta($first_image, '_wp_attachment_image_alt',$image_alt);
+                            }         
+                            
                         }
                     }
 
@@ -272,24 +273,24 @@ class Controller
                             $get_post_thumbnail_id = get_post_thumbnail_id($all_pages_thumbnail_id);
 
                             $update_img_title_Description_sql = " UPDATE " . $pages_table_name . " SET
-                                                                post_content   = '".$new_image_Description ."',
-                                                                post_title = '". $new_image_img ."'
-                                                                WHERE  " . $pages_table_name . ".ID = ".$get_post_thumbnail_id."" ;
+                            post_content   = '".$new_image_Description ."',
+                            post_title = '". $new_image_img ."'
+                            WHERE  " . $pages_table_name . ".ID = ".$get_post_thumbnail_id."" ;
                             $update_img_title_Description_result = $wpdb->get_results($update_img_title_Description_sql);
 
                         }
                     }
-            }
-            $all_pages_insert_id = implode(",", $all_post_id);       
+                }
+                $all_pages_insert_id = implode(",", $all_post_id);       
 
             // insert new page in database
-            $insertsql = $wpdb->insert($table_name, array(
-                'clonename' => $clonename,
-                'pages'     => $pages,
-                'tags'      => $clone_tags,
-                'pages_status'  => $pages_status,
-                'page_insert_id' => $all_pages_insert_id
-            ));    
+                $insertsql = $wpdb->insert($table_name, array(
+                    'clonename' => $clonename,
+                    'pages'     => $pages,
+                    'tags'      => $clone_tags,
+                    'pages_status'  => $pages_status,
+                    'page_insert_id' => $all_pages_insert_id
+                ));    
 
                 if($insertsql){
                     $data['status'] = 1;
@@ -305,7 +306,7 @@ class Controller
     {
         global $wpdb;
         $requestData = $_POST;
-     
+
         $data = array();
         $table_name = $wpdb->prefix . "clone";
         $user_table_data = $wpdb->prefix . "users";
@@ -313,13 +314,13 @@ class Controller
         $short_by_clone_name_id = $_POST['short_clone_name'];
 
         $result_sql = "SELECT clone.* , " . $user_table_data . ".user_login AS user_name  FROM " . $table_name . " as clone 
-                            LEFT JOIN " . $posts_table_data . " ON " . $posts_table_data . ".ID = clone.page_insert_id 
-                            LEFT JOIN " . $user_table_data . " ON " . $user_table_data . ".ID = " . $posts_table_data . ".post_author";
+        LEFT JOIN " . $posts_table_data . " ON " . $posts_table_data . ".ID = clone.page_insert_id 
+        LEFT JOIN " . $user_table_data . " ON " . $user_table_data . ".ID = " . $posts_table_data . ".post_author";
 
         // -------------------------------------------------------------------------------------------------------------
         if ($short_by_clone_name_id != '' && $short_by_clone_name_id != null) {
             $result_sql .=  " WHERE ((clone.clonename LIKE '$short_by_clone_name_id%')
-                                  OR (clone.clonename LIKE '" . ucfirst($short_by_clone_name_id) . "%'))";
+            OR (clone.clonename LIKE '" . ucfirst($short_by_clone_name_id) . "%'))";
         }
         //--------------------------------------------------------------------------------------------------------------- 
 
@@ -330,9 +331,9 @@ class Controller
             $search = $requestData['search']['value'];
 
             $result_sql .= " AND ((clone.clonename LIKE '%" . $search . "%')
-                                 OR (" . $user_table_data . ".user_login LIKE '%" . $search . "%')
-                                 OR (clone.pages_status LIKE '%" . $search . "%')
-                                 OR (clone.created_at LIKE '%" . $search . "%'))";
+            OR (" . $user_table_data . ".user_login LIKE '%" . $search . "%')
+            OR (clone.pages_status LIKE '%" . $search . "%')
+            OR (clone.created_at LIKE '%" . $search . "%'))";
         }
         $columns = array(
             0 => 'clone.id',
@@ -397,10 +398,10 @@ class Controller
                 $switch_status = 'checked';
             }
             $temp['update_status'] = '<div class="custom-control custom-switch">
-                                 <input type="checkbox" class="custom-control-input statusswitch"  data-toggle="tooltip" 
-                                 data-placement="top" title="' . $status_change . '" ' . $switch_status . ' data-id="' . $row->id . '" data-prod_id="' . $row->page_insert_id . '" id="customSwitches' . $count . '">
-                                 <label  class="custom-control-label" for="customSwitches' . $count . '"></label>
-                                 </div>';
+            <input type="checkbox" class="custom-control-input statusswitch"  data-toggle="tooltip" 
+            data-placement="top" title="' . $status_change . '" ' . $switch_status . ' data-id="' . $row->id . '" data-prod_id="' . $row->page_insert_id . '" id="customSwitches' . $count . '">
+            <label  class="custom-control-label" for="customSwitches' . $count . '"></label>
+            </div>';
 
             $data[] = $temp;
             $count++;
@@ -431,138 +432,138 @@ class Controller
 
         if(!empty($array_page_insert_id)){
             foreach($array_page_insert_id as $all_pages_thumbnail_id){
-                   $get_post_thumbnail_id = get_post_thumbnail_id($all_pages_thumbnail_id);
-                   $delete_img_sql = $wpdb->get_results("DELETE FROM " . $pages_table_name . " WHERE ID = ".$get_post_thumbnail_id." ");
-               }
-           }
+             $get_post_thumbnail_id = get_post_thumbnail_id($all_pages_thumbnail_id);
+             $delete_img_sql = $wpdb->get_results("DELETE FROM " . $pages_table_name . " WHERE ID = ".$get_post_thumbnail_id." ");
+         }
+     }
 
-        $delete_sql = $wpdb->delete($table_name, array('id' => $deleteId));
-        $delete_pages_sql = $wpdb->get_results("DELETE FROM " . $pages_table_name . " WHERE " . $pages_table_name . ".ID IN($page_insert_id)");
-        $meta_delete_pages_sql = $wpdb->get_results("DELETE FROM " . $meta_table_name . " WHERE " . $meta_table_name . ".post_id IN($page_insert_id)");
-        
-      
-        if ($delete_pages_sql) {
-            $result['status'] = 1;
-            $result['msg'] = "Clone deleted sucessfully";
-        }
-        if ($delete_sql) {
-            $result['status'] = 1;
-            $result['msg'] = "Clone deleted sucessfully";
-        }
-        echo json_encode($result);
-        exit();
+     $delete_sql = $wpdb->delete($table_name, array('id' => $deleteId));
+     $delete_pages_sql = $wpdb->get_results("DELETE FROM " . $pages_table_name . " WHERE " . $pages_table_name . ".ID IN($page_insert_id)");
+     $meta_delete_pages_sql = $wpdb->get_results("DELETE FROM " . $meta_table_name . " WHERE " . $meta_table_name . ".post_id IN($page_insert_id)");
+
+
+     if ($delete_pages_sql) {
+        $result['status'] = 1;
+        $result['msg'] = "Clone deleted sucessfully";
     }
-
-    function change_page_status()
-    {
-        global $wpdb;
-        $table_name = $wpdb->prefix . "clone";
-        $update_id = $_POST['id'];
-        $post_id = $_POST['page_insert_id'];
-        $page_insert_id = explode(",", $post_id);
-        $status = $_POST['status'];
-
-        foreach ($page_insert_id as $value) {
-            if ($status == 1) {
-                $wpdb->update(
-                    $table_name,
-                    array(
-                        'pages_status'  => 'publish'
-                    ),
-                    array('id' => $update_id)
-                );
-
-                $update_post_status = array(
-                    'post_type' => 'page',
-                    'ID' => $value,
-                    'post_status' => 'publish'
-                );
-            } else {
-                $wpdb->update(
-                    $table_name,
-                    array(
-                        'pages_status'  => 'draft'
-                    ),
-                    array('id' => $update_id)
-                );
-
-                $update_post_status = array(
-                    'post_type' => 'page',
-                    'ID' => $value,
-                    'post_status' => 'draft'
-                );
-            }
-            wp_update_post($update_post_status);
-        }
+    if ($delete_sql) {
+        $result['status'] = 1;
+        $result['msg'] = "Clone deleted sucessfully";
     }
+    echo json_encode($result);
+    exit();
+}
 
-    function page_click_id_open_url()
-    {
-        $result['status'] = 0;
-        $page_click_id = $_POST['page_click_id'];
-        $post_url_link = get_edit_post_link($page_click_id);
-        $url_link = str_replace("&amp;", "&", $post_url_link);
+function change_page_status()
+{
+    global $wpdb;
+    $table_name = $wpdb->prefix . "clone";
+    $update_id = $_POST['id'];
+    $post_id = $_POST['page_insert_id'];
+    $page_insert_id = explode(",", $post_id);
+    $status = $_POST['status'];
 
-        if ($url_link) {
-            $result['status'] = 1;
-            $result['link'] = $url_link;
+    foreach ($page_insert_id as $value) {
+        if ($status == 1) {
+            $wpdb->update(
+                $table_name,
+                array(
+                    'pages_status'  => 'publish'
+                ),
+                array('id' => $update_id)
+            );
+
+            $update_post_status = array(
+                'post_type' => 'page',
+                'ID' => $value,
+                'post_status' => 'publish'
+            );
+        } else {
+            $wpdb->update(
+                $table_name,
+                array(
+                    'pages_status'  => 'draft'
+                ),
+                array('id' => $update_id)
+            );
+
+            $update_post_status = array(
+                'post_type' => 'page',
+                'ID' => $value,
+                'post_status' => 'draft'
+            );
         }
-        echo json_encode($result);
-        exit();
+        wp_update_post($update_post_status);
     }
+}
 
-    function search_seo_in_form()
-    {
-        global $wpdb;
-        $seo_search = $_POST['seo_search'];
-        $table_name = $wpdb->prefix . "posts";
-        $meta_table_name = $wpdb->prefix . "postmeta";
-        $user_table_name =  $wpdb->prefix . "users";
+function page_click_id_open_url()
+{
+    $result['status'] = 0;
+    $page_click_id = $_POST['page_click_id'];
+    $post_url_link = get_edit_post_link($page_click_id);
+    $url_link = str_replace("&amp;", "&", $post_url_link);
 
-        $query = "SELECT DISTINCT post_title,post_status," . $table_name . ".ID," . $meta_table_name . ".meta_key ," . $user_table_name . ".user_login AS user_name FROM " . $table_name . " 
-        left JOIN " . $meta_table_name . " ON " . $meta_table_name . ".post_id = " . $table_name . ".ID and " . $meta_table_name . ".meta_key = 'my_clone_meta_key'
-        LEFT JOIN " . $user_table_name . " ON " . $user_table_name . ".ID = " . $table_name . ".post_author
-        WHERE post_type = 'page' 
-        AND (post_status = 'publish' or post_status = 'draft')";
-        if ($seo_search != '' && $seo_search != null) {
-            $query .=  " AND ((" . $table_name . ".post_title LIKE '%" . $seo_search . "%')
-                         OR (" . $table_name . ".post_status LIKE '%" . $seo_search . "%')
-                         OR (". $user_table_name . ".user_login LIKE '%" . $seo_search . "%'))";
-        }
-        $query .= " having meta_key is null";
-        $pagessql = $wpdb->get_results($query, OBJECT);
-
-                $table =
-                 '<div class="form-group">
-                            <div class="list-group menu" id="menu" name="menu">
-                            <table class="table table-hover table-sm">
-                                <tr>
-                                    <th scope="col"></th>
-                                    <th scope="col">SEO Set</th>
-                                    <th scope="col">Author name</th>
-                                    <th scope="col">Status</th>
-                                    <th scope="col">Edit SEO Set</th>
-                                </tr>';
-
-                    foreach ($pagessql as $pages) { 
-                    $table .='      <tr value="'. $pages->ID .'" style="margin-left: 10px;">
-                                        <td><input type="checkbox" name="pages[]" value="'.  $pages->ID .'"></td>
-                                        <td>'. $pages->post_title .'</td> 
-                                        <td> '. $pages->user_name .'</td> 
-                                        <td>'. ucfirst($pages->post_status) .' </td>
-                                        <td>
-                                        <a href="javascript:void(0)" style="float:right;" data-id="'.$pages->ID.'">
-                                        <i class="fa fa-pencil-square" aria-hidden="true"></i></a>
-                                        </td>';
-                            }
-                    $table .= '</tr>
-                        </table>
-                     </div>
-                 </div>';
-
-        echo json_encode($table);       
-        exit();
+    if ($url_link) {
+        $result['status'] = 1;
+        $result['link'] = $url_link;
     }
+    echo json_encode($result);
+    exit();
+}
+
+function search_seo_in_form()
+{
+    global $wpdb;
+    $seo_search = $_POST['seo_search'];
+    $table_name = $wpdb->prefix . "posts";
+    $meta_table_name = $wpdb->prefix . "postmeta";
+    $user_table_name =  $wpdb->prefix . "users";
+
+    $query = "SELECT DISTINCT post_title,post_status," . $table_name . ".ID," . $meta_table_name . ".meta_key ," . $user_table_name . ".user_login AS user_name FROM " . $table_name . " 
+    left JOIN " . $meta_table_name . " ON " . $meta_table_name . ".post_id = " . $table_name . ".ID and " . $meta_table_name . ".meta_key = 'my_clone_meta_key'
+    LEFT JOIN " . $user_table_name . " ON " . $user_table_name . ".ID = " . $table_name . ".post_author
+    WHERE post_type = 'page' 
+    AND (post_status = 'publish' or post_status = 'draft')";
+    if ($seo_search != '' && $seo_search != null) {
+        $query .=  " AND ((" . $table_name . ".post_title LIKE '%" . $seo_search . "%')
+        OR (" . $table_name . ".post_status LIKE '%" . $seo_search . "%')
+        OR (". $user_table_name . ".user_login LIKE '%" . $seo_search . "%'))";
+    }
+    $query .= " having meta_key is null";
+    $pagessql = $wpdb->get_results($query, OBJECT);
+
+    $table =
+    '<div class="form-group">
+    <div class="list-group menu" id="menu" name="menu">
+    <table class="table table-hover table-sm">
+    <tr>
+    <th scope="col"></th>
+    <th scope="col">SEO Set</th>
+    <th scope="col">Author name</th>
+    <th scope="col">Status</th>
+    <th scope="col">Edit SEO Set</th>
+    </tr>';
+
+    foreach ($pagessql as $pages) { 
+        $table .='      <tr value="'. $pages->ID .'" style="margin-left: 10px;">
+        <td><input type="checkbox" name="pages[]" value="'.  $pages->ID .'"></td>
+        <td>'. $pages->post_title .'</td> 
+        <td> '. $pages->user_name .'</td> 
+        <td>'. ucfirst($pages->post_status) .' </td>
+        <td>
+        <a href="javascript:void(0)" style="float:right;" data-id="'.$pages->ID.'">
+        <i class="fa fa-pencil-square" aria-hidden="true"></i></a>
+        </td>';
+    }
+    $table .= '</tr>
+    </table>
+    </div>
+    </div>';
+
+    echo json_encode($table);       
+    exit();
+}
 
 
     // function edit_record(){
@@ -584,238 +585,239 @@ class Controller
     //     exit();
     // }
 
-    function load_clone_pages_Datatable()
-    {
-        global $wpdb;
-        $requestData = $_POST;
-        $data = array();
-        $table_name = $wpdb->prefix . "posts";
-        $meta_table_name = $wpdb->prefix . "postmeta";
-        $user_data = $wpdb->prefix . "users";
-        $clone_table_name = $wpdb->prefix . "clone";
-        $post_login_data = wp_get_current_user();
-        $post_author_name = $post_login_data->ID;
-        $pages_filter_dropdown_id = $_POST['pages_filter_dropdown'];
-        $pagination_filter_id = $_POST['short_name'];
+function load_clone_pages_Datatable()
+{
+    global $wpdb;
+    $requestData = $_POST;
+    $data = array();
+    $table_name = $wpdb->prefix . "posts";
+    $meta_table_name = $wpdb->prefix . "postmeta";
+    $user_data = $wpdb->prefix . "users";
+    $clone_table_name = $wpdb->prefix . "clone";
+    $post_login_data = wp_get_current_user();
+    $post_author_name = $post_login_data->ID;
+    $pages_filter_dropdown_id = $_POST['pages_filter_dropdown'];
+    $pagination_filter_id = $_POST['short_name'];
 
 
-        $result_sql = "SELECT posts.* , " . $user_data . ".user_login AS user_name,
-            " . $clone_table_name . ".created_at AS created_at,
-            " . $clone_table_name . ".clonename AS clonename
-            FROM " . $table_name . " as posts
-            LEFT JOIN " . $meta_table_name . " ON " . $meta_table_name . ".post_id = posts.ID
-            LEFT JOIN " . $user_data . " ON " . $user_data . ".ID = posts.post_author
-            LEFT JOIN ".$clone_table_name." ON FIND_IN_SET(posts.ID, ".$clone_table_name.".page_insert_id)";
+    $result_sql = "SELECT posts.* , " . $user_data . ".user_login AS user_name,
+    " . $clone_table_name . ".created_at AS created_at,
+    " . $clone_table_name . ".clonename AS clonename
+    FROM " . $table_name . " as posts
+    LEFT JOIN " . $meta_table_name . " ON " . $meta_table_name . ".post_id = posts.ID
+    LEFT JOIN " . $user_data . " ON " . $user_data . ".ID = posts.post_author
+    LEFT JOIN ".$clone_table_name." ON FIND_IN_SET(posts.ID, ".$clone_table_name.".page_insert_id)";
         // LEFT JOIN " . $clone_table_name . " ON " . $clone_table_name . ".page_insert_id = posts.ID
-        $result_sql .= " WHERE $meta_table_name.meta_value = 1
-                             AND  $meta_table_name.meta_key = 'my_clone_meta_key'
-                             AND  posts.post_status != 'trash'";
+    $result_sql .= " WHERE $meta_table_name.meta_value = 1
+    AND  $meta_table_name.meta_key = 'my_clone_meta_key'
+    AND  posts.post_status != 'trash'";
         // -------------------------------------------------------------------------------------------------------------
-        if ($pages_filter_dropdown_id != '' && $pages_filter_dropdown_id != null) {
-            $result_sql .=  " AND posts.ID IN ($pages_filter_dropdown_id)";
-        }
+    if ($pages_filter_dropdown_id != '' && $pages_filter_dropdown_id != null) {
+        $result_sql .=  " AND posts.ID IN ($pages_filter_dropdown_id)";
+    }
         // -------------------------------------------------------------------------------------------------------------
-        if ($pagination_filter_id != '' && $pagination_filter_id != null) {
-            $result_sql .=  " AND ((posts.post_title LIKE '$pagination_filter_id%')
-                                  OR  (posts.post_title LIKE '" . ucfirst($pagination_filter_id) . "%'))";
-        }
+    if ($pagination_filter_id != '' && $pagination_filter_id != null) {
+        $result_sql .=  " AND ((posts.post_title LIKE '$pagination_filter_id%')
+        OR  (posts.post_title LIKE '" . ucfirst($pagination_filter_id) . "%'))";
+    }
         //---------------------------------------------------------------------------------------------------------------
 
-        if (isset($requestData['search']['value']) && $requestData['search']['value'] != '') {
-            $search = $requestData['search']['value'];
-            $result_sql .= " AND((posts.post_title LIKE '%" . $search . "%')
-                                 OR(" . $user_data . ".user_login LIKE '%" . $search . "%')
-                                 OR (posts.post_date LIKE '%" . $search . "%')
-                                 OR ( " . $clone_table_name . ".clonename LIKE '%" . $search . "%')
-                                 OR (posts.post_status LIKE '%" . $search . "%'))";
-        }
-        $columns = array(
-            0 => 'posts.id',
-            1 => 'posts.id',
-            2 => 'posts.post_title',
-            3 => 'posts.post_status',
-            4 => 'posts.user_name',
-            5 => 'clone.clonename',
-            6 => 'posts.post_date'
-        );
+    if (isset($requestData['search']['value']) && $requestData['search']['value'] != '') {
+        $search = $requestData['search']['value'];
+        $result_sql .= " AND((posts.post_title LIKE '%" . $search . "%')
+        OR(" . $user_data . ".user_login LIKE '%" . $search . "%')
+        OR (posts.post_date LIKE '%" . $search . "%')
+        OR ( " . $clone_table_name . ".clonename LIKE '%" . $search . "%')
+        OR (posts.post_status LIKE '%" . $search . "%'))";
+    }
+    $columns = array(
+        0 => 'posts.id',
+        1 => 'posts.id',
+        2 => 'posts.post_title',
+        3 => 'posts.post_status',
+        4 => 'posts.user_name',
+        5 => 'clone.clonename',
+        6 => 'posts.post_date'
+    );
 
-        if (isset($requestData['order'][0]['column']) && $requestData['order'][0]['column'] != '') {
-            $order_by = $columns[$requestData['order'][0]['column']];
-            $result_sql .= " ORDER BY " . $order_by;
-        } else {
-            $result_sql .= " ORDER BY posts.id DESC";
-        }
+    if (isset($requestData['order'][0]['column']) && $requestData['order'][0]['column'] != '') {
+        $order_by = $columns[$requestData['order'][0]['column']];
+        $result_sql .= " ORDER BY " . $order_by;
+    } else {
+        $result_sql .= " ORDER BY posts.id DESC";
+    }
 
-        if (isset($requestData['order'][0]['dir']) && $requestData['order'][0]['dir'] != '') {
-            $result_sql .= " " . $requestData['order'][0]['dir'];
-        } else {
-            $result_sql .= " DESC ";
-        }
+    if (isset($requestData['order'][0]['dir']) && $requestData['order'][0]['dir'] != '') {
+        $result_sql .= " " . $requestData['order'][0]['dir'];
+    } else {
+        $result_sql .= " DESC ";
+    }
 
-        $result = $wpdb->get_results($result_sql, OBJECT);
+    $result = $wpdb->get_results($result_sql, OBJECT);
 
-        $totalData = 0;
-        $totalFiltered = 0;
-        if (count($result) > 0) {
-            $totalData = count($result);
-            $totalFiltered = count($result);
-        }
+    $totalData = 0;
+    $totalFiltered = 0;
+    if (count($result) > 0) {
+        $totalData = count($result);
+        $totalFiltered = count($result);
+    }
 
         // This is for pagination
-        if (isset($requestData['start']) && $requestData['start'] != '' && isset($requestData['length']) && $requestData['length'] != '') {
-            $result_sql .= " LIMIT " . $requestData['start'] . "," . $requestData['length'];
-        }
+    if (isset($requestData['start']) && $requestData['start'] != '' && isset($requestData['length']) && $requestData['length'] != '') {
+        $result_sql .= " LIMIT " . $requestData['start'] . "," . $requestData['length'];
+    }
 
-        $list_data = $wpdb->get_results($result_sql, "OBJECT");
-        $arr_data = array();
-        $arr_data = $result;
+    $list_data = $wpdb->get_results($result_sql, "OBJECT");
+    $arr_data = array();
+    $arr_data = $result;
 
-        $count = 1;
-        foreach ($list_data as $row) {
+    $count = 1;
+    foreach ($list_data as $row) {
             //$temp['select_all'] = "<input type='hidden' value='".$row->ID."'>";
-            $temp['select_all'] = $row->ID;
-            $temp['id'] = $count;
-            $temp['clonepagename'] = $row->post_title;
-            if (strtolower($row->post_status) == 'publish') {
-                $row->post_status = "Published";
-            }
-            $temp['pagestatus'] = ucfirst($row->post_status);
-            $temp['author_name'] = $row->user_name;
-            $temp['clone_name'] = $row->clonename;
-            $temp['datetime'] = $row->post_date != '' ? date('d-m-Y h:i', strtotime($row->post_date)) : '';
-
-            $delete = "<button  class='btn btn-danger btn-sm' onclick='clone_page_delete(" . $row->ID . ")'><i class='fa fa-trash' aria-hidden='true'></i></button>";
-            $temp['delete'] = $delete;
-
-            if ($row->post_status == "draft") {
-                $status_change = 'Status Change to publish';
-            } else {
-                $status_change = 'Status Change to Draft';
-            }
-            $switch_status = '';
-
-            if (strtolower($row->post_status) == "published") {
-                $switch_status = 'checked';
-            }
-            $temp['update_status'] = '<div class="custom-control custom-switch">
-                               <input type="checkbox" class="custom-control-input statusswitch"  data-toggle="tooltip" 
-                               data-placement="top" title="' . $status_change . '" ' . $switch_status . ' data-id="' . $row->ID . '" id="update_status' . $count . '">
-                               <label class="custom-control-label" for="update_status' . $count . '"></label>
-                               </div>';
-            // $temp['select_all'] = '<input type="checkbox"  class="select_all_chacked" name="select_all_chacked[]" value="'. $row->ID .'">';
-            $data[] = $temp;
-
-            $count++;
+        $temp['select_all'] = $row->ID;
+        $temp['id'] = $count;
+        $temp['clonepagename'] = $row->post_title;
+        if (strtolower($row->post_status) == 'publish') {
+            $row->post_status = "Published";
         }
+        $temp['pagestatus'] = ucfirst($row->post_status);
+        $temp['author_name'] = $row->user_name;
+        $temp['clone_name'] = $row->clonename;
+        $temp['datetime'] = $row->post_date != '' ? date('d F Y h:i', strtotime($row->post_date)) : '';
 
-        $json_data = array(
-            "draw" => intval($requestData['draw']),
-            "recordsTotal" => intval($totalData),
-            "recordsFiltered" => intval($totalFiltered),
-            "data" => $data,
-            "sql" => $result_sql
-        );
+        $delete = "<button  class='btn btn-danger btn-sm' onclick='clone_page_delete(" . $row->ID . ")'><i class='fa fa-trash' aria-hidden='true'></i></button>";
+        $temp['delete'] = $delete;
 
-        echo json_encode($json_data);
-        exit();
-    }
-
-
-    function delete_clone_pages_record()
-    {
-        global $wpdb;
-        $result['status'] = 0;
-        $result['msg'] = "Error Not page delete";
-        $deleteId = $_POST['id'];
-        $table_name = $wpdb->prefix . "posts";
-
-        $delete_sql = $wpdb->delete($table_name, array('id' => $deleteId));
-        if ($delete_sql) {
-            $result['status'] = 1;
-            $result['msg'] = "Your record has been deleted.";
-        }
-        echo json_encode($result);
-        exit();
-    }
-    function change_post_status()
-    {
-        $status = $_POST['status'];
-        if ($status == 0) {
-            $update_post_status = array(
-                'post_type' => 'page',
-                'ID' => $_POST['id'],
-                'post_status' => 'draft'
-            );
+        if ($row->post_status == "draft") {
+            $status_change = 'Status Change to publish';
         } else {
-            $update_post_status = array(
-                'post_type' => 'page',
-                'ID' => $_POST['id'],
-                'post_status' => 'publish'
-            );
+            $status_change = 'Status Change to Draft';
         }
-        $status_changed = wp_update_post($update_post_status);
+        $switch_status = '';
+
+        if (strtolower($row->post_status) == "published") {
+            $switch_status = 'checked';
+        }
+        $temp['update_status'] = '<div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input statusswitch"  data-toggle="tooltip" 
+        data-placement="top" title="' . $status_change . '" ' . $switch_status . ' data-id="' . $row->ID . '" id="update_status' . $count . '">
+        <label class="custom-control-label" for="update_status' . $count . '"></label>
+        </div>';
+            // $temp['select_all'] = '<input type="checkbox"  class="select_all_chacked" name="select_all_chacked[]" value="'. $row->ID .'">';
+        $temp['viewaction'] = '<a href="'.$row->guid.'" target="blank"><i class="fa fa-eye" title="Preview"></a></i>&nbsp;&nbsp;<a href="'.admin_url().'post.php?post='.$row->ID.'&action=edit" target="blank"><i class="fa fa-edit" title="Edit"></i></a>';
+        $data[] = $temp;
+
+        $count++;
     }
 
-    function delete_selected_pages_record()
-    {
-        global $wpdb;
-        $result['status'] = 0;
-        $result['msg'] = "Error page not delete";
-        $delete_Id = $_POST['del_id'];
-        
-        $str_deleteId = implode(",", $delete_Id);        
-        $table_name = $wpdb->prefix . "posts";
-        $clone_table_name = $wpdb->prefix . "clone";
+    $json_data = array(
+        "draw" => intval($requestData['draw']),
+        "recordsTotal" => intval($totalData),
+        "recordsFiltered" => intval($totalFiltered),
+        "data" => $data,
+        "sql" => $result_sql
+    );
 
-        if ($str_deleteId != '') {
-            $delete_sql = $wpdb->get_results("DELETE FROM " . $table_name . " WHERE " . $table_name . ".ID IN($str_deleteId)");
-            $delete_clonename_sql = $wpdb->get_results("DELETE FROM " . $clone_table_name . " WHERE " . $clone_table_name . ".page_insert_id IN($str_deleteId)");
-            $result['status'] = 1;
-            $result['msg'] = "Your record has been deleted.";
-        }
+    echo json_encode($json_data);
+    exit();
+}
 
-        echo json_encode($result);
-        exit();
+
+function delete_clone_pages_record()
+{
+    global $wpdb;
+    $result['status'] = 0;
+    $result['msg'] = "Error Not page delete";
+    $deleteId = $_POST['id'];
+    $table_name = $wpdb->prefix . "posts";
+
+    $delete_sql = $wpdb->delete($table_name, array('id' => $deleteId));
+    if ($delete_sql) {
+        $result['status'] = 1;
+        $result['msg'] = "Your record has been deleted.";
+    }
+    echo json_encode($result);
+    exit();
+}
+function change_post_status()
+{
+    $status = $_POST['status'];
+    if ($status == 0) {
+        $update_post_status = array(
+            'post_type' => 'page',
+            'ID' => $_POST['id'],
+            'post_status' => 'draft'
+        );
+    } else {
+        $update_post_status = array(
+            'post_type' => 'page',
+            'ID' => $_POST['id'],
+            'post_status' => 'publish'
+        );
+    }
+    $status_changed = wp_update_post($update_post_status);
+}
+
+function delete_selected_pages_record()
+{
+    global $wpdb;
+    $result['status'] = 0;
+    $result['msg'] = "Error page not delete";
+    $delete_Id = $_POST['del_id'];
+
+    $str_deleteId = implode(",", $delete_Id);        
+    $table_name = $wpdb->prefix . "posts";
+    $clone_table_name = $wpdb->prefix . "clone";
+
+    if ($str_deleteId != '') {
+        $delete_sql = $wpdb->get_results("DELETE FROM " . $table_name . " WHERE " . $table_name . ".ID IN($str_deleteId)");
+        $delete_clonename_sql = $wpdb->get_results("DELETE FROM " . $clone_table_name . " WHERE " . $clone_table_name . ".page_insert_id IN($str_deleteId)");
+        $result['status'] = 1;
+        $result['msg'] = "Your record has been deleted.";
     }
 
-    function change_selected_post_status()
-    {
-        $result['status'] = 0;
-        $result['msg'] = " Error post status not change";
-        $status = $_POST['status'];
-        $update_id = $_POST['id'];
+    echo json_encode($result);
+    exit();
+}
 
-        $str_deleteId = implode(",", $update_id);
-        $on1 = ["on,", ",on", "on"];
-        $on2   = ["", "", ""];
+function change_selected_post_status()
+{
+    $result['status'] = 0;
+    $result['msg'] = " Error post status not change";
+    $status = $_POST['status'];
+    $update_id = $_POST['id'];
 
-        $update_status_Id = str_replace($on1, $on2, $str_deleteId);
-        $update_status_Id_array = explode(",", $update_status_Id);
-        if ($update_status_Id_array != '') {
-            foreach ($update_status_Id_array as $update_select_status) {
-                if ($status == 0) {
-                    $update_post_status = array(
-                        'post_type' => 'page',
-                        'ID' => $update_select_status,
-                        'post_status' => 'draft'
-                    );
+    $str_deleteId = implode(",", $update_id);
+    $on1 = ["on,", ",on", "on"];
+    $on2   = ["", "", ""];
+
+    $update_status_Id = str_replace($on1, $on2, $str_deleteId);
+    $update_status_Id_array = explode(",", $update_status_Id);
+    if ($update_status_Id_array != '') {
+        foreach ($update_status_Id_array as $update_select_status) {
+            if ($status == 0) {
+                $update_post_status = array(
+                    'post_type' => 'page',
+                    'ID' => $update_select_status,
+                    'post_status' => 'draft'
+                );
                 $result['msg'] = "All post set as Draft sucessfully";
-                } else {
-                    $update_post_status = array(
-                        'post_type' => 'page',
-                        'ID' => $update_select_status,
-                        'post_status' => 'publish'
-                    );
+            } else {
+                $update_post_status = array(
+                    'post_type' => 'page',
+                    'ID' => $update_select_status,
+                    'post_status' => 'publish'
+                );
                 $result['msg'] = "All post set as Published sucessfully";
-                }
-                wp_update_post($update_post_status);
             }
-            $result['status'] = 1;
+            wp_update_post($update_post_status);
         }
-
-        echo json_encode($result);
-        exit();
+        $result['status'] = 1;
     }
+
+    echo json_encode($result);
+    exit();
+}
 }
 
 $clone_controller = new Controller();

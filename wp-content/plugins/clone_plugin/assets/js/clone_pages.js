@@ -39,6 +39,7 @@ $(document).ready(function () {
             { mData: 'datetime' },
             { mData: 'delete' },
             { mData: 'update_status' },
+            { mData: 'viewaction' },
             // { mData: 'select_all' }
 
         ],
@@ -112,6 +113,7 @@ function loadclonepagestable() {
             { mData: 'datetime' },
             { mData: 'delete' },
             { mData: 'update_status' },
+            { mData: 'viewaction' }
             // { mData: 'select_all' }
 
         ],
@@ -126,9 +128,9 @@ function loadclonepagestable() {
                 return '<input type="checkbox" name="id[]" value="' + $('<div/>').text(data).html() + '">';
             }
          },
-         {
-                    "targets": [6, 7, 8],
-                    "orderable": false
+         {    
+            "targets": [0,7,8,9],
+            "orderable": false
          },
         ],
     });
@@ -233,6 +235,7 @@ $("#pages_filtered_id").click(function () {
             { mData: 'datetime' },
             { mData: 'delete' },
             { mData: 'update_status'},
+            { mData: 'viewaction'},
         ],
         "order": [[0, "asc"]],
         'columnDefs': [{
@@ -245,7 +248,7 @@ $("#pages_filtered_id").click(function () {
             }
          },
          {
-                    "targets": [0, 7, 8],
+                    "targets": [0, 7, 8,9],
                     "orderable": false
                 },
         ],
@@ -283,6 +286,7 @@ $("#filter_pagination a").click(function () {
             { mData: 'datetime' },
             { mData: 'delete' },
             { mData: 'update_status'},
+            { mData: 'viewaction'},
 
         ],
         "order": [[0, "asc"]],
@@ -296,7 +300,7 @@ $("#filter_pagination a").click(function () {
             }
          },
          {
-                    "targets": [0, 7, 8],
+                    "targets": [0, 7, 8,9],
                     "orderable": false
                 },
         ],

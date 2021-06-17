@@ -99,7 +99,19 @@
                       <option value="publish" selected>Publish</option>
                     </select>
                   </div>
+
+
+                  <div class="form-group">
+                    <label for="pages_status">Do you want to separate images ?</label>
+                    <select class="form-control" id="pages_image" name="pages_image">
+                      <option value="0" selected>No</option>
+                      <option value="1">Yes</option>
+                    </select>
+                  </div>
+
+
                 </div>
+
               </div>
           </div>
 

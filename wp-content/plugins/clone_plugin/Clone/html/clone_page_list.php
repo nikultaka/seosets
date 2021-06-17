@@ -99,6 +99,7 @@
 		<th>Date</th>
 		<th>Delete</th>
 		<th>Update Status</th>
+		<th>Action</th>
 	</thead>
 	<tbody></tbody>
 </table>
