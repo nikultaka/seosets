@@ -283,20 +283,22 @@ class Controller
                 }
                 $all_pages_insert_id = implode(",", $all_post_id);       
 
-            // insert new page in database
-                $insertsql = $wpdb->insert($table_name, array(
-                    'clonename' => $clonename,
-                    'pages'     => $pages,
-                    'tags'      => $clone_tags,
-                    'pages_status'  => $pages_status,
-                    'page_insert_id' => $all_pages_insert_id
-                ));    
-
-                if($insertsql){
-                    $data['status'] = 1;
-                    $data['msg'] = "Clone created successfully";
-                }
+            
             }
+
+        }  
+        // insert new page in database          
+        $insertsql = $wpdb->insert($table_name, array(
+            'clonename' => $clonename,
+            'pages'     => $pages,
+            'tags'      => $clone_tags,
+            'pages_status'  => $pages_status,
+            'page_insert_id' => $all_pages_insert_id
+        ));    
+
+        if($insertsql){
+            $data['status'] = 1;
+            $data['msg'] = "Clone created successfully";
         }
         echo json_encode($data);
         exit();
