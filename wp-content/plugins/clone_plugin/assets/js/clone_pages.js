@@ -7,58 +7,62 @@ $(document).ready(function () {
     })
     $('[data-toggle="tooltip"]').tooltip();
   //  loadclonepagestable();
-    var table =  $('#clone_pages_data-table').DataTable({
-        "paging": true,
-        "aLengthMenu": [[100, 500, 1000], [100,500, 1000]],
-        // "pageLength": 100,   
-        "bProcessing": true,
-        "serverSide": true,
-        "bDestroy": true,
-        stateSave: true,
-        "drawCallback": function( settings ) {
-            console.log("testing draw");
-            if($('#example-select-all').is(':checked')) {
-                $(document).find('.checkall').prop('checked',true);      
-            }
-        },
-        "ajax": {
-            url: pageajaxurl,
-            type: "post",
-            data:
-            {
-                action: "Controller::load_clone_pages_Datatable"
+    if(is_filter == 0) {
+        var table =  $('#clone_pages_data-table').DataTable({
+            "paging": true,
+            "aLengthMenu": [[100, 500, 1000], [100,500, 1000]],
+            // "pageLength": 100,   
+            "bProcessing": true,
+            "serverSide": true,
+            "bDestroy": true,
+            stateSave: true,
+            "drawCallback": function( settings ) {
+                console.log("testing draw");
+                if($('#example-select-all').is(':checked')) {
+                    $(document).find('.checkall').prop('checked',true);      
+                }
             },
-        },
-        "aoColumns": [
-            { mData: 'select_all'},
-            { mData: 'id' },
-            { mData: 'clonepagename' },
-            { mData: 'pagestatus' },
-            { mData: 'author_name' },
-            { mData: 'clone_name' },
-            { mData: 'datetime' },
-            { mData: 'delete' },
-            { mData: 'update_status' },
-            { mData: 'viewaction' },
-            // { mData: 'select_all' }
-
-        ],
-        "order": [[0, "asc"]],
-        'columnDefs': [{
-            'targets': 0,
-            'searchable': false,
-            'orderable': false,
-            'className': 'dt-body-center',
-            'render': function (data, type, full, meta){
-                return '<input type="checkbox" class="checkall" name="id[]" value="' + $('<div/>').text(data).html() + '">';
-            }
-         },
-         {
-                    "targets": [0, 7, 8],
-                    "orderable": false
+            "ajax": {
+                url: pageajaxurl,
+                type: "post",
+                data:
+                {
+                    action: "Controller::load_clone_pages_Datatable"
                 },
-        ],
-    });
+            },
+            "aoColumns": [
+                { mData: 'select_all'},
+                { mData: 'id' },
+                { mData: 'clonepagename' },
+                { mData: 'pagestatus' },
+                { mData: 'author_name' },
+                { mData: 'clone_name' },
+                { mData: 'datetime' },
+                { mData: 'delete' },
+                { mData: 'update_status' },
+                { mData: 'viewaction' },
+                // { mData: 'select_all' }
+
+            ],
+            "order": [[0, "asc"]],
+            'columnDefs': [{
+                'targets': 0,
+                'searchable': false,
+                'orderable': false,
+                'className': 'dt-body-center',
+                'render': function (data, type, full, meta){
+                    return '<input type="checkbox" class="checkall" name="id[]" value="' + $('<div/>').text(data).html() + '">';
+                }
+             },
+             {
+                        "targets": [0, 7, 8],
+                        "orderable": false
+                    },
+            ],
+        });
+    } else {
+        $("#pages_filtered_id").trigger('click');
+    }
 
     
     $('#example-select-all').on('change', function(){        

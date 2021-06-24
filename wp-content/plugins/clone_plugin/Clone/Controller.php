@@ -106,10 +106,45 @@ class Controller
         $clonename = $_POST['clonename'];
         $pages = implode(",", $_POST['pages']);
         $clone_tags = $_POST['clone_tags'];
-        $pages_image = $_POST['pages_image'];
+
+        $pages_image = '';
+        if(isset($_POST['pages_image'])) {
+            $pages_image = $_POST['pages_image'];    
+        }
+
+
+
+        $args = array(
+            'sort_order' => 'asc',
+            'sort_column' => 'post_title',
+            'hierarchical' => 1,
+            'exclude' => '',
+            'include' => '',
+            'meta_key' => 'my_clone_meta_key',
+            'meta_value' => '1',
+            'authors' => '',
+            'child_of' => 0,
+            'parent' => -1,
+            'exclude_tree' => '',
+            'number' => '',
+            'offset' => 0,
+            'post_type' => 'page',
+            'post_status' => 'publish'  
+        ); 
+        $internalLinksString = '<ul style="display:none;">';
+        $pages = get_pages($args);                
+        if(!empty($pages)) {
+            foreach($pages as $key => $value) {
+                $internalLinksString.="<li><a href='".$value->guid."'>".$value->post_title."</a></li>";        
+            }    
+        }    
+        $internalLinksString.="</ul>";    
+
         $first_image = '';
         //echo $clone_tags;exit;
-        $remove_space_clone_tags = str_replace(" ", "", $clone_tags);
+        //$remove_space_clone_tags = str_replace(" ", "", $clone_tags);
+        $remove_space_clone_tags = trim($clone_tags);
+
         // $remove_space_clone_tags = str_replace("<br/>", "", $remove_space_clone_tags);
         // $remove_space_clone_tags = str_replace("\n", "", $remove_space_clone_tags);
         // $remove_space_clone_tags = str_replace("\r", "", $remove_space_clone_tags);
@@ -212,17 +247,17 @@ class Controller
                             'post_type'     => 'page',
                             'post_name'     => $new_post_permalink,
                             'post_title'    =>  $titleContainsTag == '0' ? $new_title_post : $replace_title,
-                            'post_content'  => $replace_content,
+                            'post_content'  => $replace_content.$internalLinksString,
                             'post_author'   => $post_author,
                             'post_status'   => 'publish',
-                        );
+                        );   
                     } else {
                         // Create post type is draft
                         $my_post = array(
                             'post_type'     => 'page',
                             'post_name'     => $new_post_permalink,
                             'post_title'    => $titleContainsTag == '0' ? $new_title_post : $replace_title,
-                            'post_content'  => $replace_content,
+                            'post_content'  => $replace_content.$internalLinksString,
                             'post_status'   => 'draft',
                             'post_author'   => $post_author
                         );
@@ -239,6 +274,8 @@ class Controller
                     update_post_meta($page_insert_id, 'my_clone_meta_key', 1);
                     update_post_meta($page_insert_id, '_yoast_wpseo_title', $all_meta_title);
                     update_post_meta($page_insert_id, '_yoast_wpseo_metadesc', $all_meta_content);
+                    update_post_meta($page_insert_id, '_et_pb_use_builder', 'on');
+                    update_post_meta($page_insert_id, '_et_pb_show_page_creation', 'on');  
 
 
                     //echo 'sdsds'.$image_alt_content;
@@ -249,8 +286,7 @@ class Controller
                     } else {
                         if(!empty($img_meta_values)) {  
 
-                            
-                            if($pages_image == "1") {
+                            if($pages_image == "0" || $pages_image == "") {         
                                 $imageUrl = wp_upload_dir()['baseurl'].'/'.$_wp_attached_file[0]; 
                                 $lastImageID = media_sideload_image($imageUrl,$thumbnail_id,"",'id');    
                                 set_post_thumbnail($page_insert_id,$lastImageID);
@@ -283,7 +319,7 @@ class Controller
                 }
                 $all_pages_insert_id = implode(",", $all_post_id);       
 
-            
+
             }
 
         }  
@@ -379,7 +415,7 @@ class Controller
         
         foreach ($list_data as $row) {
             $temp['id'] = $count;
-            $temp['clonename'] = $row->clonename;
+            $temp['clonename'] = '<a href="'.admin_url().'admin.php?page=seo-pages&id='.$row->page_insert_id.'">'.$row->clonename.'</a>';  
             if (strtolower($row->pages_status) == 'publish') {
                 $row->pages_status = "Published";
             }
@@ -388,7 +424,7 @@ class Controller
             $temp['datetime'] = $row->created_at != '' ? date('d-m-Y h:i', strtotime($row->created_at)) : '';
 
             $delete = "<button  class='btn btn-danger btn-sm' onclick='record_delete(" . $row->id . ",[" . $row->page_insert_id . "])'><i class='fa fa-trash' aria-hidden='true'></i></button>";
-            // <button  class='btn btn-success'  onclick='record_edit(" . $row->id . ")'><i class='fa fa-pencil-square' aria-hidden='true'></i></button>
+            // <button  class='btn btn-success'  onclick='record_edit(" . $row->id . ")'><i class='fa fa-pencil-square' aria-hidden='true'></i></button>  
             $temp['delete'] = $delete;
             if ($row->pages_status == "draft") {
                 $status_change = 'Status Change to Publish';
@@ -434,17 +470,17 @@ class Controller
 
         if(!empty($array_page_insert_id)){
             foreach($array_page_insert_id as $all_pages_thumbnail_id){
-             $get_post_thumbnail_id = get_post_thumbnail_id($all_pages_thumbnail_id);
-             $delete_img_sql = $wpdb->get_results("DELETE FROM " . $pages_table_name . " WHERE ID = ".$get_post_thumbnail_id." ");
-         }
-     }
+               $get_post_thumbnail_id = get_post_thumbnail_id($all_pages_thumbnail_id);
+               $delete_img_sql = $wpdb->get_results("DELETE FROM " . $pages_table_name . " WHERE ID = ".$get_post_thumbnail_id." ");
+           }
+       }
 
-     $delete_sql = $wpdb->delete($table_name, array('id' => $deleteId));
-     $delete_pages_sql = $wpdb->get_results("DELETE FROM " . $pages_table_name . " WHERE " . $pages_table_name . ".ID IN($page_insert_id)");
-     $meta_delete_pages_sql = $wpdb->get_results("DELETE FROM " . $meta_table_name . " WHERE " . $meta_table_name . ".post_id IN($page_insert_id)");
+       $delete_sql = $wpdb->delete($table_name, array('id' => $deleteId));
+       $delete_pages_sql = $wpdb->get_results("DELETE FROM " . $pages_table_name . " WHERE " . $pages_table_name . ".ID IN($page_insert_id)");
+       $meta_delete_pages_sql = $wpdb->get_results("DELETE FROM " . $meta_table_name . " WHERE " . $meta_table_name . ".post_id IN($page_insert_id)");
 
 
-     if ($delete_pages_sql) {
+       if ($delete_pages_sql) {
         $result['status'] = 1;
         $result['msg'] = "Clone deleted sucessfully";
     }
@@ -838,3 +874,108 @@ add_action('wp_ajax_Controller::change_selected_post_status', array($clone_contr
 
 
     // add_action('wp_ajax_Controller::edit_record', Array($clone_controller, 'edit_record'));
+
+
+
+
+
+
+
+
+
+
+function sitemap() {
+    $sitemap = '';
+    $sitemap .= '<h4>Articles </h4>';
+    $sitemap .= '<ul class="sitemapul">';
+    $posts_array = get_posts();
+    foreach ($posts_array as $spost):
+        $sitemap .='<div class="blockArticle">
+            <h3><a href="' . $spost->guid . '" rel="bookmark" class="linktag">' . $spost->post_title . '</a> </h3>
+        </div>';
+    endforeach;
+    $sitemap .= '</ul>';
+    $sitemap .= '<h4>Category</h4>';
+    $sitemap .= '<ul class="sitemapul">';
+    $args = array(
+        'offset' => 0,
+        'category' => '',
+        'category_name' => '',
+        'orderby' => 'date',
+        'order' => 'DESC',
+        'include' => '',
+        'exclude' => '',
+        'meta_key' => '',
+        'meta_value' => '',
+        'post_type' => 'post',
+        'post_mime_type' => '',
+        'post_parent' => '',
+        'author' => '',
+        'post_status' => 'publish',
+        'suppress_filters' => true
+    );
+    $cats = get_categories($args);
+    foreach ($cats as $cat) :
+        $sitemap .= '<li class="pages-list"><a href="' . get_category_link($cat->term_id) . '">' . $cat->cat_name . '</a></li>';
+    endforeach;
+    $sitemap .= '</ul>';
+    $pages_args = array(
+        'exclude' => '', /* ID of pages to be excluded, separated by comma */
+        'post_type' => 'page',
+        'post_status' => 'publish'
+    );
+    $sitemap .= '<h3>Pages</h3>';
+    $sitemap .= '<ul>';
+    $pages = get_pages($pages_args);
+    foreach ($pages as $page) :
+        $sitemap .= '<li class="pages-list"><a href="' . get_page_link($page->ID) . '" rel="bookmark">' . $page->post_title . '</a></li>';
+    endforeach;
+    $sitemap .= '</ul>';
+    $sitemap .= '<h4>Tags</h4>';
+    $sitemap .= '<ul class="sitemapul">';
+    $tags = get_tags();
+    foreach ($tags as $tag) {
+        $tag_link = get_tag_link($tag->term_id);
+        $sitemap .= "<li class='pages-list'><a href='{$tag_link}' title='{$tag->name} Tag' class='{$tag->slug}'>";
+        $sitemap .= $tag->name . '</a></li>';
+    }
+    return$sitemap;
+}
+add_shortcode('sitemap', 'sitemap');
+
+
+/****************************************************
+* XML Sitemap in WordPress
+*****************************************************/
+
+function xml_sitemap() {
+  $postsForSitemap = get_posts(array(
+    'numberposts' => -1,
+    'orderby' => 'modified',
+    'post_type'  => array('post','page'),
+    'order'    => 'DESC'
+  ));
+
+  $sitemap = '<?xml version="1.0" encoding="UTF-8"?>';
+  $sitemap .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
+
+  foreach($postsForSitemap as $post) {
+    setup_postdata($post);
+
+    $postdate = explode(" ", $post->post_modified);
+
+    $sitemap .= '<url>'.
+      '<loc>'. get_permalink($post->ID) .'</loc>'.
+      '<lastmod>'. $postdate[0] .'</lastmod>'.
+      '<changefreq>monthly</changefreq>'.
+    '</url>';
+  }
+
+  $sitemap .= '</urlset>';
+
+  $fp = fopen(ABSPATH . "sitemap.xml", 'w');
+  fwrite($fp, $sitemap);
+  fclose($fp);
+}
+
+add_action("publish_page", "xml_sitemap");

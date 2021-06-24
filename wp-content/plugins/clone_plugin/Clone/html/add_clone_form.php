@@ -102,13 +102,14 @@
 
 
                   <div class="form-group">
-                    <label for="pages_status">Do you want to separate images ?</label>
+                    <label class="checkbox-inline"><input type="checkbox" id="pages_image" name="pages_image" value="1" checked="">Do not clone images</label>
+                    <!-- <label for="pages_status">Do not clone images</label>
                     <select class="form-control" id="pages_image" name="pages_image">
-                      <option value="0" selected>No</option>
-                      <option value="1">Yes</option>
-                    </select>
+                      <option value="0" selected>Yes</option>
+                      <option value="1">No</option>
+                    </select>   -->
                   </div>
-
+     
 
                 </div>
 

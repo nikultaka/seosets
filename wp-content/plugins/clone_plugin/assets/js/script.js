@@ -297,6 +297,9 @@ $(document).on("click","#menu a",function(){
 $("#seo_search").on("keyup", function(){
     $("#seo_search").css("background-color", "#F4ECF7");
     var seo_search = $('#seo_search').val();
+    if(seo_search == '') {
+        return false;
+    }
     $("#loader").addClass('loader');
     $.ajax({
         url: ajaxurl,

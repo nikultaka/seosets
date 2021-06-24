@@ -436,3 +436,275 @@
 [17-Jun-2021 11:11:26 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 316
 [17-Jun-2021 11:11:29 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 601
 [17-Jun-2021 11:11:29 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 602
+[17-Jun-2021 11:17:12 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 316
+[17-Jun-2021 11:18:47 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 316
+[17-Jun-2021 11:32:04 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 316
+[17-Jun-2021 11:32:07 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 316
+[17-Jun-2021 11:32:07 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 316
+[17-Jun-2021 11:32:10 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 601
+[17-Jun-2021 11:32:10 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 602
+[17-Jun-2021 11:32:11 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 316
+[17-Jun-2021 11:33:06 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 316
+[17-Jun-2021 11:33:07 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 316
+[17-Jun-2021 11:33:23 UTC] PHP Notice:  Undefined index: _yoast_wpseo_title in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 156
+[17-Jun-2021 11:33:23 UTC] PHP Notice:  Undefined index: _yoast_wpseo_metadesc in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 157
+[17-Jun-2021 11:33:23 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 158
+[17-Jun-2021 11:33:23 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 159
+[17-Jun-2021 11:33:23 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 164
+[17-Jun-2021 11:33:23 UTC] PHP Notice:  Trying to get property 'post_title' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 164
+[17-Jun-2021 11:33:23 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 165
+[17-Jun-2021 11:33:23 UTC] PHP Notice:  Trying to get property 'post_content' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 165
+[17-Jun-2021 11:33:23 UTC] PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 232
+[17-Jun-2021 11:33:23 UTC] PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 233
+[17-Jun-2021 11:33:23 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 316
+[17-Jun-2021 11:33:26 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 601
+[17-Jun-2021 11:33:26 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 602
+[17-Jun-2021 11:33:35 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 316
+[17-Jun-2021 11:33:38 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 316
+[17-Jun-2021 11:33:38 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 316
+[17-Jun-2021 11:33:42 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 601
+[17-Jun-2021 11:33:42 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 602
+[17-Jun-2021 11:33:43 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 316
+[17-Jun-2021 11:33:55 UTC] PHP Notice:  Undefined index: pages_image in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 109
+[17-Jun-2021 11:33:56 UTC] PHP Notice:  Undefined index: _yoast_wpseo_title in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 156
+[17-Jun-2021 11:33:56 UTC] PHP Notice:  Undefined index: _yoast_wpseo_metadesc in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 157
+[17-Jun-2021 11:33:56 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 158
+[17-Jun-2021 11:33:56 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 159
+[17-Jun-2021 11:33:56 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 164
+[17-Jun-2021 11:33:56 UTC] PHP Notice:  Trying to get property 'post_title' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 164
+[17-Jun-2021 11:33:56 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 165
+[17-Jun-2021 11:33:56 UTC] PHP Notice:  Trying to get property 'post_content' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 165
+[17-Jun-2021 11:33:56 UTC] PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 232
+[17-Jun-2021 11:33:56 UTC] PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 233
+[17-Jun-2021 11:33:56 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 316
+[17-Jun-2021 11:34:10 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 316
+[17-Jun-2021 11:34:10 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 316
+[17-Jun-2021 11:34:12 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 601
+[17-Jun-2021 11:34:12 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 602
+[17-Jun-2021 11:34:13 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 601
+[17-Jun-2021 11:34:13 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 602
+[17-Jun-2021 11:34:13 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 316
+[17-Jun-2021 11:34:32 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 319
+[17-Jun-2021 11:34:33 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 604
+[17-Jun-2021 11:34:33 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 605
+[17-Jun-2021 11:34:34 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 319
+[17-Jun-2021 11:35:03 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 319
+[17-Jun-2021 11:37:00 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 319
+[17-Jun-2021 11:42:06 UTC] PHP Notice:  Undefined index: pages_image in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 109
+[17-Jun-2021 11:45:32 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 321
+[17-Jun-2021 11:46:51 UTC] PHP Notice:  Undefined index: _yoast_wpseo_title in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 161
+[17-Jun-2021 11:46:51 UTC] PHP Notice:  Undefined index: _yoast_wpseo_metadesc in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 162
+[17-Jun-2021 11:46:51 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 163
+[17-Jun-2021 11:46:51 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 164
+[17-Jun-2021 11:46:51 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 169
+[17-Jun-2021 11:46:51 UTC] PHP Notice:  Trying to get property 'post_title' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 169
+[17-Jun-2021 11:46:51 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 170
+[17-Jun-2021 11:46:51 UTC] PHP Notice:  Trying to get property 'post_content' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 170
+[17-Jun-2021 11:46:51 UTC] PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 237
+[17-Jun-2021 11:46:51 UTC] PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 238
+[17-Jun-2021 11:46:51 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 321
+[17-Jun-2021 11:46:59 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 321
+[17-Jun-2021 11:46:59 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 321
+[17-Jun-2021 11:47:16 UTC] PHP Notice:  Undefined index: _yoast_wpseo_title in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 161
+[17-Jun-2021 11:47:16 UTC] PHP Notice:  Undefined index: _yoast_wpseo_metadesc in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 162
+[17-Jun-2021 11:47:16 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 163
+[17-Jun-2021 11:47:16 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 164
+[17-Jun-2021 11:47:16 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 169
+[17-Jun-2021 11:47:16 UTC] PHP Notice:  Trying to get property 'post_title' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 169
+[17-Jun-2021 11:47:16 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 170
+[17-Jun-2021 11:47:16 UTC] PHP Notice:  Trying to get property 'post_content' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 170
+[17-Jun-2021 11:47:16 UTC] PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 237
+[17-Jun-2021 11:47:16 UTC] PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 238
+[17-Jun-2021 11:47:16 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 321
+[17-Jun-2021 11:48:10 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 321
+[17-Jun-2021 11:48:10 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 321
+[17-Jun-2021 11:49:30 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 606
+[17-Jun-2021 11:49:30 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[17-Jun-2021 11:49:30 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 321
+[17-Jun-2021 11:49:32 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 606
+[17-Jun-2021 11:49:32 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[17-Jun-2021 11:49:33 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 321
+[17-Jun-2021 11:50:46 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[17-Jun-2021 11:50:46 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[17-Jun-2021 11:50:46 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[17-Jun-2021 11:50:47 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[17-Jun-2021 11:51:45 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[17-Jun-2021 11:51:47 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[17-Jun-2021 11:51:48 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 605
+[17-Jun-2021 11:51:48 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 606
+[17-Jun-2021 11:51:51 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 605
+[17-Jun-2021 11:51:51 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 606
+[17-Jun-2021 11:51:51 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 605
+[17-Jun-2021 11:51:51 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 606
+[17-Jun-2021 11:51:54 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 605
+[17-Jun-2021 11:51:54 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 606
+[17-Jun-2021 11:51:54 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 605
+[17-Jun-2021 11:51:54 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 606
+[17-Jun-2021 11:51:56 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[17-Jun-2021 11:51:57 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 605
+[17-Jun-2021 11:51:57 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 606
+[17-Jun-2021 11:51:58 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[17-Jun-2021 11:52:00 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 605
+[17-Jun-2021 11:52:00 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 606
+[17-Jun-2021 11:52:01 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[17-Jun-2021 11:52:15 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 605
+[17-Jun-2021 11:52:15 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 606
+[17-Jun-2021 11:52:15 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[17-Jun-2021 11:52:40 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[17-Jun-2021 11:52:42 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 605
+[17-Jun-2021 11:52:42 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 606
+[17-Jun-2021 11:52:43 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[17-Jun-2021 11:53:08 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[17-Jun-2021 11:53:15 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[17-Jun-2021 11:53:15 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[17-Jun-2021 11:53:17 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 605
+[17-Jun-2021 11:53:17 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 606
+[17-Jun-2021 11:53:18 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[17-Jun-2021 11:53:39 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[17-Jun-2021 11:53:51 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 605
+[17-Jun-2021 11:53:51 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 606
+[17-Jun-2021 11:53:52 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[17-Jun-2021 11:53:54 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[17-Jun-2021 11:53:54 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[17-Jun-2021 11:54:01 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[17-Jun-2021 11:59:41 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[18-Jun-2021 17:51:18 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[18-Jun-2021 17:51:54 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[18-Jun-2021 17:51:57 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 605
+[18-Jun-2021 17:51:57 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 606
+[22-Jun-2021 13:06:08 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[22-Jun-2021 13:06:55 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[23-Jun-2021 06:48:33 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[23-Jun-2021 06:48:45 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[23-Jun-2021 06:48:45 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[23-Jun-2021 06:48:48 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[23-Jun-2021 06:48:48 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[23-Jun-2021 06:49:13 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 320
+[23-Jun-2021 06:52:46 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 06:52:46 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 06:53:03 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 06:53:28 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 06:55:18 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 06:55:18 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 06:55:53 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 06:55:53 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 06:57:11 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 06:58:26 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 06:58:26 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 06:58:29 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 06:58:46 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 06:58:46 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 06:59:15 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 06:59:23 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 06:59:23 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 06:59:41 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 06:59:43 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 06:59:43 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 07:00:07 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 07:00:09 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 07:00:09 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 07:02:33 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 07:02:33 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 07:02:37 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 07:02:38 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 07:02:38 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 07:03:24 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 07:03:49 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 07:03:50 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 07:03:50 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 07:03:50 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 07:03:52 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 07:03:52 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 07:04:25 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 07:04:41 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 07:04:44 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 07:04:45 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 07:04:45 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 07:04:47 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 07:04:49 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 07:04:49 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 07:19:11 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 07:19:12 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 07:19:12 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 07:19:35 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 07:19:35 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 07:19:38 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 07:19:40 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 07:19:40 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 07:21:10 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 07:21:10 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 07:21:30 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 07:21:30 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 07:28:16 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 07:28:16 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 07:28:24 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 07:29:45 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 07:29:45 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 07:29:57 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 07:31:31 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 07:31:51 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 07:32:01 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 07:32:03 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 07:32:04 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 07:32:07 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 07:32:10 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 07:32:10 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 08:24:51 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 08:24:51 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 08:44:25 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 322
+[23-Jun-2021 08:44:27 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 08:44:36 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 08:44:39 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 607
+[23-Jun-2021 08:44:39 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 608
+[23-Jun-2021 09:05:15 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 633
+[23-Jun-2021 09:08:24 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 347
+[23-Jun-2021 09:08:26 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 633
+[23-Jun-2021 09:08:32 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 347
+[23-Jun-2021 10:10:21 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 350
+[23-Jun-2021 10:10:25 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 350
+[23-Jun-2021 10:10:25 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 350
+[23-Jun-2021 10:10:28 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 350
+[23-Jun-2021 10:10:28 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 350
+[23-Jun-2021 10:13:53 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 635
+[23-Jun-2021 10:13:53 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 636
+[23-Jun-2021 10:13:53 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 350
+[23-Jun-2021 10:14:10 UTC] PHP Notice:  wpdb::prepare was called <strong>incorrectly</strong>. Unsupported value type (array). Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 4.8.2.) in /var/www/html/seosets/wp-includes/functions.php on line 5313
+[23-Jun-2021 10:14:11 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 350
+[23-Jun-2021 10:14:14 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 636
+[23-Jun-2021 10:14:15 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 350
+[23-Jun-2021 10:14:27 UTC] PHP Notice:  wpdb::prepare was called <strong>incorrectly</strong>. Unsupported value type (array). Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 4.8.2.) in /var/www/html/seosets/wp-includes/functions.php on line 5313
+[23-Jun-2021 10:14:28 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 350
+[23-Jun-2021 10:14:31 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 636
+[23-Jun-2021 10:14:34 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 350
+[23-Jun-2021 10:14:35 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 635
+[23-Jun-2021 10:14:35 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 636
+[24-Jun-2021 05:51:03 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 635
+[24-Jun-2021 05:51:03 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 636
+[24-Jun-2021 06:35:42 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 635
+[24-Jun-2021 06:35:42 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 636
+[24-Jun-2021 09:06:37 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 352
+[24-Jun-2021 09:06:40 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 352
+[24-Jun-2021 09:06:40 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 352
+[24-Jun-2021 09:06:43 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 352
+[24-Jun-2021 09:06:43 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 352
+[24-Jun-2021 09:07:01 UTC] PHP Notice:  wpdb::prepare was called <strong>incorrectly</strong>. Unsupported value type (array). Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 4.8.2.) in /var/www/html/seosets/wp-includes/functions.php on line 5313
+[24-Jun-2021 09:07:01 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 352
+[24-Jun-2021 09:07:03 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 638
+[24-Jun-2021 09:07:11 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 638
+[24-Jun-2021 09:49:57 UTC] PHP Warning:  Use of undefined constant “publish_post” - assumed '“publish_post”' (this will throw an Error in a future version of PHP) in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 878
+[24-Jun-2021 09:49:57 UTC] PHP Warning:  Use of undefined constant “XML_sitemap” - assumed '“XML_sitemap”' (this will throw an Error in a future version of PHP) in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 878
+[24-Jun-2021 09:49:57 UTC] PHP Warning:  Use of undefined constant “publish_page” - assumed '“publish_page”' (this will throw an Error in a future version of PHP) in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 878
+[24-Jun-2021 09:49:57 UTC] PHP Warning:  Use of undefined constant “XML_sitemap” - assumed '“XML_sitemap”' (this will throw an Error in a future version of PHP) in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 878
+[24-Jun-2021 09:49:57 UTC] PHP Warning:  Use of undefined constant “publish_post” - assumed '“publish_post”' (this will throw an Error in a future version of PHP) in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 878
+[24-Jun-2021 09:49:57 UTC] PHP Warning:  Use of undefined constant “XML_sitemap” - assumed '“XML_sitemap”' (this will throw an Error in a future version of PHP) in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 878
+[24-Jun-2021 09:49:57 UTC] PHP Warning:  Use of undefined constant “publish_page” - assumed '“publish_page”' (this will throw an Error in a future version of PHP) in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 878
+[24-Jun-2021 09:49:57 UTC] PHP Warning:  Use of undefined constant “XML_sitemap” - assumed '“XML_sitemap”' (this will throw an Error in a future version of PHP) in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 878
+[24-Jun-2021 09:50:06 UTC] PHP Warning:  Use of undefined constant “publish_page” - assumed '“publish_page”' (this will throw an Error in a future version of PHP) in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 878
+[24-Jun-2021 09:50:06 UTC] PHP Warning:  Use of undefined constant “XML_sitemap” - assumed '“XML_sitemap”' (this will throw an Error in a future version of PHP) in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 878
+[24-Jun-2021 10:08:27 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 352
+[24-Jun-2021 10:08:30 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 352
+[24-Jun-2021 10:08:30 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 352
+[24-Jun-2021 10:08:49 UTC] PHP Notice:  wpdb::prepare was called <strong>incorrectly</strong>. Unsupported value type (array). Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 4.8.2.) in /var/www/html/seosets/wp-includes/functions.php on line 5313
+[24-Jun-2021 10:08:50 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 352
+[24-Jun-2021 10:09:03 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 637
+[24-Jun-2021 10:09:03 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 638

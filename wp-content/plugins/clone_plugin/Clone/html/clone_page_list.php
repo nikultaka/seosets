@@ -56,7 +56,7 @@
 					<option value="">Select SEO SETS</option> 
 					<?php
 					foreach ($pagessql as $pages) { ?>
-						<option value="<?php echo $pages->page_insert_id ?>"><?php echo $pages->clonename ?></option>
+						<option value="<?php echo $pages->page_insert_id ?>" <?php if( isset($_REQUEST['id']) && $pages->page_insert_id == $_REQUEST['id']) {  echo "selected = 'selected'";  } ?> ><?php echo $pages->clonename ?></option>
 					<?php
 					}
 					?>
@@ -105,5 +105,11 @@
 </table>
 
 <script type="text/javascript">
-	var pageajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
+	//$(document).ready(function () {
+		var pageajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
+		var is_filter = 0;
+		<?php if(isset($_REQUEST['id'])) { ?>
+				is_filter = 1;
+	    <?php } ?>    
+	//});
 </script>
