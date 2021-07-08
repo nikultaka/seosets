@@ -234,8 +234,8 @@ class Controller
 
 
                     foreach ($create_tags_name_page as $permalinkkey => $permalinkvalue) {
-                        $new_post_permalink = str_replace('1t1' . $permalinkkey . '1t1', $permalinkvalue, $new_post_permalink);  
-                    }                
+                        $new_post_permalink = str_replace('1t1' . strtolower($permalinkkey) . '1t1',' '.strtolower($permalinkvalue).' ', $new_post_permalink);  
+                    }                    
                     
                     $new_title_post = $get_post->post_title . ' - ' . $pages_title_name;
 
@@ -941,7 +941,7 @@ function sitemap() {
     }
     return$sitemap;
 }
-add_shortcode('sitemap', 'sitemap');
+//add_shortcode('sitemap', 'sitemap');
 
 
 /****************************************************
@@ -973,9 +973,9 @@ function xml_sitemap() {
 
   $sitemap .= '</urlset>';
 
-  $fp = fopen(ABSPATH . "sitemap.xml", 'w');
-  fwrite($fp, $sitemap);
+  $fp = fopen(ABSPATH . "sitemap_index.xml", 'w');
+  fwrite($fp, $sitemap);  
   fclose($fp);
 }
 
-add_action("publish_page", "xml_sitemap");
+//add_action("publish_page", "xml_sitemap");
