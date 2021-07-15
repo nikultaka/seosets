@@ -131,14 +131,14 @@ class Controller
             'post_type' => 'page',
             'post_status' => 'publish'  
         ); 
-        $internalLinksString = '<ul style="display:none;">';
+        /*$internalLinksString = '<ul style="display:none;">';
         $pages = get_pages($args);                
         if(!empty($pages)) {
             foreach($pages as $key => $value) {
-                $internalLinksString.="<li><a href='".$value->guid."'>".$value->post_title."</a></li>";        
+                $internalLinksString.="<li><a href='".$value->guid."'>".$value->post_title."</a></li>";    
             }    
         }    
-        $internalLinksString.="</ul>";    
+        $internalLinksString.="</ul>"; */
 
         $first_image = '';
         //echo $clone_tags;exit;
@@ -241,23 +241,28 @@ class Controller
 
                     $post_login_data = wp_get_current_user();
                     $post_author = $post_login_data->ID;
+
+                    /*$internalLinksString = '[et_pb_section fb_built="1" _builder_version="4.9.4" _module_preset="default"]
+[et_pb_row _builder_version="4.9.4" _module_preset="default"]
+[et_pb_column _builder_version="4.9.4" _module_preset="default" type="4_4"]'.$internalLinksString.'[/et_pb_column][/et_pb_row][/et_pb_section]';*/                       
+
                     if ($pages_status == "publish") {
                         // Create post type is publish
                         $my_post = array(
                             'post_type'     => 'page',
                             'post_name'     => $new_post_permalink,
                             'post_title'    =>  $titleContainsTag == '0' ? $new_title_post : $replace_title,
-                            'post_content'  => $replace_content.$internalLinksString,
+                            'post_content'  => $replace_content, //.$internalLinksString
                             'post_author'   => $post_author,
                             'post_status'   => 'publish',
                         );   
-                    } else {
+                    } else {     
                         // Create post type is draft
                         $my_post = array(
                             'post_type'     => 'page',
                             'post_name'     => $new_post_permalink,
                             'post_title'    => $titleContainsTag == '0' ? $new_title_post : $replace_title,
-                            'post_content'  => $replace_content.$internalLinksString,
+                            'post_content'  => $replace_content, //.$internalLinksString
                             'post_status'   => 'draft',
                             'post_author'   => $post_author
                         );
@@ -979,3 +984,34 @@ function xml_sitemap() {
 }
 
 //add_action("publish_page", "xml_sitemap");
+
+
+function addInternalLinking() {
+    $args = array(
+        'sort_order' => 'asc',
+        'sort_column' => 'post_title',
+        'hierarchical' => 1,
+        'exclude' => '',
+        'include' => '',
+        'meta_key' => 'my_clone_meta_key',
+        'meta_value' => '1',
+        'authors' => '',
+        'child_of' => 0,
+        'parent' => -1,
+        'exclude_tree' => '',
+        'number' => '',
+        'offset' => 0,
+        'post_type' => 'page',
+        'post_status' => 'publish'  
+    );     
+    $internalLinksString = '<ul style="display:none;">';
+    $pages = get_pages($args);                
+    if(!empty($pages)) {
+        foreach($pages as $key => $value) {
+            $internalLinksString.="<li><a href='".$value->guid."'>".$value->post_title."</a></li>";    
+        }    
+    }    
+    $internalLinksString.="</ul>";    
+    echo $internalLinksString;
+}
+add_action('wp_footer','addInternalLinking');

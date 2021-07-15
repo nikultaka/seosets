@@ -14,6 +14,8 @@ define('WCP_PLUGIN_VERSION', '1.0.0');
 define('WCP_PLUGIN_DOMAIN', 'website-custom-plugin');
 define('WCP_PLUGIN_URL', WP_PLUGIN_URL . '/Website-Custome-Plugin');
 
+@define("WP_MEMORY_LIMIT","2048M");       
+
 include_once(dirname(__FILE__) . "/Clone/Controller.php");
 register_activation_hook(__FILE__, 'myPluginCreateTable');
 

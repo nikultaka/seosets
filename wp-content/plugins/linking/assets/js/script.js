@@ -5,18 +5,20 @@ $(document).ready(function () {
         var countError = 0;
         if(companyTitle == '') {
             countError++;
-            alert("Please enter company title");
+            $("#companyTitle").parent('div').addClass('has-error');
         } 
         if(companyDescription == '') {
             countError++;
-            alert("Please enter company description")
-        }
+            $("#companyDescription").parent('div').addClass('has-error');
+        }    
         if(countError == 0) {
             $.ajax({
                 url: ajaxurl,
                 type: 'post',
                 data: $('#companyForm').serialize()+'&action=LinkingController::insert_linking',
                 success: function (responce) {
+                    $("#companyTitle").parent('div').removeClass('has-error');
+                    $("#companyDescription").parent('div').removeClass('has-error');
                     var data = JSON.parse(responce);
                     if (data.status == 1) {    
                         Swal.fire({
@@ -37,6 +39,8 @@ $(document).ready(function () {
                     }  
                 }
             });
-        }
+        } else {
+            return false;
+        }    
     });
 });    
