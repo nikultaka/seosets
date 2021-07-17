@@ -81,8 +81,7 @@ class LinkingController
                 'post_status' => 'publish',
                 'post_date' => date('Y-m-d H:i:s'),
                 'post_author' => $user_ID,
-                'post_type' => 'post',
-                'post_category' => array(0)    
+                'post_type' => 'page',
             );         
             $postID = wp_insert_post($new_post);   
             add_post_meta($postID,'linking',$siteUrl);
@@ -151,11 +150,17 @@ function xml_sitemap_linking($seostring) {
     fclose($fp);
 }  
 
+/*function get_header($headerName)
+{
+    $headers = getallheaders();
+    return isset($headerName) ? $headers[$headerName] : null;
+}*/
 
-function callCurl($url,$title,$description,$linking) {
+
+function callCurl($linking,$endpoint,$data=array(),$header=array()) {
     $curl = curl_init();
     curl_setopt_array($curl, array(
-      CURLOPT_URL => $linking.'/wp-json/linking/v1/blog',
+      CURLOPT_URL => $linking.'/wp-json/linking/v1/'.$endpoint,
       CURLOPT_RETURNTRANSFER => true,
       CURLOPT_ENCODING => '',
       CURLOPT_MAXREDIRS => 10,
@@ -163,12 +168,13 @@ function callCurl($url,$title,$description,$linking) {
       CURLOPT_FOLLOWLOCATION => true,
       CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
       CURLOPT_CUSTOMREQUEST => 'POST',
-      CURLOPT_POSTFIELDS => array('title'=>$title,'linking'=>$linking,'description'=>$description,'url'=>$url),
-  ));
+      CURLOPT_POSTFIELDS => $data,
+      CURLOPT_HTTPHEADER => $header
+    ));
     $response = curl_exec($curl);
     curl_close($curl);
-    return json_decode($response);
-}
+    return $data = json_decode($response);
+}    
 
 
 
@@ -177,50 +183,93 @@ function cron_job($data) {
     $data = $commonDB->query("select * from linking")->fetchAll();
     if(!empty($data)) {
         foreach($data as $key => $value) {          
-            callCurl($value->post_url,$value->title,$value->description,$value->back_link);
+            $string_to_encrypt=uniqid();
+            $password="Testing@123";
+            $encrypted_string=openssl_encrypt($string_to_encrypt,"AES-128-ECB",$password);
+            $postData = array('datetime'=>time(),'data'=>$string_to_encrypt,'linking'=>$value['back_link'],'authorization'=>$encrypted_string);    
+            $data = callCurl($value['back_link'],'run',$postData,array());
+            return $data;
         }        
-    }
+    }  
+}
+
+function run_external_api() {
+    global $wpdb;
+    $data = $_POST['data'];   
+    $linking = $_POST['linking'];   
+    $encrypted_string = $_POST['authorization'];
+    $password="Testing@123";
+    $decrypted_string = openssl_decrypt($encrypted_string,"AES-128-ECB",$password);
+    if(trim($decrypted_string) == trim($data)) {
+        $string_to_encrypt=uniqid();
+        $password="Testing@123";
+        $encrypted_string=openssl_encrypt($string_to_encrypt,"AES-128-ECB",$password);    
+        $postData = array('datetime'=>time(),'data'=>$string_to_encrypt,'authorization'=>$encrypted_string);
+        $data =  callCurl($linking,'blog',$postData,array());
+        return $data;
+    } else {    
+        return array("status"=>0,"msg"=>"Authorization failed");
+    }    
 }
 
 function add_blog() {
     global $wpdb;
-    $title = $_POST['title'];   
-    $description = $_POST['description'];  
-    $linking = $_POST['linking'];
-    $url = $_POST['url'];        
-    $data = get_users();
-    $userID = '';
-    if(!empty($data)) {
-        foreach($data as $key => $value) {
-            $role = $value->roles[0];   
-            if($role == 'administrator') {
-                $userID = $value->data->ID;
-                break;
-            }
-        }           
+
+    $data = $_POST['data'];   
+    $encrypted_string = $_POST['authorization'];
+    $password="Testing@123";
+    $decrypted_string = openssl_decrypt($encrypted_string,"AES-128-ECB",$password);
+    if(trim($decrypted_string) == trim($data)) {
+          
+        $data = get_users();    
+        $userID = '';
+        if(!empty($data)) {
+            foreach($data as $key => $value) {
+                $role = $value->roles[0];   
+                if($role == 'administrator') {
+                    $userID = $value->data->ID;
+                    break;
+                }
+            }           
+        }
+
+        $commonDB = new db(STORAGE_HOST,STORAGE_USERNAME,STORAGE_PASSWORD,STORAGE_DB);
+        $data = $commonDB->query("select * from linking")->fetchAll();
+        if(!empty($data)) {
+            foreach($data as $key => $value) {          
+                $title = $value['title'];   
+                $description = $value['description'];  
+                $linking = $value['back_link'];
+                $url = $value['post_url'];              
+                $data = $wpdb->get_results("SELECT * FROM $wpdb->postmeta WHERE meta_key = 'linking' and meta_value = '".$linking."'");
+                if(!empty($data)) {
+                    $postID = $data[0]->post_id;    
+                    $post = array();
+                    $post['ID'] = $postID;
+                    $post['post_title'] = $title;       
+                    $post['post_content'] = $description.'<div style="display:none;"><a href="'.$url.'">'.$title.'</a><div>';     
+                    wp_update_post($post,true);    
+                } else {     
+                    $new_post = array(   
+                        'post_title' => $title,     
+                        'post_content' => $description.'<div style="display:none;"><a href="'.$url.'">'.$title.'</a><div>',        
+                        'post_status' => 'publish',
+                        'post_date' => date('Y-m-d H:i:s'),
+                        'post_author' => $userID,
+                        'post_type' => 'page',
+                    );              
+                    $postID = wp_insert_post($new_post);        
+                    add_post_meta($postID,'linking',$linking);
+                }               
+            }        
+        }     
+        return array("status"=>1);    
+    } else {
+        return array("status"=>0,"msg"=>"Authorization failed");
     }
-    $data = $wpdb->get_results("SELECT * FROM $wpdb->postmeta WHERE meta_key = 'linking' and meta_value = '".$linking."'");
-    if(!empty($data)) {
-        $postID = $data[0]->post_id;    
-        $post = array();
-        $post['ID'] = $postID;
-        $post['post_title'] = $title;
-        $post['post_content'] = $description.'<div style="display:none;"><a href="'.$url.'">'.$title.'</a><div>';     
-        wp_update_post($post,true);    
-    } else {     
-        $new_post = array(   
-            'post_title' => $title,     
-            'post_content' => $description.'<div style="display:none;"><a href="'.$url.'">'.$title.'</a><div>',     
-            'post_status' => 'publish',
-            'post_date' => date('Y-m-d H:i:s'),
-            'post_author' => $userID,
-            'post_type' => 'post',
-            'post_category' => array(0),
-        );              
-        $postID = wp_insert_post($new_post);        
-        add_post_meta($postID,'linking',$linking);
-    }    
-    return array('status'=>1);
+
+
+    
 }
 
 add_action( 'rest_api_init', function () {     
@@ -235,4 +284,11 @@ add_action( 'rest_api_init', function () {
         'methods' => 'POST',
         'callback' => 'add_blog',
     ));     
-});   
+});
+
+add_action( 'rest_api_init', function () {
+    @register_rest_route( 'linking/v1', '/run', array(
+        'methods' => 'POST',
+        'callback' => 'run_external_api'
+    ));     
+});       
