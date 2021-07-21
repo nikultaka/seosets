@@ -44,8 +44,8 @@ function display_clone_set()
     left JOIN " . $meta_table_name . " ON " . $meta_table_name . ".post_id = " . $table_name . ".ID and " . $meta_table_name . ".meta_key = 'my_clone_meta_key'
     LEFT JOIN " . $user_table_name . " ON " . $user_table_name . ".ID = " . $table_name . ".post_author
     WHERE post_type = 'page' 
-    AND (post_status = 'publish' or post_status = 'draft') 
-    having meta_key is null";
+    AND (post_status = 'draft') 
+    having meta_key is null"; //post_status = 'publish' or 
 
     $pagessql = $wpdb->get_results($query);
 
@@ -96,6 +96,15 @@ class Controller
         return $post_id;
     }
 
+    public function get_count() {
+        global $wpdb;
+        $table_count_name = $wpdb->prefix . "clone_count";
+        $query = "SELECT * FROM  ".$table_count_name." order by id DESC limit 1";
+        $count = $wpdb->get_results($query);
+        echo json_encode(array('status'=>1,'count'=>$count[0]->count));
+        die;
+    }
+
     public function insert_clone()
     {   
         set_time_limit(0);
@@ -106,12 +115,29 @@ class Controller
         $clonename = $_POST['clonename'];
         $pages = implode(",", $_POST['pages']);
         $clone_tags = $_POST['clone_tags'];
+        $pages_status = $_POST['pages_status'];
+        $table_name = $wpdb->prefix . "clone";
+        $table_count_name = $wpdb->prefix . "clone_count";
+        $pages_table_name = $wpdb->prefix . "posts";
 
         $pages_image = '';
         if(isset($_POST['pages_image'])) {
             $pages_image = $_POST['pages_image'];    
         }
 
+        // insert new page in database          
+        $insertsql = $wpdb->insert($table_name, array(
+            'clonename' => $clonename,
+            'pages'     => $pages,
+            'tags'      => $clone_tags,
+            'pages_status'  => $pages_status,
+            'page_insert_id' => ''
+        ));   
+        $lastCloneID = $wpdb->insert_id; 
+        $wpdb->insert($table_count_name, array(
+            'clone_id' => $lastCloneID,
+            'count'     => 0,
+        ));
 
 
         $args = array(
@@ -152,9 +178,8 @@ class Controller
         // $clone_tages_string = str_replace("}", "}\n", $remove_space_clone_tags);
         // $new_clone_tags_string = nl2br($clone_tages_string); 
         
-        $pages_status = $_POST['pages_status'];
-        $table_name = $wpdb->prefix . "clone";
-        $pages_table_name = $wpdb->prefix . "posts";
+        
+        
         
         // decode tags content                          
         $jsonData = stripslashes(html_entity_decode($remove_space_clone_tags));
@@ -215,16 +240,16 @@ class Controller
 
                     foreach ($create_tags_name_page as $sagkey => $sagvalue) {
                         // replace {{}} tags content
-                        $replace_content = str_replace('{{' . $sagkey . '}}', $sagvalue, $replace_content);
-                        $all_meta_content = str_replace('{{' . $sagkey . '}}', $sagvalue, $all_meta_content);
+                        $replace_content = str_replace('{{' . strtolower($sagkey) . '}}', $sagvalue, strtolower($replace_content));
+                        $all_meta_content = str_replace('{{' . strtolower($sagkey) . '}}', $sagvalue, strtolower($all_meta_content));
                     }
                     $titleContainsTag = 0;
                     if (strpos($all_pages_title, '{{') !== false) {
                         $titleContainsTag = 1;
                     }
                     foreach ($create_tags_name_page as $titlekey => $titlevalue) {
-                        $replace_title = str_replace('{{' . $titlekey . '}}', $titlevalue, $replace_title);
-                        $all_meta_title = str_replace('{{' . $titlekey . '}}', $titlevalue, $all_meta_title);
+                        $replace_title = str_replace('{{' . strtolower($titlekey) . '}}', $titlevalue, strtolower($replace_title));
+                        $all_meta_title = str_replace('{{' . strtolower($titlekey) . '}}', $titlevalue, strtolower($all_meta_title));
                     }
                     foreach ($create_tags_name_page as $imagekey => $imagevalue) {
                         $image_alt = str_replace('{{' . $imagekey . '}}', $imagevalue, $image_alt);
@@ -321,21 +346,16 @@ class Controller
 
                         }
                     }
+                    $wpdb->query("UPDATE ".$table_count_name." SET count=count+1 WHERE clone_id=".$lastCloneID);    
                 }
                 $all_pages_insert_id = implode(",", $all_post_id);       
-
-
             }
 
         }  
-        // insert new page in database          
-        $insertsql = $wpdb->insert($table_name, array(
-            'clonename' => $clonename,
-            'pages'     => $pages,
-            'tags'      => $clone_tags,
-            'pages_status'  => $pages_status,
+        
+        $wpdb->update($table_name, array(
             'page_insert_id' => $all_pages_insert_id
-        ));    
+        ),array('id'=>$lastCloneID));
 
         if($insertsql){
             $data['status'] = 1;
@@ -877,6 +897,7 @@ add_action('wp_ajax_Controller::change_post_status', array($clone_controller, 'c
 add_action('wp_ajax_Controller::delete_selected_pages_record', array($clone_controller, 'delete_selected_pages_record'));
 add_action('wp_ajax_Controller::change_selected_post_status', array($clone_controller, 'change_selected_post_status'));
 
+add_action('wp_ajax_Controller::get_count', array($clone_controller, 'get_count'));
 
     // add_action('wp_ajax_Controller::edit_record', Array($clone_controller, 'edit_record'));
 
@@ -1004,14 +1025,22 @@ function addInternalLinking() {
         'post_type' => 'page',
         'post_status' => 'publish'  
     );     
-    $internalLinksString = '<ul style="display:none;">';
+    $internalLinksString = '<div class="forsyth"><div class="software"><div class="links"><ul>';
     $pages = get_pages($args);                
     if(!empty($pages)) {
         foreach($pages as $key => $value) {
-            $internalLinksString.="<li><a href='".$value->guid."'>".$value->post_title."</a></li>";    
-        }    
+            $siteURL = site_url().'/index.php/'.$value->post_name;
+            $internalLinksString.="<li><a href='".$siteURL."'>".$value->post_title."</a></li>";    
+        }        
     }    
-    $internalLinksString.="</ul>";    
+    $internalLinksString.="</ul></div></div></div>";    
     echo $internalLinksString;
 }
 add_action('wp_footer','addInternalLinking');
+
+
+function theme_styles()  
+{ 
+    wp_enqueue_style('theme_styles', plugin_dir_url( __FILE__ ) .'../assets/css/custom.css');  
+}     
+add_action('wp_head','theme_styles', -1000);    

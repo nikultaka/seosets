@@ -9,6 +9,7 @@ $(document).ready(function () {
         $('#seo_search').val('');
     });
 
+    var countInterval;
     $("#formdata").validate({
         rules: {
             clonename: "required",
@@ -18,11 +19,30 @@ $(document).ready(function () {
         },
         submitHandler: function () {
             $("#loader").addClass('loader');
+            $(".spanText").show();
+
+            var text = $('#clone_tags').val();
+            var eachLine = text.split('\n');
+            $("#currentTotalPages").text(eachLine.length);
+
+            countInterval = setInterval(function() { 
+                $.ajax({
+                    url: ajaxurl,
+                    type: 'post',
+                    data: "action=Controller::get_count",
+                    dataType : 'json',
+                    success: function (response) {
+                        $("#currentCount").text(response.count);
+                    }
+                });
+            },1000);
+
             $.ajax({
                 url: ajaxurl,
                 type: 'post',
                 data: $('#formdata').serialize(),
                 success: function (responce) {
+                    clearInterval(countInterval);
                     var data = JSON.parse(responce);
                     if (data.status == 1) {
                         Swal.fire({
@@ -39,16 +59,18 @@ $(document).ready(function () {
                         $('#CloneModal').modal('hide');
                         loaddatatable();
                         $("#loader").removeClass('loader');
+                        $(".spanText").hide();
                     } else {
+                        clearInterval(countInterval);
                         Swal.fire({
                             icon: 'error',
                             title: data.msg,
                             showConfirmButton: false,
                             timer: 1500,
-
                         },
                         );
                         $("#loader").removeClass('loader');
+                        $(".spanText").hide();
                     }
                 }
             });
@@ -74,22 +96,22 @@ function loaddatatable() {
             },
         },
         "aoColumns": [
-            { mData: 'id' },
-            { mData: 'clonename' },
-            { mData: 'pages_status' },
-            { mData: 'author_name' },
-            { mData: 'datetime' },
+        { mData: 'id' },
+        { mData: 'clonename' },
+        { mData: 'pages_status' },
+        { mData: 'author_name' },
+        { mData: 'datetime' },
             // { mData: 'tags' },
             { mData: 'delete' },
             { mData: 'update_status' }
 
-        ],
-        "order": [[0, "asc"]],
-        "columnDefs": [{
-            "targets": [5, 6],
-            "orderable": false
-        }]
-    });
+            ],
+            "order": [[0, "asc"]],
+            "columnDefs": [{
+                "targets": [5, 6],
+                "orderable": false
+            }]
+        });
     $("#loader").removeClass('loader');
 }
 
@@ -122,8 +144,8 @@ function record_delete(id, page_insert_id,get_post_thumbnail_id) {
                             'Deleted!',
                             data.msg,
                             'success',
-                           { className: "swal-modal"}
-                           );
+                            { className: "swal-modal"}
+                            );
                         $("#loader").removeClass('loader');
                         loaddatatable();
                     } else {
@@ -131,7 +153,7 @@ function record_delete(id, page_insert_id,get_post_thumbnail_id) {
                             'Deleted!',
                             data.msg,
                             'error'
-                        )
+                            )
                         $("#loader").removeClass('loader');
                     }
                     loaddatatable();
@@ -191,11 +213,15 @@ $('body').on('change', '.statusswitch', function () {
             status: status,
             action: "Controller::change_page_status"
         },
-        success: function () {
+        success: function () {    
+            $("#loader").removeClass('loader');
             loaddatatable();
         },
+        error: function () {
+            $("#loader").removeClass('loader');
+        }
     });
-    $("#loader").removeClass('loader');
+    
 });
 
 $("#clonename_un_filtered").click(function () {
@@ -216,13 +242,13 @@ $("#clonename_un_filtered").click(function () {
             },
         },
         "aoColumns": [
-            { mData: 'id' },
-            { mData: 'clonename' },
-            { mData: 'pages_status' },
-            { mData: 'author_name' },
-            { mData: 'datetime' },
-            { mData: 'delete' },
-            { mData: 'update_status' }
+        { mData: 'id' },
+        { mData: 'clonename' },
+        { mData: 'pages_status' },
+        { mData: 'author_name' },
+        { mData: 'datetime' },
+        { mData: 'delete' },
+        { mData: 'update_status' }
         ],
         "order": [[0, "asc"]],
         "columnDefs": [{
@@ -253,13 +279,13 @@ $("#filter_pagination_clone a").click(function () {
             },
         },
         "aoColumns": [
-            { mData: 'id' },
-            { mData: 'clonename' },
-            { mData: 'pages_status' },
-            { mData: 'author_name' },
-            { mData: 'datetime' },
-            { mData: 'delete' },
-            { mData: 'update_status' }
+        { mData: 'id' },
+        { mData: 'clonename' },
+        { mData: 'pages_status' },
+        { mData: 'author_name' },
+        { mData: 'datetime' },
+        { mData: 'delete' },
+        { mData: 'update_status' }
         ],
         "order": [[0, "asc"]],
         "columnDefs": [{
@@ -271,47 +297,47 @@ $("#filter_pagination_clone a").click(function () {
 });
 
 // $("#menu a").click(function () {
-$(document).on("click","#menu a",function(){
-    var id = $(this).data('id');
-    $("#loader").addClass('loader');
-    $.ajax({
-        url: ajaxurl,
-        type: 'POST',
-        data: {
-            id: id,
-            page_click_id: id,
-            action: "Controller::page_click_id_open"
-        },
-        success: function (responce) {
-            var data = JSON.parse(responce);
-            var page_link = data.link;
-            if (data.status == 1) {
+    $(document).on("click","#menu a",function(){
+        var id = $(this).data('id');
+        $("#loader").addClass('loader');
+        $.ajax({
+            url: ajaxurl,
+            type: 'POST',
+            data: {
+                id: id,
+                page_click_id: id,
+                action: "Controller::page_click_id_open"
+            },
+            success: function (responce) {
+                var data = JSON.parse(responce);
+                var page_link = data.link;
+                if (data.status == 1) {
 
-                window.open(page_link, "_blank")
-            }
-        },
+                    window.open(page_link, "_blank")
+                }
+            },
+        });
+        $("#loader").removeClass('loader');
     });
-    $("#loader").removeClass('loader');
-});
 
-$("#seo_search").on("keyup", function(){
-    $("#seo_search").css("background-color", "#F4ECF7");
-    var seo_search = $('#seo_search').val();
-    if(seo_search == '') {
-        return false;
-    }
-    $("#loader").addClass('loader');
-    $.ajax({
-        url: ajaxurl,
-        type: 'POST',
-        data: {
-            seo_search : seo_search,
-            action: "Controller::search_seo_in_form"
-        },
-        success: function (responce) {
-            var data = JSON.parse(responce);
+    $("#seo_search").on("keyup", function(){
+        $("#seo_search").css("background-color", "#F4ECF7");
+        var seo_search = $('#seo_search').val();
+        if(seo_search == '') {
+            return false;
+        }
+        $("#loader").addClass('loader');
+        $.ajax({
+            url: ajaxurl,
+            type: 'POST',
+            data: {
+                seo_search : seo_search,
+                action: "Controller::search_seo_in_form"
+            },
+            success: function (responce) {
+                var data = JSON.parse(responce);
                 $("#seo_search_table").html(data);
                 $("#loader").removeClass('loader');
-        },
+            },
+        });
     });
-  });

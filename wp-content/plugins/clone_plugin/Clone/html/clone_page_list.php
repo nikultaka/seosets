@@ -14,6 +14,7 @@
 <link type="text/css" href="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.12/css/dataTables.checkboxes.css" rel="stylesheet" />
 <script type="text/javascript" src="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.12/js/dataTables.checkboxes.min.js"></script>
 
+
 <div id="loader" style="z-index:9999999999;"></div>
 <div class="row mt-5">
 	<div class="col-md-8">
@@ -57,7 +58,7 @@
 					<?php
 					foreach ($pagessql as $pages) { ?>
 						<option value="<?php echo $pages->page_insert_id ?>" <?php if( isset($_REQUEST['id']) && $pages->page_insert_id == $_REQUEST['id']) {  echo "selected = 'selected'";  } ?> ><?php echo $pages->clonename ?></option>
-					<?php
+						<?php
 					}
 					?>
 				</select>
@@ -70,27 +71,27 @@
 
 <!-- mass update and delete button -->
 
-	<div class="row">
-		<div class="col-md-6 pull-right">
-				<button  class='btn btn-danger btn-sm pull-right' id="select_all_delete">Mass Delete</button> 
-		</div>
+<div class="row">
+	<div class="col-md-6 pull-right">
+		<button  class='btn btn-danger btn-sm pull-right' id="select_all_delete">Mass Delete</button> 
+	</div>
 
-		<div class="col-md-6 pull-left dropdown" id="change_status">
-			<button class="btn btn-info btn-sm  dropdown-toggle" type="button" id="change_selected_status" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	<div class="col-md-6 pull-left dropdown" id="change_status">
+		<button class="btn btn-info btn-sm  dropdown-toggle" type="button" id="change_selected_status" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			Mass Update
-			</button>
-			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				<a class="dropdown-item" href="javascript:void(0)" data-id="1">Published</a>
-				<a class="dropdown-item" href="javascript:void(0)" data-id="0">Draft</a>
-			</div>
+		</button>
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			<a class="dropdown-item" href="javascript:void(0)" data-id="1">Published</a>
+			<a class="dropdown-item" href="javascript:void(0)" data-id="0">Draft</a>
 		</div>
 	</div>
-	<br>
+</div>
+<br>
 
 <!-- dataTable -->
 <table class="table" id="clone_pages_data-table" style="width: 100%;">
 	<thead>
-	    <th><input type="checkbox" name="select_all" value="1" id="example-select-all"></th>
+		<th><input type="checkbox" name="select_all" value="1" id="example-select-all"></th>
 		<th>ID</th>
 		<th width=15%;>Name</th>
 		<th>Status</th>
@@ -109,7 +110,7 @@
 		var pageajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
 		var is_filter = 0;
 		<?php if(isset($_REQUEST['id'])) { ?>
-				is_filter = 1;
-	    <?php } ?>    
+			is_filter = 1;
+		<?php } ?>    
 	//});
 </script>

@@ -62,3 +62,593 @@
 [17-Jul-2021 10:07:10 UTC] PHP Notice:  Trying to get property 'back_link' of non-object in /var/www/html/seosets/wp-content/plugins/linking/linking/Controller.php on line 242
 [17-Jul-2021 10:07:10 UTC] PHP Notice:  Undefined index: post_url in /var/www/html/seosets/wp-content/plugins/linking/linking/Controller.php on line 243
 [17-Jul-2021 10:08:14 UTC] PHP Notice:  Undefined index: post_url in /var/www/html/seosets/wp-content/plugins/linking/linking/Controller.php on line 243
+[20-Jul-2021 13:49:33 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[20-Jul-2021 13:50:01 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[20-Jul-2021 13:50:06 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 643
+[20-Jul-2021 13:51:15 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 642
+[20-Jul-2021 13:51:15 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 643
+[20-Jul-2021 13:51:16 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[20-Jul-2021 13:51:42 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[20-Jul-2021 13:51:45 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 643
+[20-Jul-2021 13:53:14 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 642
+[20-Jul-2021 13:53:14 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 643
+[20-Jul-2021 13:53:17 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[20-Jul-2021 13:53:40 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[20-Jul-2021 13:53:43 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 643
+[20-Jul-2021 13:54:22 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[20-Jul-2021 13:55:22 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 226
+[20-Jul-2021 13:56:49 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[20-Jul-2021 13:57:12 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[20-Jul-2021 13:57:14 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 643
+[20-Jul-2021 14:04:10 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[20-Jul-2021 14:04:33 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 199
+[20-Jul-2021 14:04:33 UTC] PHP Notice:  Trying to get property 'post_title' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 199
+[20-Jul-2021 14:04:33 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 200
+[20-Jul-2021 14:04:33 UTC] PHP Notice:  Trying to get property 'post_content' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 200
+[20-Jul-2021 14:04:33 UTC] PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 272
+[20-Jul-2021 14:04:33 UTC] PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 273
+[20-Jul-2021 14:04:34 UTC] PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 272
+[20-Jul-2021 14:04:34 UTC] PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 273
+[20-Jul-2021 14:04:34 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[20-Jul-2021 14:04:36 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 643
+[20-Jul-2021 14:05:04 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[20-Jul-2021 14:05:26 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 199
+[20-Jul-2021 14:05:26 UTC] PHP Notice:  Trying to get property 'post_title' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 199
+[20-Jul-2021 14:05:26 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 200
+[20-Jul-2021 14:05:26 UTC] PHP Notice:  Trying to get property 'post_content' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 200
+[20-Jul-2021 14:05:26 UTC] PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 272
+[20-Jul-2021 14:05:26 UTC] PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 273
+[20-Jul-2021 14:05:27 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[20-Jul-2021 14:05:30 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 643
+[20-Jul-2021 14:07:36 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[20-Jul-2021 14:07:58 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 199
+[20-Jul-2021 14:07:58 UTC] PHP Notice:  Trying to get property 'post_title' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 199
+[20-Jul-2021 14:07:58 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 200
+[20-Jul-2021 14:07:58 UTC] PHP Notice:  Trying to get property 'post_content' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 200
+[20-Jul-2021 14:07:58 UTC] PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 272
+[20-Jul-2021 14:07:58 UTC] PHP Notice:  Trying to access array offset on value of type bool in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 273
+[20-Jul-2021 14:07:58 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[20-Jul-2021 14:08:03 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 643
+[20-Jul-2021 14:25:38 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 643
+[20-Jul-2021 14:25:39 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[20-Jul-2021 14:26:42 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[20-Jul-2021 16:41:34 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[20-Jul-2021 16:43:36 UTC] PHP Parse error:  syntax error, unexpected ')' in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1011
+[20-Jul-2021 16:43:41 UTC] PHP Parse error:  syntax error, unexpected ')' in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1011
+[20-Jul-2021 16:43:41 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /var/www/html/seosets/wp-includes/functions.php on line 5313
+[20-Jul-2021 16:43:41 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /var/www/html/seosets/wp-includes/functions.php on line 5313
+[20-Jul-2021 16:45:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php:1011
+Stack trace:
+#0 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): addInternalLinking()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#2 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /var/www/html/seosets/wp-includes/general-template.php(3025): do_action()
+#4 /var/www/html/seosets/wp-content/themes/twentytwentyone/footer.php(71): wp_footer()
+#5 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#6 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#7 /var/www/html/seosets/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/seosets/wp-content/themes/twentytwentyone/page.php(25): get_footer()
+#9 /var/www/html/seosets/wp-includes/template-loader.php(106): include('/var/www/html/s...')
+#10 /var/www/html/seosets/wp-blog-header.php in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1011
+[20-Jul-2021 16:45:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php:1011
+Stack trace:
+#0 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): addInternalLinking()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#2 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /var/www/html/seosets/wp-includes/general-template.php(3025): do_action()
+#4 /var/www/html/seosets/wp-content/themes/twentytwentyone/footer.php(71): wp_footer()
+#5 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#6 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#7 /var/www/html/seosets/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/seosets/wp-content/themes/twentytwentyone/page.php(25): get_footer()
+#9 /var/www/html/seosets/wp-includes/template-loader.php(106): include('/var/www/html/s...')
+#10 /var/www/html/seosets/wp-blog-header.php in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1011
+[20-Jul-2021 16:46:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php:1011
+Stack trace:
+#0 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): addInternalLinking()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#2 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /var/www/html/seosets/wp-includes/general-template.php(3025): do_action()
+#4 /var/www/html/seosets/wp-content/themes/twentytwentyone/footer.php(71): wp_footer()
+#5 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#6 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#7 /var/www/html/seosets/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/seosets/wp-content/themes/twentytwentyone/page.php(25): get_footer()
+#9 /var/www/html/seosets/wp-includes/template-loader.php(106): include('/var/www/html/s...')
+#10 /var/www/html/seosets/wp-blog-header.php in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1011
+[20-Jul-2021 16:46:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php:1011
+Stack trace:
+#0 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): addInternalLinking()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#2 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /var/www/html/seosets/wp-includes/general-template.php(3025): do_action()
+#4 /var/www/html/seosets/wp-content/themes/twentytwentyone/footer.php(71): wp_footer()
+#5 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#6 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#7 /var/www/html/seosets/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/seosets/wp-content/themes/twentytwentyone/page.php(25): get_footer()
+#9 /var/www/html/seosets/wp-includes/template-loader.php(106): include('/var/www/html/s...')
+#10 /var/www/html/seosets/wp-blog-header.php in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1011
+[20-Jul-2021 16:46:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php:1011
+Stack trace:
+#0 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): addInternalLinking()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#2 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /var/www/html/seosets/wp-includes/general-template.php(3025): do_action()
+#4 /var/www/html/seosets/wp-content/themes/twentytwentyone/footer.php(71): wp_footer()
+#5 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#6 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#7 /var/www/html/seosets/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/seosets/wp-content/themes/twentytwentyone/page.php(25): get_footer()
+#9 /var/www/html/seosets/wp-includes/template-loader.php(106): include('/var/www/html/s...')
+#10 /var/www/html/seosets/wp-blog-header.php in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1011
+[20-Jul-2021 16:46:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php:1011
+Stack trace:
+#0 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): addInternalLinking()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#2 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /var/www/html/seosets/wp-includes/general-template.php(3025): do_action()
+#4 /var/www/html/seosets/wp-content/themes/twentytwentyone/footer.php(71): wp_footer()
+#5 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#6 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#7 /var/www/html/seosets/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/seosets/wp-content/themes/twentytwentyone/page.php(25): get_footer()
+#9 /var/www/html/seosets/wp-includes/template-loader.php(106): include('/var/www/html/s...')
+#10 /var/www/html/seosets/wp-blog-header.php in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1011
+[20-Jul-2021 16:47:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php:1011
+Stack trace:
+#0 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): addInternalLinking()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#2 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /var/www/html/seosets/wp-includes/general-template.php(3025): do_action()
+#4 /var/www/html/seosets/wp-content/themes/twentytwentyone/footer.php(71): wp_footer()
+#5 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#6 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#7 /var/www/html/seosets/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/seosets/wp-content/themes/twentytwentyone/page.php(25): get_footer()
+#9 /var/www/html/seosets/wp-includes/template-loader.php(106): include('/var/www/html/s...')
+#10 /var/www/html/seosets/wp-blog-header.php in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1011
+[20-Jul-2021 16:47:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php:1011
+Stack trace:
+#0 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): addInternalLinking()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#2 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /var/www/html/seosets/wp-includes/general-template.php(3025): do_action()
+#4 /var/www/html/seosets/wp-content/themes/twentytwentyone/footer.php(71): wp_footer()
+#5 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#6 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#7 /var/www/html/seosets/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/seosets/wp-content/themes/twentytwentyone/page.php(25): get_footer()
+#9 /var/www/html/seosets/wp-includes/template-loader.php(106): include('/var/www/html/s...')
+#10 /var/www/html/seosets/wp-blog-header.php in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1011
+[20-Jul-2021 16:47:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php:1011
+Stack trace:
+#0 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): addInternalLinking()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#2 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /var/www/html/seosets/wp-includes/general-template.php(3025): do_action()
+#4 /var/www/html/seosets/wp-content/themes/twentytwentyone/footer.php(71): wp_footer()
+#5 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#6 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#7 /var/www/html/seosets/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/seosets/wp-content/themes/twentytwentyone/page.php(25): get_footer()
+#9 /var/www/html/seosets/wp-includes/template-loader.php(106): include('/var/www/html/s...')
+#10 /var/www/html/seosets/wp-blog-header.php in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1011
+[20-Jul-2021 16:47:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php:1011
+Stack trace:
+#0 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): addInternalLinking()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#2 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /var/www/html/seosets/wp-includes/general-template.php(3025): do_action()
+#4 /var/www/html/seosets/wp-content/themes/twentytwentyone/footer.php(71): wp_footer()
+#5 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#6 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#7 /var/www/html/seosets/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/seosets/wp-content/themes/twentytwentyone/page.php(25): get_footer()
+#9 /var/www/html/seosets/wp-includes/template-loader.php(106): include('/var/www/html/s...')
+#10 /var/www/html/seosets/wp-blog-header.php in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1011
+[20-Jul-2021 16:52:01 UTC] PHP Parse error:  syntax error, unexpected ''>".$value->post_title."</a></' (T_CONSTANT_ENCAPSED_STRING) in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1017
+[20-Jul-2021 16:52:47 UTC] PHP Parse error:  syntax error, unexpected '/' in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1011
+[20-Jul-2021 17:20:55 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function '/var/www/html/seosets/wp-content/plugins/clone_plugin/Clone//assets/css/style.css' not found or invalid function name in /var/www/html/seosets/wp-includes/class-wp-hook.php on line 292
+[20-Jul-2021 17:25:48 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function plugin_dir_url(), 0 passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1023 and exactly 1 expected in /var/www/html/seosets/wp-includes/plugin.php:766
+Stack trace:
+#0 /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php(1023): plugin_dir_url()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): theme_styles()
+#2 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/seosets/wp-includes/general-template.php(3009): do_action()
+#5 /var/www/html/seosets/wp-content/themes/twentytwentyone/header.php(20): wp_head()
+#6 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#7 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#8 /var/www/html/seosets/wp-includes/general-template.php(48): locate_template()
+#9 /var/www/ht in /var/www/html/seosets/wp-includes/plugin.php on line 766
+[20-Jul-2021 17:25:48 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function plugin_dir_url(), 0 passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1023 and exactly 1 expected in /var/www/html/seosets/wp-includes/plugin.php:766
+Stack trace:
+#0 /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php(1023): plugin_dir_url()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): theme_styles()
+#2 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/seosets/wp-includes/general-template.php(3009): do_action()
+#5 /var/www/html/seosets/wp-content/themes/twentytwentyone/header.php(20): wp_head()
+#6 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#7 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#8 /var/www/html/seosets/wp-includes/general-template.php(48): locate_template()
+#9 /var/www/ht in /var/www/html/seosets/wp-includes/plugin.php on line 766
+[20-Jul-2021 17:25:48 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function plugin_dir_url(), 0 passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1023 and exactly 1 expected in /var/www/html/seosets/wp-includes/plugin.php:766
+Stack trace:
+#0 /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php(1023): plugin_dir_url()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): theme_styles()
+#2 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/seosets/wp-includes/general-template.php(3009): do_action()
+#5 /var/www/html/seosets/wp-content/themes/twentytwentyone/header.php(20): wp_head()
+#6 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#7 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#8 /var/www/html/seosets/wp-includes/general-template.php(48): locate_template()
+#9 /var/www/ht in /var/www/html/seosets/wp-includes/plugin.php on line 766
+[20-Jul-2021 17:25:48 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function plugin_dir_url(), 0 passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1023 and exactly 1 expected in /var/www/html/seosets/wp-includes/plugin.php:766
+Stack trace:
+#0 /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php(1023): plugin_dir_url()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): theme_styles()
+#2 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/seosets/wp-includes/general-template.php(3009): do_action()
+#5 /var/www/html/seosets/wp-content/themes/twentytwentyone/header.php(20): wp_head()
+#6 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#7 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#8 /var/www/html/seosets/wp-includes/general-template.php(48): locate_template()
+#9 /var/www/ht in /var/www/html/seosets/wp-includes/plugin.php on line 766
+[20-Jul-2021 17:25:49 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function plugin_dir_url(), 0 passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1023 and exactly 1 expected in /var/www/html/seosets/wp-includes/plugin.php:766
+Stack trace:
+#0 /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php(1023): plugin_dir_url()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): theme_styles()
+#2 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/seosets/wp-includes/general-template.php(3009): do_action()
+#5 /var/www/html/seosets/wp-content/themes/twentytwentyone/header.php(20): wp_head()
+#6 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#7 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#8 /var/www/html/seosets/wp-includes/general-template.php(48): locate_template()
+#9 /var/www/ht in /var/www/html/seosets/wp-includes/plugin.php on line 766
+[20-Jul-2021 17:25:49 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function plugin_dir_url(), 0 passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1023 and exactly 1 expected in /var/www/html/seosets/wp-includes/plugin.php:766
+Stack trace:
+#0 /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php(1023): plugin_dir_url()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): theme_styles()
+#2 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/seosets/wp-includes/general-template.php(3009): do_action()
+#5 /var/www/html/seosets/wp-content/themes/twentytwentyone/header.php(20): wp_head()
+#6 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#7 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#8 /var/www/html/seosets/wp-includes/general-template.php(48): locate_template()
+#9 /var/www/ht in /var/www/html/seosets/wp-includes/plugin.php on line 766
+[20-Jul-2021 17:25:49 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function plugin_dir_url(), 0 passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1023 and exactly 1 expected in /var/www/html/seosets/wp-includes/plugin.php:766
+Stack trace:
+#0 /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php(1023): plugin_dir_url()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): theme_styles()
+#2 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/seosets/wp-includes/general-template.php(3009): do_action()
+#5 /var/www/html/seosets/wp-content/themes/twentytwentyone/header.php(20): wp_head()
+#6 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#7 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#8 /var/www/html/seosets/wp-includes/general-template.php(48): locate_template()
+#9 /var/www/ht in /var/www/html/seosets/wp-includes/plugin.php on line 766
+[20-Jul-2021 17:25:49 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function plugin_dir_url(), 0 passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1023 and exactly 1 expected in /var/www/html/seosets/wp-includes/plugin.php:766
+Stack trace:
+#0 /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php(1023): plugin_dir_url()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): theme_styles()
+#2 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/seosets/wp-includes/general-template.php(3009): do_action()
+#5 /var/www/html/seosets/wp-content/themes/twentytwentyone/header.php(20): wp_head()
+#6 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#7 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#8 /var/www/html/seosets/wp-includes/general-template.php(48): locate_template()
+#9 /var/www/ht in /var/www/html/seosets/wp-includes/plugin.php on line 766
+[20-Jul-2021 17:25:49 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function plugin_dir_url(), 0 passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1023 and exactly 1 expected in /var/www/html/seosets/wp-includes/plugin.php:766
+Stack trace:
+#0 /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php(1023): plugin_dir_url()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): theme_styles()
+#2 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/seosets/wp-includes/general-template.php(3009): do_action()
+#5 /var/www/html/seosets/wp-content/themes/twentytwentyone/header.php(20): wp_head()
+#6 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#7 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#8 /var/www/html/seosets/wp-includes/general-template.php(48): locate_template()
+#9 /var/www/ht in /var/www/html/seosets/wp-includes/plugin.php on line 766
+[20-Jul-2021 17:25:49 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function plugin_dir_url(), 0 passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1023 and exactly 1 expected in /var/www/html/seosets/wp-includes/plugin.php:766
+Stack trace:
+#0 /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php(1023): plugin_dir_url()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): theme_styles()
+#2 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/seosets/wp-includes/general-template.php(3009): do_action()
+#5 /var/www/html/seosets/wp-content/themes/twentytwentyone/header.php(20): wp_head()
+#6 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#7 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#8 /var/www/html/seosets/wp-includes/general-template.php(48): locate_template()
+#9 /var/www/ht in /var/www/html/seosets/wp-includes/plugin.php on line 766
+[20-Jul-2021 17:25:49 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function plugin_dir_url(), 0 passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1023 and exactly 1 expected in /var/www/html/seosets/wp-includes/plugin.php:766
+Stack trace:
+#0 /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php(1023): plugin_dir_url()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): theme_styles()
+#2 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/seosets/wp-includes/general-template.php(3009): do_action()
+#5 /var/www/html/seosets/wp-content/themes/twentytwentyone/header.php(20): wp_head()
+#6 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#7 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#8 /var/www/html/seosets/wp-includes/general-template.php(48): locate_template()
+#9 /var/www/ht in /var/www/html/seosets/wp-includes/plugin.php on line 766
+[20-Jul-2021 17:25:49 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function plugin_dir_url(), 0 passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1023 and exactly 1 expected in /var/www/html/seosets/wp-includes/plugin.php:766
+Stack trace:
+#0 /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php(1023): plugin_dir_url()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): theme_styles()
+#2 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/seosets/wp-includes/general-template.php(3009): do_action()
+#5 /var/www/html/seosets/wp-content/themes/twentytwentyone/header.php(20): wp_head()
+#6 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#7 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#8 /var/www/html/seosets/wp-includes/general-template.php(48): locate_template()
+#9 /var/www/ht in /var/www/html/seosets/wp-includes/plugin.php on line 766
+[20-Jul-2021 17:25:49 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function plugin_dir_url(), 0 passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1023 and exactly 1 expected in /var/www/html/seosets/wp-includes/plugin.php:766
+Stack trace:
+#0 /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php(1023): plugin_dir_url()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): theme_styles()
+#2 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/seosets/wp-includes/general-template.php(3009): do_action()
+#5 /var/www/html/seosets/wp-content/themes/twentytwentyone/header.php(20): wp_head()
+#6 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#7 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#8 /var/www/html/seosets/wp-includes/general-template.php(48): locate_template()
+#9 /var/www/ht in /var/www/html/seosets/wp-includes/plugin.php on line 766
+[20-Jul-2021 17:25:49 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function plugin_dir_url(), 0 passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1023 and exactly 1 expected in /var/www/html/seosets/wp-includes/plugin.php:766
+Stack trace:
+#0 /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php(1023): plugin_dir_url()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): theme_styles()
+#2 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/seosets/wp-includes/general-template.php(3009): do_action()
+#5 /var/www/html/seosets/wp-content/themes/twentytwentyone/header.php(20): wp_head()
+#6 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#7 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#8 /var/www/html/seosets/wp-includes/general-template.php(48): locate_template()
+#9 /var/www/ht in /var/www/html/seosets/wp-includes/plugin.php on line 766
+[20-Jul-2021 17:25:49 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function plugin_dir_url(), 0 passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1023 and exactly 1 expected in /var/www/html/seosets/wp-includes/plugin.php:766
+Stack trace:
+#0 /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php(1023): plugin_dir_url()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): theme_styles()
+#2 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/seosets/wp-includes/general-template.php(3009): do_action()
+#5 /var/www/html/seosets/wp-content/themes/twentytwentyone/header.php(20): wp_head()
+#6 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#7 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#8 /var/www/html/seosets/wp-includes/general-template.php(48): locate_template()
+#9 /var/www/ht in /var/www/html/seosets/wp-includes/plugin.php on line 766
+[20-Jul-2021 17:25:49 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function plugin_dir_url(), 0 passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1023 and exactly 1 expected in /var/www/html/seosets/wp-includes/plugin.php:766
+Stack trace:
+#0 /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php(1023): plugin_dir_url()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): theme_styles()
+#2 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/seosets/wp-includes/general-template.php(3009): do_action()
+#5 /var/www/html/seosets/wp-content/themes/twentytwentyone/header.php(20): wp_head()
+#6 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#7 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#8 /var/www/html/seosets/wp-includes/general-template.php(48): locate_template()
+#9 /var/www/ht in /var/www/html/seosets/wp-includes/plugin.php on line 766
+[20-Jul-2021 17:25:49 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function plugin_dir_url(), 0 passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1023 and exactly 1 expected in /var/www/html/seosets/wp-includes/plugin.php:766
+Stack trace:
+#0 /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php(1023): plugin_dir_url()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): theme_styles()
+#2 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/seosets/wp-includes/general-template.php(3009): do_action()
+#5 /var/www/html/seosets/wp-content/themes/twentytwentyone/header.php(20): wp_head()
+#6 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#7 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#8 /var/www/html/seosets/wp-includes/general-template.php(48): locate_template()
+#9 /var/www/ht in /var/www/html/seosets/wp-includes/plugin.php on line 766
+[20-Jul-2021 17:25:49 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function plugin_dir_url(), 0 passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1023 and exactly 1 expected in /var/www/html/seosets/wp-includes/plugin.php:766
+Stack trace:
+#0 /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php(1023): plugin_dir_url()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): theme_styles()
+#2 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/seosets/wp-includes/general-template.php(3009): do_action()
+#5 /var/www/html/seosets/wp-content/themes/twentytwentyone/header.php(20): wp_head()
+#6 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#7 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#8 /var/www/html/seosets/wp-includes/general-template.php(48): locate_template()
+#9 /var/www/ht in /var/www/html/seosets/wp-includes/plugin.php on line 766
+[20-Jul-2021 17:25:49 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function plugin_dir_url(), 0 passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 1023 and exactly 1 expected in /var/www/html/seosets/wp-includes/plugin.php:766
+Stack trace:
+#0 /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php(1023): plugin_dir_url()
+#1 /var/www/html/seosets/wp-includes/class-wp-hook.php(292): theme_styles()
+#2 /var/www/html/seosets/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/seosets/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/seosets/wp-includes/general-template.php(3009): do_action()
+#5 /var/www/html/seosets/wp-content/themes/twentytwentyone/header.php(20): wp_head()
+#6 /var/www/html/seosets/wp-includes/template.php(730): require_once('/var/www/html/s...')
+#7 /var/www/html/seosets/wp-includes/template.php(676): load_template()
+#8 /var/www/html/seosets/wp-includes/general-template.php(48): locate_template()
+#9 /var/www/ht in /var/www/html/seosets/wp-includes/plugin.php on line 766
+[21-Jul-2021 05:41:42 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[21-Jul-2021 05:42:11 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[21-Jul-2021 05:43:08 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[21-Jul-2021 05:44:36 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[21-Jul-2021 05:46:21 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[21-Jul-2021 05:46:33 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[21-Jul-2021 05:47:04 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[21-Jul-2021 05:48:13 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[21-Jul-2021 05:49:52 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[21-Jul-2021 05:54:15 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[21-Jul-2021 06:00:27 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[21-Jul-2021 06:04:04 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[21-Jul-2021 06:04:19 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[21-Jul-2021 06:05:00 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[21-Jul-2021 06:05:03 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 642
+[21-Jul-2021 06:05:03 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 643
+[21-Jul-2021 06:08:11 UTC] PHP Notice:  Undefined index: pages_filter_dropdown in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 642
+[21-Jul-2021 06:08:11 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 643
+[21-Jul-2021 06:08:13 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[21-Jul-2021 06:09:24 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[21-Jul-2021 06:11:01 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[21-Jul-2021 06:11:27 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 357
+[21-Jul-2021 07:30:47 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 364
+[21-Jul-2021 07:30:50 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 650
+[21-Jul-2021 07:31:04 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 364
+[21-Jul-2021 07:31:15 UTC] PHP Notice:  Undefined variable: pages_table_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 101
+[21-Jul-2021 07:31:15 UTC] PHP Notice:  Undefined variable: thumbnail_id in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 101
+[21-Jul-2021 07:31:15 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as posts WHERE id =' at line 1 for query SELECT count(id) FROM  as posts WHERE id =  made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 07:31:17 UTC] PHP Notice:  Undefined variable: pages_table_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 101
+[21-Jul-2021 07:31:17 UTC] PHP Notice:  Undefined variable: thumbnail_id in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 101
+[21-Jul-2021 07:31:17 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as posts WHERE id =' at line 1 for query SELECT count(id) FROM  as posts WHERE id =  made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 07:31:17 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 364
+[21-Jul-2021 07:45:14 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 370
+[21-Jul-2021 08:41:58 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 378
+[21-Jul-2021 08:46:42 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:47:23 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:47:36 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:47:36 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:47:36 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:47:38 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:47:38 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:47:38 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:47:38 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:48:16 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:48:50 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:49:04 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:49:04 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:49:04 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:49:06 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:49:06 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:49:06 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:49:07 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:49:45 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:50:00 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:50:00 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:50:00 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:50:02 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:50:02 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:50:02 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:50:02 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:50:46 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:50:59 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:51:16 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:16 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:16 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:17 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:17 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:17 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:18 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:18 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:18 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:19 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:19 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:19 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:20 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:20 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:20 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:21 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:21 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:21 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:22 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:22 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:22 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:23 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:23 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:23 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:24 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:24 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:24 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:25 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:25 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:25 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:26 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:26 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:26 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:27 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:27 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:27 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:28 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:28 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:28 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:29 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:29 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:29 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:30 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:30 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:30 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:31 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:31 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:31 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:32 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:32 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:32 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:33 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:33 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:33 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:34 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:34 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:34 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:35 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:35 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:35 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:36 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:36 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:36 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:37 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:37 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:37 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:38 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:38 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:38 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:39 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:39 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:39 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:40 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:40 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:40 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:41 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC limit 1' at line 1 for query SELECT * FROM  wp_clone_count where id DESC limit 1 made by do_action('wp_ajax_Controller::get_count'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->get_count
+[21-Jul-2021 08:51:41 UTC] PHP Notice:  Undefined offset: 0 in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:51:41 UTC] PHP Notice:  Trying to get property 'count' of non-object in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 104
+[21-Jul-2021 08:53:08 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:53:14 UTC] PHP Notice:  Undefined index: page_insert_id in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 488
+[21-Jul-2021 08:53:14 UTC] PHP Notice:  Undefined index: page_insert_id in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 489
+[21-Jul-2021 08:53:14 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 489
+[21-Jul-2021 08:53:14 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 for query DELETE FROM wp_posts WHERE wp_posts.ID IN() made by do_action('wp_ajax_Controller::delete_record'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->delete_record
+[21-Jul-2021 08:53:14 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 for query DELETE FROM wp_postmeta WHERE wp_postmeta.post_id IN() made by do_action('wp_ajax_Controller::delete_record'), WP_Hook->do_action, WP_Hook->apply_filters, Controller->delete_record
+[21-Jul-2021 08:54:06 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:54:11 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:54:11 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:54:16 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:54:16 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:54:19 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:54:19 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:54:22 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:54:22 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:54:26 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:54:26 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:54:29 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:54:29 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:57:19 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 08:57:27 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 663
+[21-Jul-2021 08:59:33 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 09:06:54 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 09:08:14 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 09:14:22 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 09:15:07 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 09:15:53 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 09:16:24 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 09:16:48 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 09:17:03 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 09:17:13 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 09:18:38 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 09:19:24 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 09:20:00 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377

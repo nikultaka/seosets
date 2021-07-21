@@ -44,7 +44,7 @@ class LinkingController
         $data = $wpdb->get_results($query);
 
         $commonDB = new db(STORAGE_HOST,STORAGE_USERNAME,STORAGE_PASSWORD,STORAGE_DB);
-        $siteUrl = get_site_url();  
+        $siteUrl = get_site_url().'/index.php/';  
 
         $commonDbData = $commonDB->query("select * from linking")->fetchAll();    
         $commonDBID = '';

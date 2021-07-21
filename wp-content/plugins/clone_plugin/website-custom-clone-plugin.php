@@ -24,6 +24,7 @@ function myPluginCreateTable(){
     global $db_table_name;
     $charset_collate = $wpdb->get_charset_collate();
     $db_table_name = $wpdb->prefix . 'clone';
+    $db_clone_count_table_name = $wpdb->prefix . 'clone_count';
 
     $sql = "CREATE TABLE `$db_table_name` (
      `id` int(200) NOT NULL AUTO_INCREMENT,
@@ -35,6 +36,18 @@ function myPluginCreateTable(){
      `page_insert_id` varchar(5000) NOT NULL,
      PRIMARY KEY (`id`)
     ) ENGINE=MyISAM AUTO_INCREMENT=374 DEFAULT CHARSET=latin1";
+
+    $sqlCount = "CREATE TABLE `$db_clone_count_table_name` (
+     `id` int(11) NOT NULL AUTO_INCREMENT,
+     `clone_id` int(11) NULL,
+     `count` int(11) NULL,
+     PRIMARY KEY (`id`)
+    ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1";
+
+    if ($wpdb->get_var("SHOW TABLES LIKE '$db_clone_count_table_name'") != $db_clone_count_table_name) {
+        require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+        dbDelta($sqlCount);
+    }  
 
 
     if ($wpdb->get_var("SHOW TABLES LIKE '$db_table_name'") != $db_table_name) {
