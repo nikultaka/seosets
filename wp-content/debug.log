@@ -652,3 +652,13 @@ Stack trace:
 [21-Jul-2021 09:18:38 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
 [21-Jul-2021 09:19:24 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
 [21-Jul-2021 09:20:00 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 09:20:44 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 663
+[21-Jul-2021 09:30:39 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 663
+[21-Jul-2021 09:30:41 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 09:31:14 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 09:31:18 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 663
+[21-Jul-2021 09:32:38 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 09:33:31 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 09:34:00 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 09:34:03 UTC] PHP Notice:  Undefined index: short_clone_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 377
+[21-Jul-2021 09:34:05 UTC] PHP Notice:  Undefined index: short_name in /var/www/html/seosets/wp-content/plugins/clone_plugin/Clone/Controller.php on line 663
