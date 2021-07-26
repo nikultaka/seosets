@@ -14,10 +14,10 @@ define('WCP_PLUGIN_LIKING_VERSION', '1.0.0');
 define('WCP_PLUGIN_LIKING_DOMAIN', 'website-custom-plugin');
 define('WCP_PLUGIN_LIKING_URL', WP_PLUGIN_URL . '/linking');
 
-define('STORAGE_HOST','localhost');
-define('STORAGE_USERNAME','root');
-define('STORAGE_PASSWORD','Testing@123');
-define('STORAGE_DB','storage');
+define('STORAGE_HOST','remotemysql.com');
+define('STORAGE_USERNAME','lZDlp1nfbB');
+define('STORAGE_PASSWORD','SpQcMVSdWe');
+define('STORAGE_DB','lZDlp1nfbB');       
 
 include_once(dirname(__FILE__) . "/linking/Controller.php");
 include_once(dirname(__FILE__) . "/linking/db.php");  

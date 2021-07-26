@@ -10,8 +10,8 @@ $(document).ready(function () {
     if(is_filter == 0) {
         var table =  $('#clone_pages_data-table').DataTable({
             "paging": true,
-            "aLengthMenu": [[100, 500, 1000], [100,500, 1000]],
-            // "pageLength": 100,   
+            "aLengthMenu": [[10,15,20], [10,15,20]],
+            "pageLength": 10,   
             "bProcessing": true,
             "serverSide": true,
             "bDestroy": true,
@@ -92,8 +92,8 @@ function loadclonepagestable() {
     $("#loader").addClass('loader');
      $('#clone_pages_data-table').dataTable({
         "paging": true,
-        "aLengthMenu": [[100, 500, 1000], [100,500, 1000]],
-        "pageLength": 100,
+        "aLengthMenu": [[10, 15, 20], [10, 15, 20]],
+        "pageLength": 10,
         "bProcessing": true,
         "serverSide": true,
         "bDestroy": true,
@@ -215,8 +215,8 @@ $("#pages_filtered_id").click(function () {
     $("#loader").addClass('loader');
     $('#clone_pages_data-table').dataTable({
         "paging": true,
-        "aLengthMenu": [[100, 500, 1000], [100,500, 1000]],
-        "pageLength": 100,
+        "aLengthMenu": [[10,15, 20], [10,15, 20]],
+        "pageLength": 10,
         "bProcessing": true,
         "serverSide": true,
         "bDestroy": true,
@@ -266,8 +266,8 @@ $("#filter_pagination a").click(function () {
     $("#loader").addClass('loader');
     $('#clone_pages_data-table').dataTable({
         "paging": true,
-        "aLengthMenu": [[100, 500, 1000], [100,500, 1000]],
-        "pageLength": 100,
+        "aLengthMenu": [[10,15, 20], [10,15, 20]],
+        "pageLength": 10,
         "bProcessing": true,
         "serverSide": true,
         "bDestroy": true,

@@ -1,0 +1,5568 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Quiz Maker\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2018-07-13 11:50+0000\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n_noop:1,2;_x\n"
+"X-Poedit-Basepath: .\n"
+"Last-Translator: \n"
+"POT-Creation-Date: \n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../admin/class-quiz-maker-admin.php:207
+#: ../admin/partials/quizes/quiz-maker-quizes-display.php:135
+msgid "Question Default Title"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:208
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:124
+#: ../admin/partials/quizes/quiz-maker-quizes-display.php:139
+#: ../admin/partials/settings/quiz-maker-settings.php:19
+msgid "Radio"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:209
+#: ../admin/partials/quizes/quiz-maker-quizes-display.php:140
+msgid "Checkbox"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:210
+#: ../admin/partials/quizes/quiz-maker-quizes-display.php:141
+msgid "Dropdawn"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:211
+msgid "Empty Answer"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:212
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3626
+msgid "Add Gif"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:213
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:127
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3614
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3826
+#: ../admin/partials/quizes/quiz-maker-quizes-display.php:142
+#: ../admin/partials/settings/quiz-maker-settings.php:22
+msgid "Text"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:214
+#: ../admin/partials/quizes/quiz-maker-quizes-display.php:212
+msgid "Answer text"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:215
+msgid "Copied!"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:216
+#: ../admin/partials/quizes/actions/quiz-maker-quiz-categories-actions.php:52
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:604
+msgid "Click for copy."
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:217
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:128
+#: ../admin/partials/quizes/quiz-maker-quizes-display.php:143
+#: ../admin/partials/settings/quiz-maker-settings.php:23
+msgid "Short Text"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:218
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:134
+msgid "True"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:219
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:135
+msgid "False"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:300
+#: ../admin/class-quiz-maker-admin.php:301
+#: ../admin/class-quiz-maker-admin.php:562
+#: ../admin/partials/quiz-maker-admin-display.php:39
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:12
+msgid "Quizzes"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:313
+#: ../admin/class-quiz-maker-admin.php:314
+#: ../admin/class-quiz-maker-admin.php:588
+#: ../admin/class-quiz-maker-admin.php:1048
+#: ../admin/partials/quiz-maker-admin-display.php:36
+#: ../admin/partials/quizes/quiz-maker-quizes-display.php:126
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:12
+msgid "Questions"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:326
+#: ../admin/class-quiz-maker-admin.php:327
+#: ../admin/class-quiz-maker-admin.php:575
+#: ../includes/lists/class-quiz-maker-quiz-categories-list-table.php:10
+msgid "Quiz Categories"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:339
+#: ../admin/class-quiz-maker-admin.php:340
+#: ../admin/class-quiz-maker-admin.php:601
+#: ../includes/lists/class-quiz-maker-question-categories-list-table.php:10
+msgid "Question Categories"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:352
+#: ../admin/class-quiz-maker-admin.php:353
+msgid "Custom Fields"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:363
+#: ../admin/class-quiz-maker-admin.php:364
+msgid "Orders"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:375
+#: ../admin/class-quiz-maker-admin.php:614
+#: ../admin/partials/results/quiz-maker-results-display.php:13
+#: ../includes/lists/class-quiz-maker-results-list-table.php:12
+msgid "Results"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:392
+#: ../admin/class-quiz-maker-admin.php:393
+msgid "How to use"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:402
+#: ../admin/class-quiz-maker-admin.php:403
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:245
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:646
+#: ../admin/partials/settings/quiz-maker-settings.php:187
+#: ../admin/partials/settings/quiz-maker-settings.php:213
+msgid "General Settings"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:413
+#: ../admin/class-quiz-maker-admin.php:414
+msgid "Our products"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:424
+#: ../admin/class-quiz-maker-admin.php:425
+msgid "PRO Features"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:442
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:240
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:623
+msgid "Settings"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:443
+msgid "Demo"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:444
+msgid "Buy Now"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:670
+#: ../admin/class-quiz-maker-admin.php:679
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:77
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:879
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:888
+msgid "Edit question"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:879
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:121
+#: ../public/class-quiz-maker-public.php:136
+msgid "The quiz has expired!"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:957
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4300
+msgid "User Information"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:959
+#: ../admin/partials/questions/quiz-maker-questions-display.php:53
+msgid "Export to"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:961
+msgid "PDF"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:964
+msgid "XLSX"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:976
+#: ../includes/lists/class-quiz-maker-results-list-table.php:85
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:212
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:205
+msgid "Guest"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:990
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4358
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4379
+#: ../admin/partials/settings/quiz-maker-settings.php:1208
+#: ../admin/partials/settings/quiz-maker-settings.php:1375
+#: ../admin/partials/settings/quiz-maker-settings.php:1536
+#: ../includes/lists/class-quiz-maker-results-list-table.php:505
+#: ../public/class-quiz-maker-public.php:467
+#: ../public/class-quiz-maker-public.php:469
+msgid "Email"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:996
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4352
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4373
+#: ../admin/partials/results/quiz-maker-results-display.php:78
+#: ../admin/partials/settings/quiz-maker-settings.php:52
+#: ../admin/partials/settings/quiz-maker-settings.php:164
+#: ../includes/lists/class-quiz-maker-results-list-table.php:504
+#: ../public/class-quiz-maker-public.php:461
+#: ../public/class-quiz-maker-public.php:463
+msgid "Name"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1002
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4364
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4385
+#: ../includes/lists/class-quiz-maker-results-list-table.php:506
+msgid "Phone"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1018
+msgid "Quiz Information"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1022
+#: ../admin/class-quiz-maker-admin.php:1028
+#: ../includes/lists/class-quiz-maker-results-list-table.php:507
+msgid "Rate"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1023
+msgid "Rate Score"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1024
+msgid "Review"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1033
+#: ../admin/partials/settings/quiz-maker-settings.php:60
+#: ../admin/partials/settings/quiz-maker-settings.php:105
+#: ../admin/partials/settings/quiz-maker-settings.php:143
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:150
+msgid "Start date"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1037
+#: ../admin/partials/settings/quiz-maker-settings.php:54
+#: ../admin/partials/settings/quiz-maker-settings.php:62
+#: ../admin/partials/settings/quiz-maker-settings.php:107
+#: ../admin/partials/settings/quiz-maker-settings.php:145
+#: ../admin/partials/settings/quiz-maker-settings.php:166
+#: ../includes/lists/class-quiz-maker-results-list-table.php:510
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:152
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:161
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:155
+msgid "Duration"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1041
+#: ../admin/partials/results/quiz-maker-results-display.php:79
+#: ../admin/partials/settings/quiz-maker-settings.php:53
+#: ../admin/partials/settings/quiz-maker-settings.php:63
+#: ../admin/partials/settings/quiz-maker-settings.php:108
+#: ../admin/partials/settings/quiz-maker-settings.php:146
+#: ../admin/partials/settings/quiz-maker-settings.php:165
+#: ../includes/lists/class-quiz-maker-results-list-table.php:511
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:153
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:162
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:156
+msgid "Score"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1093
+#: ../admin/class-quiz-maker-admin.php:1144
+#: ../admin/class-quiz-maker-admin.php:1190
+#: ../admin/class-quiz-maker-admin.php:1601
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:248
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:838
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5346
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:11
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:999
+msgid "Question"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1108
+#: ../admin/class-quiz-maker-admin.php:1119
+#: ../admin/class-quiz-maker-admin.php:1152
+#: ../admin/class-quiz-maker-admin.php:1163
+msgid "Correct answer"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1131
+#: ../admin/class-quiz-maker-admin.php:1175
+#: ../admin/class-quiz-maker-admin.php:1196
+msgid "User answered"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1138
+msgid "Succeed"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1183
+#: ../includes/lists/class-quiz-maker-results-list-table.php:474
+msgid "Failed"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1197
+msgid "Answer point"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1229
+#: ../admin/class-quiz-maker-admin.php:1248
+#: ../includes/lists/class-quiz-maker-results-list-table.php:435
+msgid "No rate provided"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1240
+#: ../includes/lists/class-quiz-maker-results-list-table.php:426
+msgid "No review provided"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1278
+#: ../admin/class-quiz-maker-admin.php:1300
+msgid "The user has not answered this question."
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1430
+#: ../admin/partials/quiz-maker-admin-display.php:28
+#: ../pb_templates/quiz_maker_elementor.php:9
+#: ../pb_templates/quiz_maker_wpbvc.php:23
+#: ../pb_templates/quiz_maker_wpbvc.php:33 ../quiz/quiz-maker-block.js:122
+msgid "Quiz Maker"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1595
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:665
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:11
+#: ../includes/lists/class-quiz-maker-results-list-table.php:501
+msgid "Quiz"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1607
+#: ../admin/class-quiz-maker-admin.php:1613
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:697
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:840
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5349
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:1000
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:1109
+#: ../public/class-quiz-maker-public.php:3198
+#: ../public/partials/class-quiz-maker-category-shortcode.php:107
+msgid "Category"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1630
+#: ../admin/partials/questions/quiz-maker-question-categories-display.php:14
+#: ../admin/partials/questions/quiz-maker-questions-display.php:18
+#: ../admin/partials/quiz-maker-admin-display.php:39
+#: ../admin/partials/quizes/quiz-maker-quiz-categories-display.php:5
+#: ../admin/partials/quizes/quiz-maker-quizes-display.php:46
+msgid "Add New"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1645
+#: ../includes/lists/class-quiz-maker-question-categories-list-table.php:283
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:908
+#: ../includes/lists/class-quiz-maker-quiz-categories-list-table.php:279
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:1017
+msgid "Edit"
+msgstr ""
+
+#: ../admin/class-quiz-maker-admin.php:1793
+msgid "If you love our plugin, please do big favor and rate us on"
+msgstr ""
+
+#: ../admin/partials/attributes/quiz-maker-attributes-display.php:8
+#: ../admin/partials/attributes/quiz-maker-attributes-display.php:12
+#: ../admin/partials/orders/quiz-maker-orders-display.php:8
+#: ../admin/partials/orders/quiz-maker-orders-display.php:12
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:731
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:849
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:876
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:751
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1000
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1735
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1739
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1950
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2209
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2277
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2379
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2405
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2481
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3227
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3257
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3772
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3776
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3931
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4155
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4159
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4249
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4395
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4454
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4458
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4770
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4824
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4897
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4971
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5013
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5056
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5113
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5156
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5185
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5223
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5261
+#: ../admin/partials/results/quiz-maker-results-display.php:46
+#: ../admin/partials/results/quiz-maker-results-display.php:50
+#: ../admin/partials/settings/quiz-maker-settings.php:338
+#: ../admin/partials/settings/quiz-maker-settings.php:551
+#: ../admin/partials/settings/quiz-maker-settings.php:608
+#: ../admin/partials/settings/quiz-maker-settings.php:659
+#: ../admin/partials/settings/quiz-maker-settings.php:713
+#: ../admin/partials/settings/quiz-maker-settings.php:778
+#: ../admin/partials/settings/quiz-maker-settings.php:821
+#: ../admin/partials/settings/quiz-maker-settings.php:856
+#: ../admin/partials/settings/quiz-maker-settings.php:899
+#: ../admin/partials/settings/quiz-maker-settings.php:970
+#: ../admin/partials/settings/quiz-maker-settings.php:1030
+#: ../admin/partials/settings/quiz-maker-settings.php:1073
+#: ../admin/partials/settings/quiz-maker-settings.php:1107
+#: ../admin/partials/settings/quiz-maker-settings.php:1147
+#: ../admin/partials/settings/quiz-maker-settings.php:1151
+#: ../admin/partials/settings/quiz-maker-settings.php:1314
+#: ../admin/partials/settings/quiz-maker-settings.php:1318
+#: ../admin/partials/settings/quiz-maker-settings.php:1469
+#: ../admin/partials/settings/quiz-maker-settings.php:1473
+#: ../admin/partials/settings/quiz-maker-settings.php:1631
+#: ../admin/partials/settings/quiz-maker-settings.php:1702
+#: ../admin/partials/settings/quiz-maker-settings.php:1782
+#: ../admin/partials/settings/quiz-maker-settings.php:2364
+#: ../admin/partials/settings/quiz-maker-settings.php:2368
+msgid "This feature is available only in "
+msgstr ""
+
+#: ../admin/partials/attributes/quiz-maker-attributes-display.php:9
+#: ../admin/partials/attributes/quiz-maker-attributes-display.php:13
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:732
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:850
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:877
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:752
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1001
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1736
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1740
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1951
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2210
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2278
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2406
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2482
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3228
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3258
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3773
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3777
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3932
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4156
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4160
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4250
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4396
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4455
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4459
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4771
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4972
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5014
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5057
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5114
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5157
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5186
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5224
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5262
+#: ../admin/partials/results/quiz-maker-results-display.php:47
+#: ../admin/partials/results/quiz-maker-results-display.php:51
+#: ../admin/partials/settings/quiz-maker-settings.php:339
+#: ../admin/partials/settings/quiz-maker-settings.php:552
+#: ../admin/partials/settings/quiz-maker-settings.php:609
+#: ../admin/partials/settings/quiz-maker-settings.php:779
+#: ../admin/partials/settings/quiz-maker-settings.php:822
+#: ../admin/partials/settings/quiz-maker-settings.php:857
+#: ../admin/partials/settings/quiz-maker-settings.php:900
+#: ../admin/partials/settings/quiz-maker-settings.php:971
+#: ../admin/partials/settings/quiz-maker-settings.php:1031
+#: ../admin/partials/settings/quiz-maker-settings.php:1074
+#: ../admin/partials/settings/quiz-maker-settings.php:1108
+#: ../admin/partials/settings/quiz-maker-settings.php:1148
+#: ../admin/partials/settings/quiz-maker-settings.php:1152
+#: ../admin/partials/settings/quiz-maker-settings.php:1315
+#: ../admin/partials/settings/quiz-maker-settings.php:1319
+#: ../admin/partials/settings/quiz-maker-settings.php:1470
+#: ../admin/partials/settings/quiz-maker-settings.php:1474
+#: ../admin/partials/settings/quiz-maker-settings.php:1632
+#: ../admin/partials/settings/quiz-maker-settings.php:1703
+#: ../admin/partials/settings/quiz-maker-settings.php:1783
+#: ../admin/partials/settings/quiz-maker-settings.php:2365
+#: ../admin/partials/settings/quiz-maker-settings.php:2369
+msgid "PRO version!!!"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:22
+msgid "Personal"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:26
+msgid "Business"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:30
+msgid "Developer"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:37
+msgid "Free"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:52
+#: ../admin/partials/features/quiz-maker-features-display.php:55
+#: ../admin/partials/features/quiz-maker-features-display.php:72
+#: ../admin/partials/features/quiz-maker-features-display.php:75
+msgid "Support for"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:56
+msgid "1 site"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:57
+msgid "5 site"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:58
+msgid "Unlimited sites"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:62
+#: ../admin/partials/features/quiz-maker-features-display.php:65
+msgid "Upgrade for"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:66
+#: ../admin/partials/features/quiz-maker-features-display.php:76
+msgid "1 months"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:67
+#: ../admin/partials/features/quiz-maker-features-display.php:77
+msgid "12 months"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:68
+#: ../admin/partials/features/quiz-maker-features-display.php:78
+#: ../admin/partials/features/quiz-maker-features-display.php:86
+#: ../admin/partials/features/quiz-maker-features-display.php:87
+#: ../admin/partials/features/quiz-maker-features-display.php:88
+msgid "Lifetime"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:82
+#: ../admin/partials/features/quiz-maker-features-display.php:85
+msgid "Usage for"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:92
+#: ../admin/partials/features/quiz-maker-features-display.php:95
+msgid "Install on unlimited sites"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:102
+#: ../admin/partials/features/quiz-maker-features-display.php:105
+msgid "Reports in dashboard"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:112
+#: ../admin/partials/features/quiz-maker-features-display.php:115
+msgid "Export and import questions"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:122
+#: ../admin/partials/features/quiz-maker-features-display.php:125
+msgid "Export results"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:132
+#: ../admin/partials/features/quiz-maker-features-display.php:135
+msgid "Image answers"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:142
+#: ../admin/partials/features/quiz-maker-features-display.php:145
+msgid "Flash cards"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:152
+#: ../admin/partials/features/quiz-maker-features-display.php:155
+msgid "Send mail to user"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:162
+#: ../admin/partials/features/quiz-maker-features-display.php:165
+#: ../admin/partials/quiz-maker-admin-display.php:189
+msgid "Send mail to admin"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:172
+#: ../admin/partials/features/quiz-maker-features-display.php:175
+msgid "Result text according to result"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:182
+#: ../admin/partials/features/quiz-maker-features-display.php:185
+msgid "Results with charts"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:192
+#: ../admin/partials/features/quiz-maker-features-display.php:195
+msgid "Send certificate"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:202
+#: ../admin/partials/features/quiz-maker-features-display.php:205
+msgid "Custom Form Fields"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:212
+#: ../admin/partials/features/quiz-maker-features-display.php:215
+msgid "Google sheet integration"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:222
+#: ../admin/partials/features/quiz-maker-features-display.php:225
+msgid "Mailchimp integration"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:232
+#: ../admin/partials/features/quiz-maker-features-display.php:235
+msgid "Quiz Widget"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:242
+#: ../admin/partials/features/quiz-maker-features-display.php:245
+msgid "Campaign Monitor integration"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:252
+#: ../admin/partials/features/quiz-maker-features-display.php:255
+msgid "Zapier integration"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:262
+#: ../admin/partials/features/quiz-maker-features-display.php:265
+msgid "Slack integration"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:272
+#: ../admin/partials/features/quiz-maker-features-display.php:275
+msgid "ActiveCampaign integration"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:282
+#: ../admin/partials/features/quiz-maker-features-display.php:285
+msgid "Mad Mimi integration"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:292
+#: ../admin/partials/features/quiz-maker-features-display.php:295
+msgid "ConvertKit integration"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:302
+#: ../admin/partials/features/quiz-maker-features-display.php:305
+msgid "GetResponse integration"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:312
+#: ../admin/partials/features/quiz-maker-features-display.php:315
+msgid "User page shortcode"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:322
+#: ../admin/partials/features/quiz-maker-features-display.php:325
+msgid "Email configuration"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:332
+#: ../admin/partials/features/quiz-maker-features-display.php:335
+msgid "Question weight/points"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:342
+#: ../admin/partials/features/quiz-maker-features-display.php:345
+msgid "Answer weight/points"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:353
+#: ../admin/partials/features/quiz-maker-features-display.php:356
+msgid "Leaderboards"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:363
+#: ../admin/partials/features/quiz-maker-features-display.php:366
+msgid "Make questions required"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:373
+#: ../admin/partials/features/quiz-maker-features-display.php:376
+msgid "Password protected quiz"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:383
+#: ../admin/partials/features/quiz-maker-features-display.php:386
+msgid "Personality quiz"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:394
+#: ../admin/partials/features/quiz-maker-features-display.php:397
+msgid "Copy content protection"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:404
+#: ../admin/partials/features/quiz-maker-features-display.php:407
+msgid "PayPal integration"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:414
+#: ../admin/partials/features/quiz-maker-features-display.php:417
+msgid "Stripe integration"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:427
+msgid "Download"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-features-display.php:428
+#: ../admin/partials/features/quiz-maker-features-display.php:429
+msgid "Buy now"
+msgstr ""
+
+#: ../admin/partials/features/quiz-maker-plugin-featured-display.php:5
+msgid "Please feel free to use our other awesome plugins!"
+msgstr ""
+
+#: ../admin/partials/orders/quiz-maker-orders-display.php:9
+#: ../admin/partials/orders/quiz-maker-orders-display.php:13
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2380
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4825
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4898
+msgid "Developer version!!!"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:10
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:255
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:256
+msgid "Add Image"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:74
+msgid "Add new question"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:105
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:259
+msgid "Edit Image"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:125
+#: ../admin/partials/settings/quiz-maker-settings.php:20
+msgid "Checkbox( Multiple )"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:126
+#: ../admin/partials/settings/quiz-maker-settings.php:21
+msgid "Dropdown"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:129
+#: ../admin/partials/settings/quiz-maker-settings.php:24
+msgid "Number"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:130
+#: ../admin/partials/settings/quiz-maker-settings.php:25
+msgid "Date"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:131
+#: ../admin/partials/settings/quiz-maker-settings.php:26
+msgid "True/False"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:227
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:979
+#: ../admin/partials/questions/actions/quiz-maker-questions-categories-actions.php:104
+#: ../admin/partials/quizes/actions/quiz-maker-quiz-categories-actions.php:120
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:587
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5299
+msgid "Save and close"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:229
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:981
+msgid "Save and new"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:231
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:983
+#: ../admin/partials/questions/actions/quiz-maker-questions-categories-actions.php:105
+#: ../admin/partials/quizes/actions/quiz-maker-quiz-categories-actions.php:121
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:588
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5300
+msgid "Save"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:237
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:617
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2216
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2224
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4271
+#: ../admin/partials/settings/quiz-maker-settings.php:195
+msgid "General"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:267
+msgid "Question type"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:270
+msgid "Choose the type of question."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:272
+msgid "Multiple choice question with one Correct answer."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:273
+msgid "Multiple choice question with multiple Correct answers."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:274
+msgid "Multiple choice questions with one Correct answer, which will be displayed as Dropdown."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:303
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:333
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:581
+#: ../admin/partials/quizes/quiz-maker-quizes-display.php:172
+#: ../admin/partials/quizes/quiz-maker-quizes-display.php:183
+#: ../admin/partials/quizes/quiz-maker-quizes-display.php:194
+msgid "Answer"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:307
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:583
+msgid "Answers"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:321
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:837
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3823
+msgid "Ordering"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:322
+msgid "Correct"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:324
+msgid "Weight/Point"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:325
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:330
+msgid "PRO feature!!!"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:329
+msgid "Keyword"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:335
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3827
+msgid "Image"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:336
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:823
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:891
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:933
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3828
+#: ../includes/lists/class-quiz-maker-question-categories-list-table.php:287
+#: ../includes/lists/class-quiz-maker-question-categories-list-table.php:354
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:910
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:1036
+#: ../includes/lists/class-quiz-maker-quiz-categories-list-table.php:283
+#: ../includes/lists/class-quiz-maker-quiz-categories-list-table.php:353
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:1020
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:1144
+msgid "Delete"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:339
+msgid "Placeholder"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:442
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:560
+msgid "Add"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:591
+msgid "Use HTML for answers"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:592
+msgid "Allowed tags list"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:600
+msgid "For inserting multiple possible correct answers, please use delimeter %%%."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:601
+msgid "Example:"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:609
+msgid "Maximum length of a text field"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:610
+msgid "Restrict the number of characters to be inserted in the text field by the user."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:622
+msgid "Limit by"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:623
+msgid "Choose your preferred type of limitation."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:630
+msgid "Characters"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:631
+msgid "Words"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:639
+msgid "Length"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:640
+msgid "Indicate the length of the characters/words."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:653
+msgid "Show word/character counter"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:654
+msgid "Tick the checkbox and the live box will appear under the text field. It will indicate the current state of word/character usage."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:671
+msgid "Maximum value of a number field"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:672
+msgid "Give a maximum legal value to your number field. For example, if you give a 20 value to the field, then the user will be able to answer the question by writing a value less than or equal to 20."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:684
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:713
+msgid "Max value"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:685
+msgid "Specify the maximum value allowed. "
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:700
+msgid "Enable maximum selection number"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:701
+msgid "Allow users to choose more than one answer but not over the max value you provided. It will work with the Checkbox type."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:714
+msgid "Specify the maximum value allowed."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:738
+msgid "Question weight"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:749
+msgid "Question category"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:750
+msgid "You can choose your desired category prepared in advance."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:776
+msgid "Question status"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:777
+msgid "Choose whether the question is active or not. If you choose Unpublished option, the question won’t be shown anywhere on your website."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:786
+#: ../admin/partials/questions/actions/quiz-maker-questions-categories-actions.php:91
+#: ../admin/partials/quizes/actions/quiz-maker-quiz-categories-actions.php:107
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:735
+#: ../includes/lists/class-quiz-maker-question-categories-list-table.php:43
+#: ../includes/lists/class-quiz-maker-question-categories-list-table.php:296
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:102
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:933
+#: ../includes/lists/class-quiz-maker-quiz-categories-list-table.php:41
+#: ../includes/lists/class-quiz-maker-quiz-categories-list-table.php:297
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:104
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:1047
+msgid "Published"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:790
+#: ../admin/partials/questions/actions/quiz-maker-questions-categories-actions.php:95
+#: ../admin/partials/quizes/actions/quiz-maker-quiz-categories-actions.php:111
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:741
+#: ../includes/lists/class-quiz-maker-question-categories-list-table.php:44
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:103
+#: ../includes/lists/class-quiz-maker-quiz-categories-list-table.php:42
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:105
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:1050
+msgid "Unpublished"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:798
+msgid "Hide question text on the front-end"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:799
+msgid "Make the question appear without text. The option is designed to use when the question includes an image as well."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:815
+msgid "No influence to score"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:817
+msgid "If you enable this option, this question will not be counted in the final score."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:818
+msgid "So this question will be just a Survey question."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:819
+msgid "There will not be correct/incorrect answers."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:820
+msgid "This is for just collecting data from users."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:836
+msgid "Advanced settings"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:842
+msgid "Question Settings"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:856
+msgid "Question background image"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:883
+msgid "User answer explanation"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:888
+msgid "Enabled"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:892
+msgid "Disabled"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:902
+msgid "Question hint"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:903
+msgid "Add extra information that can help users about the question."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:921
+msgid "Question explanation"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:922
+msgid "Provide descriptive or informative text about the question."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:940
+msgid "Message for the wrong answer"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:940
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:959
+msgid "except for checkbox type"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:941
+msgid "You can write text which will be shown in case of the wrong answer. It doesn’t work when you chose Quiz calculation option By Weight/points from Quiz Settings."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:959
+msgid "Message for the right answer"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-actions.php:960
+msgid "You can write text which will be shown in case of right answer.  It doesn’t work when you chose Quiz calculation option By Weight/points from Quiz Settings."
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-categories-actions.php:14
+#: ../admin/partials/quizes/actions/quiz-maker-quiz-categories-actions.php:14
+msgid "Add new category"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-categories-actions.php:17
+#: ../admin/partials/quizes/actions/quiz-maker-quiz-categories-actions.php:17
+msgid "Edit category"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-categories-actions.php:50
+#: ../admin/partials/quizes/actions/quiz-maker-quiz-categories-actions.php:66
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:651
+#: ../includes/lists/class-quiz-maker-question-categories-list-table.php:323
+#: ../includes/lists/class-quiz-maker-quiz-categories-list-table.php:321
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:1108
+msgid "Title"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-categories-actions.php:51
+msgid "Title of the question category"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-categories-actions.php:64
+#: ../admin/partials/quizes/actions/quiz-maker-quiz-categories-actions.php:80
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:681
+#: ../includes/lists/class-quiz-maker-question-categories-list-table.php:324
+#: ../includes/lists/class-quiz-maker-quiz-categories-list-table.php:322
+msgid "Description"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-categories-actions.php:65
+msgid "Provide more information about the question category"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-categories-actions.php:81
+#: ../admin/partials/quizes/actions/quiz-maker-quiz-categories-actions.php:97
+msgid "Category status"
+msgstr ""
+
+#: ../admin/partials/questions/actions/quiz-maker-questions-categories-actions.php:82
+msgid "Choose whether the question category is active or not. If you choose Unpublished option, the question category won’t be shown anywhere on your website"
+msgstr ""
+
+#: ../admin/partials/questions/quiz-maker-questions-display.php:26
+msgid "For import XLSX file your version of PHP must be over than 5.6."
+msgstr ""
+
+#: ../admin/partials/questions/quiz-maker-questions-display.php:32
+msgid "Example"
+msgstr ""
+
+#: ../admin/partials/questions/quiz-maker-questions-display.php:53
+#: ../admin/partials/questions/quiz-maker-questions-display.php:54
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5310
+msgid "This property aviable only in pro version"
+msgstr ""
+
+#: ../admin/partials/questions/quiz-maker-questions-display.php:54
+msgid "Import"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:27
+msgid "How to create a simple quiz in 4 steps with the help of the"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:29
+msgid "plugin."
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:36
+msgid "Go to the"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:36
+msgid "page and create"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:36
+msgid "new questions"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:39
+msgid "Then, go to the"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:39
+msgid "page and build your first quiz by clicking on the"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:39
+msgid "button"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:42
+msgid "Fill out the information by adding a title, previously created questions and so on."
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:45
+msgid "Copy the"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:45
+msgid "shortcode"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:45
+msgid "of the quiz and paste it into any post․"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:50
+msgid "Congrats! You have already created your first quiz."
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:58
+msgid "Community"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:65
+msgid "YouTube community"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:68
+msgid "Subscribe"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:75
+msgid "Free support"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:78
+msgid "Join"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:85
+msgid "Premium support"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:88
+msgid "Contact"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:96
+msgid "FAQs"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:100
+msgid "Will I lose the data after the upgrade?"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:106
+msgid "Nope!"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:107
+msgid "All your content and assigned settings of the plugin will remain unchanged even after switching to the Pro version. You don’t need to redo what you have already built with the free version. For the detailed instruction, please take a look at our"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:108
+msgid "upgrade guide"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:115
+msgid "How do I change the design of the quiz?"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:121
+#: ../admin/partials/quiz-maker-admin-display.php:140
+msgid "To do that, please go to the"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:122
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:620
+msgid "Styles"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:123
+msgid "tab of the given quiz, which allows you to take full advantage of the various options it offers. The plugin provides 8 awesome ready-to-use themes. After choosing your preferred theme, you can customize it with 35+ style options to create appealing quizzes that people love to take, including"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:124
+msgid "main color, background image, right/wrong answer icons, progress bar, answer styles"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:125
+msgid "and etc. Moreover, you can use the"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:126
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2116
+#: ../admin/partials/settings/quiz-maker-settings.php:1262
+#: ../admin/partials/settings/quiz-maker-settings.php:1413
+#: ../admin/partials/settings/quiz-maker-settings.php:1580
+msgid "Custom CSS"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:127
+msgid "written field to fully match the design of your website and brand."
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:134
+msgid "How do I limit access to the quiz?"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:141
+msgid "Limitation"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:142
+msgid "tab of the given quiz. The plugin suggests two methods to manage and detect the number of attempts from the same person. Those are"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:143
+msgid "by IP"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:144
+msgid "or"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:145
+msgid "by User ID."
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:146
+msgid "One of the awesome functionalities that the plugin suggests is the"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:147
+msgid "Only for logged-in users"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:148
+msgid "option, which gives access to the quiz to those, who are logged-in users on your website. This option will allow you to precisely target your quiz takers, and not receive unnecessary data from the guests. Moreover, with the help of the"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:149
+msgid "Generated passwords (PRO)"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:150
+msgid "option, you can give unique one-time access codes to each participant individually for accessing the quiz. You can use those access codes as promo codes, discounted codes, coupon codes, and so on."
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:157
+msgid "Can I know more about my respondents?"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:163
+msgid "You are in a right place!"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:164
+msgid "You just need to enable the"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:165
+msgid "Information Form"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:166
+msgid "from the"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:167
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:632
+msgid "User Data"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:168
+msgid "tab of the given quiz, create your preferred"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:169
+msgid "custom fields"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:170
+msgid "in the"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:171
+msgid "Custom Fields (PRO)"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:172
+msgid "page from the plugin left navbar, and come up with a clear picture of who your quiz participants are, where they live, what their lifestyle and personality are like, etc."
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:179
+msgid "Will I get notified every time a quiz is submitted? (PRO)"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:185
+msgid "You will!"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:186
+#: ../admin/partials/quiz-maker-admin-display.php:205
+msgid "To enable it, please go to the"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:187
+#: ../admin/partials/quiz-maker-admin-display.php:206
+msgid "Email/Certificate"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:188
+#: ../admin/partials/quiz-maker-admin-display.php:207
+msgid "tab of the given quiz. There you will find the"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:190
+msgid "option. After enabling the option, the admin (and/or your provided additional email(s)) will receive an email notification about results at each time."
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:198
+msgid "Can I send certificates to those users who have passed the quiz? (PRO)"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:204
+msgid "Yes!"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:208
+msgid "Send certificate to user"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:209
+msgid "option. After enabling the option, you need to configure the settings of it such as"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:210
+msgid "Certificate pass score, Title"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:211
+msgid "and"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:212
+msgid "Body"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:213
+msgid "Moreover, you can choose the orientation of the certificate, add a "
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:214
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1404
+msgid "Background image"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:215
+msgid "(for instance the logo of your company) and select your preferred frame."
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:221
+msgid "For more advanced needs, please take a look at our"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:222
+msgid "Quiz Maker plugin User Manual."
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:224
+msgid "If none of these guides help you, ask your question by contacting our"
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:225
+msgid "support specialists."
+msgstr ""
+
+#: ../admin/partials/quiz-maker-admin-display.php:226
+msgid "and get a reply within a day."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quiz-categories-actions.php:47
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:599
+msgid "Shortcode text for editor"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quiz-categories-actions.php:51
+msgid "To insert the Quiz category into a page, post or text widget, copy shortcode"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quiz-categories-actions.php:53
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:605
+msgid "and paste it at the desired place in the editor."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quiz-categories-actions.php:54
+msgid "The count attribute is required for random view type."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quiz-categories-actions.php:67
+msgid "Title of the category"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quiz-categories-actions.php:81
+msgid "Provide more information about the quiz category"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quiz-categories-actions.php:98
+msgid "Choose whether the quiz category is active or not. If you choose Unpublished option, the quiz category won’t be shown anywhere on your website."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:120
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3148
+msgid "The quiz will be available soon!"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:203
+msgid "Add new quiz"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:206
+msgid "Edit quiz"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:287
+msgid "Please click the stars to rate the quiz"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:478
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:439
+#: ../public/class-quiz-maker-public.php:3548
+msgid "Congratulations!"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:478
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:439
+#: ../public/class-quiz-maker-public.php:3548
+msgid "You passed the quiz!"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:479
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:440
+#: ../public/class-quiz-maker-public.php:3556
+msgid "Oops!"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:479
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:440
+#: ../public/class-quiz-maker-public.php:3556
+msgid "You have not passed the quiz! <br> Try again!"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:603
+msgid "To insert the Quiz into a page, post or text widget, copy shortcode"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:626
+msgid "Results Settings"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:629
+msgid "Limitation Users"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:635
+msgid "E-Mail, Certificate"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:638
+#: ../admin/partials/settings/quiz-maker-settings.php:198
+#: ../admin/partials/settings/quiz-maker-settings.php:596
+msgid "Integrations"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:652
+msgid "Title of the quiz"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:667
+msgid "Add image to the starting page of the quiz"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:682
+msgid "Provide more information about the quiz. You can choose whether to show it or not in the front end in the “Settings” tab"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:698
+msgid "Category of the quiz. For making a category please visit Quiz Categories page from the left navbar."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:724
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:1004
+#: ../includes/lists/class-quiz-maker-results-list-table.php:512
+msgid "Status"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:725
+msgid "Published OR Unpublished. Choose whether the quiz is active or not. If you choose Unpublished option, the quiz won’t be shown anywhere in your website (You don’t need to remove shortcodes)."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:759
+msgid "Create post for quiz"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:760
+msgid "A new WordPress post will be created automatically and will include the shortcode of this quiz. This function will be executed only once. You can find this post on Posts page, which will have the same title as the quiz. The image of the quiz will be the featured image of the post."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:772
+msgid "Choose post categories"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:773
+msgid "You can choose one or several categories. These categories are WordPress default post categories. There is no connection with quiz categories."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:781
+msgid "Uncategorized"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:796
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:916
+msgid "Add questions"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:798
+msgid "For adding questions to the quiz you need to make questions first from the “Questions page” in the left navbar. After popup’s opening, you can filter and select your prepared questions for this quiz."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:798
+msgid "The ordering of the questions will be the same as you chose. Also, you can reorder them after selection. There are no limitations for questions quantity."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:809
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:929
+msgid "items"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:817
+msgid "Reverse the ordering of the questions in the list."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:826
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:936
+msgid "Select All"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:839
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5347
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:1001
+msgid "Type"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:841
+#: ../admin/partials/settings/quiz-maker-settings.php:1204
+#: ../admin/partials/settings/quiz-maker-settings.php:1371
+#: ../admin/partials/settings/quiz-maker-settings.php:1532
+#: ../includes/lists/class-quiz-maker-question-categories-list-table.php:326
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:1005
+#: ../includes/lists/class-quiz-maker-quiz-categories-list-table.php:325
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:1115
+#: ../includes/lists/class-quiz-maker-results-list-table.php:513
+msgid "ID"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:842
+msgid "Actions"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:908
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:841
+msgid "There are no questions yet."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:911
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5340
+msgid "Create question"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:944
+msgid "Quiz Styles"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:949
+msgid "Theme"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:950
+msgid "You can choose your preferred template and customize it with options below Elegant Dark, Elegant Light, Classic Dark, Classic Light, Rect Dark, Rect Light."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:959
+msgid "Elegant Dark"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:965
+msgid "Elegant Light"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:971
+msgid "Classic Dark"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:977
+msgid "Classic Light"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:983
+msgid "Rect Dark"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:989
+msgid "Rect Light"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1008
+msgid "Modern Light"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1014
+msgid "Modern Dark"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1036
+msgid "Animation effect"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1037
+msgid "Animation effect of transition between questions"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1054
+msgid "Quiz Color"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1055
+msgid "Colors of the quiz main attributes (buttons, hover effect, progress bar, etc.)."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1069
+msgid "Background color"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1070
+msgid "Background color of the quiz box. You can also choose the opacity(alfa) level on the right side."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1085
+msgid "Text Color"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1086
+msgid "Specify the text color inside the quiz and questions. It affects all kinds of texts and icons."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1101
+msgid "Buttons text color"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1102
+msgid "Specify the text color of buttons inside the quiz and questions. It affects only to buttons."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1117
+msgid "Quiz width"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1118
+msgid "Quiz container width in pixels. Set it 0 or leave it blank for making a quiz with 100%  width. It accepts only numeric values."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1128
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1152
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1229
+#: ../admin/partials/settings/quiz-maker-settings.php:1192
+#: ../admin/partials/settings/quiz-maker-settings.php:1359
+#: ../admin/partials/settings/quiz-maker-settings.php:1517
+#, php-format
+msgid "For 100% leave blank"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1132
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1233
+msgid "px"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1133
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1234
+msgid "%"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1142
+msgid "Quiz max-width for mobile"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1143
+msgid "Quiz container max-width for mobile in percentage. This option will work for the screens with less than 640 pixels width."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1159
+msgid "Quiz min-height"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1160
+msgid "Quiz minimal height in pixels"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1173
+msgid "Quiz title transformation"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1175
+msgid "Specify how to capitalize a title text of your quiz."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1177
+msgid "Uppercase – Transforms all characters to uppercase"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1178
+msgid "Lowercase – ransforms all characters to lowercase"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1179
+msgid "Capitalize – Transforms the first character of each word to uppercase"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1188
+msgid "Uppercase"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1189
+msgid "Lowercase"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1190
+msgid "Capitalize"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1191
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1262
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1759
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3211
+msgid "None"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1199
+msgid "Quiz image height"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1200
+msgid "Set quiz image height in pixels. It accepts only number values."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1213
+msgid "Question image styles"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1214
+msgid "It affects the images chosen from “Add Image” not from “Add media”  on the Edit question page."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1223
+msgid "Image Width"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1224
+msgid "Question image width in pixels. Set it 0 or leave it blank for making it 100%. It accepts only numeric values."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1242
+msgid "Image Height"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1243
+msgid "Question image height in pixels. It accepts only number values."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1254
+msgid "Image sizing"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1255
+msgid "It helps to configure the scale of the images inside the quiz in case of differences between the sizes."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1260
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1755
+msgid "Cover"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1261
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1757
+msgid "Contain"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1263
+msgid "Unset"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1273
+msgid "Quiz container border"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1274
+msgid "Allow quiz container border"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1288
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1792
+msgid "Border width"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1289
+msgid "The width of quiz container border"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1299
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1801
+msgid "Border style"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1300
+msgid "The style of quiz container border"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1320
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1820
+msgid "Border color"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1321
+msgid "The color of the quiz container border"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1339
+msgid "Border radius"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1340
+msgid "Quiz container border-radius in pixels. It accepts only numeric values."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1356
+msgid "Box shadow"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1357
+msgid "Allow quiz container box shadow"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1372
+msgid "Box shadow color"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1373
+msgid "The color of the shadow of the quiz container"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1384
+msgid "X"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1388
+msgid "Y"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1392
+msgid "Z"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1405
+msgid "Background image of the container. You can choose different images for each question from the Settings tab on the Edit question page. The background-size is set “Cover” by default for not scaling the image."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1425
+msgid "Background image position"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1426
+msgid "The position of background image of the quiz"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1431
+msgid "Left Top"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1432
+msgid "Left Center"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1433
+msgid "Left Bottom"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1434
+msgid "Center Top"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1435
+msgid "Center Center"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1436
+msgid "Center Bottom"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1437
+msgid "Right Top"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1438
+msgid "Right Center"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1439
+msgid "Right Bottom"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1447
+msgid "Hide background image on result page"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1448
+msgid "If this option is enabled background image of quiz will disappear on the result page."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1465
+msgid "Hide background image on start page"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1466
+msgid "If this option is enabled background image of quiz will disappear on the start page."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1482
+msgid "Background gradient"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1483
+msgid "Color gradient of the quiz background"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1497
+msgid "Color 1"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1498
+msgid "Color 1 of the quiz background gradient"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1506
+msgid "Color 2"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1507
+msgid "Color 2 of the quiz background gradient"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1515
+msgid "Gradient direction"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1516
+msgid "The direction of the color gradient"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1521
+msgid "Vertical"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1522
+msgid "Horizontal"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1523
+msgid "Diagonal left to right"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1524
+msgid "Diagonal right to left"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1534
+msgid "Buttons position"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1535
+msgid "Specify the position of buttons of the quiz."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1542
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1721
+msgid "Center"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1543
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1717
+msgid "Left"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1544
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1725
+msgid "Right"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1545
+msgid "Space Between"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1553
+msgid "Progress bar style"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1554
+msgid "Design of the progress bar which will appear on the finish page only. It will show the user’s score."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1561
+msgid "Rounded"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1562
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1611
+msgid "Rectangle"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1563
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1612
+msgid "With stripes"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1564
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1613
+msgid "With stripes and animation"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1602
+msgid "Progress live bar style"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1603
+msgid "Choose your preferred design for the progress live bar which will appear while taking the quiz. It will show the current state of the user in the quiz."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1610
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2752
+msgid "Default"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1649
+msgid "Custom class for quiz container"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1650
+msgid "Custom HTML class for quiz container. You can use your class for adding your custom styles for quiz container."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1660
+msgid "Answers Styles"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1665
+msgid "Answer font size"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1666
+msgid "The font size of the answers in pixels in the quiz. It accepts only numeric values."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1679
+msgid "Question font size"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1680
+msgid "The font size of the questions in pixels in the quiz (only for <p> tag). It accepts only numeric values."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1693
+msgid "Disable answer hover"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1694
+msgid "Disable the hover effect for the answers."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1708
+msgid "Question text alignment"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1709
+msgid "Align the text of your questions to the left, center, or right."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1747
+msgid "Answer object-fit"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1748
+msgid "Choose the fit of the images in the answers in the questions."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1756
+msgid "Fill"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1758
+msgid "Scale-down"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1767
+msgid "Answer gap"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1768
+msgid "Gap between answers."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1781
+msgid "Answer border"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1782
+msgid "Allow answer border"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1793
+msgid "The width of answers border"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1802
+msgid "The style of answers border"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1821
+msgid "The color of the answers border"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1833
+msgid "Answer box-shadow"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1834
+msgid "Allow answer container box shadow"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1844
+msgid "Answer box-shadow color"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1845
+msgid "The shadow color of answers container"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1857
+msgid "Answer image height"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1858
+msgid "Height of answers images."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1871
+msgid "Show answer caption"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1872
+msgid "Show answers caption near the answer image. This option will be work only when answer has image."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1886
+msgid "Caption style of the image answer"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1887
+msgid "Choose the preferred view type of captions in the image answers."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1894
+msgid "Outside"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1895
+msgid "Inside"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1903
+msgid "Caption position of the image answer"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1904
+msgid "Choose the position of captions in the image answers."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1911
+msgid "Top"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1912
+msgid "Bottom"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1922
+msgid "Right/wrong answer icons"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:1988
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2002
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2108
+#: ../includes/lists/class-quiz-maker-results-list-table.php:508
+#: ../public/class-quiz-maker-public.php:146
+#: ../public/class-quiz-maker-public.php:193
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:159
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:153
+msgid "Start"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2011
+msgid "Buttons Styles"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2018
+msgid "Button size"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2019
+msgid "The default sizes of buttons."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2027
+msgid "Small"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2030
+msgid "Medium"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2033
+msgid "Large"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2042
+msgid "Button font-size"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2043
+msgid "The font size of the buttons in pixels in the quiz. It accepts only numeric values."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2056
+msgid "Button width"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2057
+msgid "Set the button width in pixels. For an initial width, leave the field blank."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2064
+msgid "For an initial width, leave the field blank."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2071
+msgid "Button padding"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2072
+msgid "Padding of buttons."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2079
+msgid "Left / Right"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2083
+msgid "Top / Bottom"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2092
+msgid "Button border-radius"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2093
+msgid "Quiz buttons border-radius in pixels. It accepts only numeric values."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2117
+msgid "Field for entering your own CSS code. Example: p{color:red !important}"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2131
+msgid "Quiz Settings"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2136
+msgid "Show quiz head information"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2137
+msgid "Enable to show the quiz title and description in the start page of the quiz(in the front-end)."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2146
+msgid "Show title"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2151
+msgid "Show description"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2159
+msgid "Enable randomize answers"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2160
+msgid "The possibility of showing the answers of the questions in an accidental sequence. Every time it will show answers in random order."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2175
+msgid "Enable randomize questions"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2176
+msgid "The possibility of showing questions in an accidental sequence. It will show questions in random order. If you want to take a specific amount of questions from a pool of questions randomly you need to enable question bank option."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2191
+msgid "Enable question bank"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2192
+msgid "Enable to take a specific amount of questions from the quiz randomly. For example, you can choose 20 questions from 50 randomly. Every time it will take different questions from the pool."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2220
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2226
+msgid "By Category"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2223
+msgid "There are two ways of making question bank system."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2225
+msgid "It will take the specified amount of questions from all the questions you include in this quiz."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2227
+msgid "Here you can see all the categories of questions you have included in the general tab. You can provide different numbers for different categories. Also, you can reorder them as you want by drag and dropping. The category order will be kept in the front end, but questions will be printed randomly."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2232
+msgid "Refresh Categories"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2241
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2295
+msgid "Questions count"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2242
+msgid "Number of randomly selected questions"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2259
+msgid "Group questions by category"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2260
+msgid "If the option is enabled, then selected questions for the given quiz, will be grouped based on categories. When the Enable randomize questions option is enabled too, then it will randomize both questions among categories and categories among quiz."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2285
+msgid "Question count per page"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2310
+msgid "Display all questions on one page"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2311
+msgid "Tick the checkbox if you want to show all your questions on one page."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2324
+msgid "Answers view"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2325
+msgid "Specify the design of the answers of question."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2345
+msgid "Show questions counter"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2346
+msgid "Show the number of the current question and the total amount of the question in the quiz. It will be shown on the right top corner of the quiz container. Example: 3/7."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2361
+msgid "Use RTL Direction"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2362
+msgid "Enable Right to Left direction for the text. This option is intended for the Arabic language."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2387
+msgid "Enable copy protection"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2388
+msgid "Disable copy functionality in quiz page(CTRL+C) and Right-click"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2413
+msgid "Make the questions required"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2414
+msgid "If the user doesn’t answer the question he/she can’t go to the next question."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2430
+msgid "Show correct answers"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2431
+msgid "Show if the selected answer is right or wrong with green and red marks. To decide when the right/wrong answers will be shown go to “Show messages for right/wrong answers option”."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2445
+msgid "Display duration of right/wrong answers (in seconds)"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2447
+msgid "Display duration of right/wrong answers (in seconds) after answering the question."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2462
+msgid "Finish the quiz after one wrong answer"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2464
+msgid "Finish the quiz after one wrong answer."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2489
+msgid "Show only wrong answers"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2491
+msgid "If the user's chosen answer is wrong he/she won't see the right answer."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2510
+msgid "Show messages for right/wrong answers"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2511
+msgid "Specify where to display right/wrong answers. Note that the “Show correct answers” option should be enabled."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2519
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2544
+msgid "During the quiz"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2523
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2548
+msgid "On results page"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2527
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2552
+msgid "On Both"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2535
+msgid "Show question explanation"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2536
+msgid "Specify where to display questions explanation. Note that the “Show correct answers” option should be enabled."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2560
+msgid "Show passed users count"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2561
+msgid "Show how many users passed the quiz. It will be shown at the bottom of  the start page of the quiz"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2576
+msgid "Show average rate"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2577
+msgid "Show the average rate of the quiz. It will be shown at the bottom of the start page of the quiz."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2592
+msgid "Show creation date"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2593
+msgid "Show creation date in quiz start page"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2608
+msgid "Show quiz author"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2609
+msgid "Show quiz author in quiz start page"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2624
+msgid "Show quiz category"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2625
+msgid "Show quiz category in quiz start page"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2640
+msgid "Show question category"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2641
+msgid "Show question category in each question."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2656
+msgid "Enable quiz assessment"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2657
+msgid "Comment and rate the quiz with up to 5 stars at the end of the quiz."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2671
+msgid "Show the last 5 reviews"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2672
+msgid "Show the last 5 reviews after rating the quiz."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2687
+msgid "Rating form title"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2688
+msgid "Text which will notify user that he can submit a feedback"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2708
+msgid "Enable live progress bar"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2709
+msgid "Show the current state of the user passing the quiz. It will be shown at the top of the quiz container."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2724
+msgid "Enable percent view"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2725
+msgid "Show the progress bar by percentage."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2742
+msgid "Hint icon"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2743
+msgid "Choose either the default symbol or your preferred text for the hint button."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2758
+msgid "Custom text"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2769
+msgid "Enable finish button"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2770
+msgid "Allow user to finish the quiz early."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2784
+msgid "Enable confirm box for the Finish button"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2785
+msgid "If the checkbox is ticked and the Finish button is enabled too, then when the user clicks on the Finish button, the confirmation box will be displayed. It will ask `Do you want to finish the quiz? Are you sure? `."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2800
+msgid "Enable clear answer button"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2801
+msgid "Allow user to clear the selected answer. Button will not be displayed if Show correct answers option is enabled."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2816
+msgid "Enable to go next by pressing Enter key"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2817
+msgid "This option allows users to go to the next question by pressing Enter key. It is working with the following question types only: Text, Short Text, Number."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2832
+msgid "Enable next button"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2833
+msgid "User can change the question forward manually. If you want to make the questions required just disable this option."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2846
+msgid "Enable previous button"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2847
+msgid "User can change the question backward manually"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2860
+msgid "Use arrows instead of buttons"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2861
+msgid "Buttons will be replaced to icons."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2896
+msgid "Enable Timer"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2897
+msgid "Show countdown time in the quiz. It will be automatically submitted if the time is over."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2909
+msgid "Timer seconds"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2915
+msgid "Note"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2915
+msgid ""
+"After timer finished\n"
+"                                        countdowning, quiz will be submitted automatically."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2923
+msgid "Message before starting the quiz"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2924
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2943
+msgid "Use"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2924
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2943
+msgid "for showing time"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2942
+msgid "Message after the timer ends"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2943
+msgid "This text will only be displayed after the quiz due to a timer end."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2961
+msgid "Show timer on page tab"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2962
+msgid "Enable to show countdown timer in the browser tab."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2976
+msgid "Turn on warning"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2977
+#, php-format
+msgid "When 90% of the set time passes, the timer color changes to red."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2994
+msgid "Enable Background music"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:2995
+msgid "Background music will play while passing the quiz. Upload your own audio file for the quiz."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3007
+msgid "Select music"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3017
+msgid "Enable sounds for right/wrong answers"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3018
+msgid "This option will work only when Enable Show correct answers option is enabled and sounds are selected from General options page."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3030
+msgid "Sounds are selected. For change sounds go to"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3030
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3032
+msgid "General options"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3030
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3032
+msgid "page"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3032
+msgid "Sounds are not selected. For selecting sounds go to"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3040
+msgid "Enable audio autoplay"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3041
+msgid "If there is audio in the question, it will automatically turn on."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3056
+msgid "Schedule the quiz"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3058
+msgid "The period of time when quiz will be active. When the date is out the expiration message will be shown."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3063
+msgid "To change your GMT "
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3064
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3663
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3701
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3731
+msgid "click here"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3074
+msgid "Start date:"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3090
+msgid "End date:"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3108
+msgid "Show timer"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3111
+msgid "Show the countdown or end date time in the quiz."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3126
+msgid "Show countdown"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3133
+msgid "Show start date"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3143
+msgid "Pre-start message"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3163
+msgid "Expiration message:"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3168
+msgid "This quiz has expired!"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3187
+msgid "Enable confirmation box for leaving the page"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3188
+msgid "Show confirmation popup if user tries to refresh or leave the page during the quiz taking process."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3203
+msgid "Answers numbering"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3204
+msgid "Assign numbering to each answer in ascending sequential order. Choose your preferred type from the list."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3212
+msgid "1."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3213
+msgid "1)"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3214
+msgid "A."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3215
+msgid "A)"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3216
+msgid "a."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3217
+msgid "a)"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3235
+msgid "Enable full-screen mode"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3236
+msgid "Allow the quiz takers to enter full-screen mode by pressing the icon located in the top-right corner of the quiz container."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3250
+msgid "Quiz results settings"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3265
+msgid "Calculate the score"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3266
+msgid "Calculate the score of results by the selected method."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3274
+msgid "By correctness"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3278
+msgid "By weight / points"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3288
+msgid "Redirect after submission"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3289
+msgid "Redirect to custom URL after user submit the form."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3303
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3352
+msgid "Redirect URL"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3304
+msgid "The URL for redirecting after the user submits the form."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3319
+msgid "Redirect delay (sec)"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3320
+msgid "The redirection delay in seconds after the user submits the form. Value should be greater than 0."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3337
+msgid "Enable Exit button"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3338
+msgid "Exit button will be displayed in the finish page and must redirect the user to a custom URL."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3353
+msgid "The custom URL address for EXIT button in finish page."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3370
+msgid "Hide score"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3371
+msgid "Disable to show the user score with percentage on the finish page. If you want to show points or correct answers count, you need to tick this option and use Variables (General Settings) in the “Text for showing after quiz completion” option."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3386
+msgid "Display score"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3387
+msgid "How to display score of result"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3395
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3795
+msgid "By percentage"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3399
+msgid "By correct answers count"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3407
+msgid "Enable progress bar"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3408
+msgid "Show score via progressbar"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3423
+msgid "Enable restart button"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3424
+msgid "Show the restart button at the end of the quiz for restarting the quiz and pass it again."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3439
+msgid "Show question results on the results page"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3440
+msgid "Show all questions with right and wrong answers after quiz"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3452
+msgid "Hide correct answers"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3453
+msgid "After enabling this option, the user whose chosen answer to the question is wrong will not see the right one."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3466
+msgid "Show wrong answers first"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3467
+msgid "Tick the checkbox if you want to show the wrongly answered questions by the particular user in the first place on the result page."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3482
+msgid "Show the statistical average"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3483
+msgid "Show average score according to all results of the quiz"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3498
+msgid "Show the Social buttons"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3499
+msgid "Display social buttons for sharing quiz page URL. LinkedIn, Facebook, Twitter"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3514
+msgid "Enable Social Media links"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3515
+msgid "Display social media links at the end of the quiz to allow users to visit your pages in the Social media."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3530
+msgid "Linkedin link"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3531
+msgid "Linkedin profile or page link for showing after quiz finish."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3546
+msgid "Facebook link"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3547
+msgid "Facebook profile or page link for showing after quiz finish."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3562
+msgid "Twitter link"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3563
+msgid "Twitter profile or page link for showing after quiz finish."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3579
+msgid "Quiz loader icon"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3580
+msgid "Choose the design of the loader on the finish page after submitting. It will inherit the Quiz Text color from the Styles tab."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3623
+msgid "Gif"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3639
+msgid "Width (px)"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3640
+msgid "Custom Gif width in pixels. It accepts only numeric values."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3656
+#: ../admin/partials/settings/quiz-maker-settings.php:2180
+#: ../admin/partials/settings/quiz-maker-settings.php:2188
+msgid "Result message"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3657
+msgid "The message will be displayed after submitting the quiz. You can use Variables (General Settings) to insert user data here. If you want to show results with points or with the number of correct answers, you need to use correspondent variables and enable the “Hide score” option."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3662
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3700
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3730
+msgid "To see all Message Variables "
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3679
+msgid "Pass Score (%)"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3680
+msgid "Set the minimum score to pass the quiz in percentage. Please note to give a value to it above 0, otherwise, the Quiz pass message and Quiz fail message options will not work."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3694
+#: ../admin/partials/settings/quiz-maker-settings.php:2181
+#: ../admin/partials/settings/quiz-maker-settings.php:2189
+msgid "Quiz pass message"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3695
+msgid "The message in the case of the user passes the quiz"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3723
+#: ../admin/partials/settings/quiz-maker-settings.php:2182
+#: ../admin/partials/settings/quiz-maker-settings.php:2190
+msgid "Quiz fail message"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3724
+msgid "The message in the case of the user fails the quiz"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3753
+msgid "Disable data storing in database"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3754
+msgid "Disable data storing in the database, and results will not be displayed on the 'Results' page (not recommended)."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3759
+msgid "Not recommended"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3783
+msgid "Intervals"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3787
+msgid "Set different messages based on the user’s score. The message will be displayed on the result page of the quiz."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3799
+msgid "By points"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3803
+msgid "By keywords"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3807
+msgid "Choose your preferred method of calculation."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3809
+msgid "By percentage - If this option is enabled, you need to assign values to Min and Max fields by percentage and write a correspondent message and attach an image for each interval separately. You need to cover the 0-100 range with as many intervals as you want."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3810
+msgid "By points - If this option is enabled, you need to assign values to Min and Max fields by points and write a correspondent message and attach an image for each interval separately. There is no limitation to that."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3811
+msgid "By keywords - If this option is enabled, you need to select the keywords, which you have already assigned to your answers and write a correspondent message and attach an image for each interval separately. It will be calculated based on the majority of the selected answers of the user."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3824
+msgid "Min"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3825
+msgid "Max"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3878
+msgid "Limitation of Users"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3883
+msgid "Limit Users"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3884
+msgid "This option allows to block the users who have already passed the quiz."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3899
+msgid "Limit users by"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3900
+msgid "Limit users pass the quiz by IP or by User ID."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3900
+msgid "If you choose 'User ID', the 'Limit users' option will not work for the not logged in users. It works only with 'Only for logged in users' option."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3908
+msgid "IP"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3912
+msgid "User ID"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3916
+msgid "Cookie"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3920
+msgid "IP and Cookie"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3940
+msgid "Attempts count:"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3941
+msgid "Specify the count of the attempts per user for passing the quiz."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3955
+msgid "Pass score for attempt restriction"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3956
+msgid "Select the passing score(in percentage), and the attempt of the user will be detected only under that given condition. For example: If we give 40% value to it and assign 5 to the Attempts count option, the user can pass the quiz with getting more than 40% score in 5 times, but will have a chance to pass the quiz with getting under the 40% score as to how much as he/she wants."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3973
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4045
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4132
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4197
+msgid "Message"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3974
+msgid "Message for those who have passed the quiz"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3993
+msgid "Redirect url"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:3994
+msgid "For leave current page and go to the link provided"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4010
+msgid "Redirect delay"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4011
+msgid "Leave current page and go to the link provided after X second"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4029
+msgid "Only for logged in users"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4030
+msgid "After enabling this option, only logged in users will be able to pass the quiz."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4046
+msgid "Message for those who haven’t logged in"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4064
+msgid "Show Login form"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4065
+msgid "Show the Login form bottom of the message for not logged in users."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4080
+msgid "Only for selected user role"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4081
+msgid "Quiz is available only for the users who have role mentioned in the list."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4096
+msgid "User role"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4097
+msgid "Role of the user on the website. Option accepts multiple values."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4133
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4198
+msgid "Message for the users who aren’t included in the above-mentioned list."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4168
+msgid "Access only selected users"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4169
+msgid "Quiz is available only for the users mentioned in the list."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4181
+msgid "Users"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4182
+msgid "Users on the website."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4216
+msgid "Limitation count of takers"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4217
+msgid "You can choose how many users can pass the quiz."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4230
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:1112
+msgid "Count"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4231
+msgid "The number of users who can pass the quiz."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4257
+msgid "Password for passing quiz"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4258
+msgid "You can choose a password for users to pass the quiz."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4275
+msgid "Generated Passwords"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4283
+msgid "Password"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4284
+msgid "Password for users who can pass the quiz."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4305
+msgid "Information Form title"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4306
+msgid "Description of the Information Form which will be shown at the top of the Form Fields."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4324
+msgid "Information form"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4325
+msgid "Data form for the user personal information. You can choose when the Information Form will be shown for completion."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4334
+msgid "After Quiz"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4337
+msgid "Before Quiz"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4340
+msgid "Disable"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4347
+msgid "Form Fields"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4367
+msgid "Required Fields"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4402
+msgid "Add custom fields"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4407
+msgid "For creating custom fields click "
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4408
+#: ../admin/partials/quizes/quiz-maker-quizes-display.php:61
+msgid "here"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4416
+msgid "Show Information Form to logged-in users"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4417
+msgid "Enable the option if you want to show the Information Form to logged-in users as well. If the option is disabled, then logged-in users will not see the Information Form before or after the quiz, but the system will collect the Name and Email info from their WP accounts and store in the Name and Email fields in the database."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4432
+msgid "Autofill logged-in user data"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4433
+msgid "After enabling this option, logged in  user’s name and email will be autofilled in Information Form."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4447
+msgid "E-mail and Certificate settings"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4465
+msgid "Send Mail To User"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4478
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4609
+msgid "Pass score (%)"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4479
+msgid "If the option is enabled, then the user will receive the email only if he/she has passed the minimum score required. It will take the value of the general pass score of the quiz. Please specify it in the Result Settings tab."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4490
+msgid "Tick the checkbox, and the user will receive the email only if he/she has passed the minimum score required."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4496
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4700
+msgid "Mail message"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4507
+msgid "Send Results to User"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4518
+msgid "Send Interval message to User"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4530
+msgid "Send Certificate To User"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4532
+msgid "Generate certificate without sending to user"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4536
+msgid "Generate Certificate preview"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4537
+msgid "This is a just preview of the certificate and some message variables will not work on preview mode. Please be understanding."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4558
+msgid "Certificate pass score"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4567
+msgid "Certificate title"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4576
+msgid "Certificate body"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4600
+msgid "Send Mail To Admin"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4610
+msgid "If the option is enabled, then the admin will receive the email only if the user has passed the minimum score required. It will take the value of the general pass score of the quiz. Please specify it in the Result Settings tab."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4621
+msgid "Tick the checkbox, and admin will receive the email only if the user has passed the minimum score required."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4629
+msgid "Admin"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4630
+msgid "Disable this feature, if you want to make it possible not to send emails to the registered Mail of the site Admin, but only to additional emails."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4646
+msgid "Additional Emails"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4658
+msgid "Send Report table to Admin"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4659
+msgid "You can send results to the admin after the quiz is completed"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4672
+msgid "Send Interval message to Admin"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4673
+msgid "If this option is enabled then the admin will get the Email with Interval message."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4686
+msgid "Send Certificate to Admin too"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4687
+msgid "If this option is enabled then the admin will get the Email with an attached PDF file that gets the user. If the \"Send Certificate To User\" option is disabled admin does not get a certificate too."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4701
+msgid "Provide the message text for sending to the Admin by email. You can use Variables from General Settings page to insert data. (name, score, date etc.)"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4715
+msgid "Email Configuration"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4722
+msgid "From Email"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4733
+msgid "From Name"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4744
+msgid "From Subject"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4758
+msgid "Integrations settings"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4763
+msgid "MailChimp Settings"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4778
+msgid "Enable MailChimp"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4789
+msgid "MailChimp list"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4802
+msgid "Enable double opt-in"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4807
+msgid "Send contacts an opt-in confirmation email when their email address added to the list."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4817
+msgid "PayPal Settings"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4832
+msgid "Enable PayPal"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4843
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4916
+msgid "Amount"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4854
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4927
+msgid "Currency"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4859
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4932
+msgid "United States Dollar"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4860
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4933
+msgid "Euro"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4861
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4934
+msgid "British Pound Sterling"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4862
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4935
+msgid "Australian dollar"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4863
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4936
+msgid "Swiss Franc"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4864
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4937
+msgid "Japanese Yen"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4865
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4938
+msgid "Indian Rupee"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4866
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4939
+msgid "Chinese Yuan"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4867
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4940
+msgid "Canadian Dollar"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4868
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4941
+msgid "United Arab Emirates Dirham"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4869
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4942
+msgid "Russian Ruble"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4877
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4950
+msgid "Payment details"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4891
+msgid "Stripe Settings"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4905
+msgid "Enable Stripe"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4964
+msgid "Campaign Monitor Settings"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4979
+msgid "Enable Campaign Monitor"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4990
+msgid "Campaign Monitor list"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:4995
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5080
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5094
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5201
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5205
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5243
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5281
+msgid "Select List"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5006
+msgid "Zapier Integration Settings"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5021
+msgid "Enable Zapier Integration"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5029
+msgid "Send test data"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5032
+msgid "We will send you a test data, and you can catch it in your ZAP for configure it."
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5049
+msgid "ActiveCampaign Settings"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5064
+msgid "Enable ActiveCampaign"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5075
+msgid "ActiveCampaign list"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5081
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5095
+msgid "Just create contact"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5089
+msgid "ActiveCampaign automation"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5106
+msgid "Slack Settings"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5121
+msgid "Enable Slack integration"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5132
+msgid "Slack conversation"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5137
+msgid "Select Channel"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5148
+msgid "Google Sheet Settings"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5164
+msgid "Enable Google integration"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5178
+msgid "Mad Mimi Settings"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5192
+msgid "Enable Mad Mimi"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5216
+msgid "ConvertKit Settings"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5230
+msgid "Enable ConvertKit"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5239
+msgid "ConvertKit List"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5254
+msgid "GetResponse Settings"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5268
+msgid "Enable GetResponse"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5277
+msgid "GetResponse List"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5305
+msgid "Saves the assigned settings of the current quiz as default. After clicking on this button, each time creating a new quiz, the system will take the settings and styles of the current quiz. If you want to change and renew it, please click on this button on another quiz. This feature is available only in PRO version!!!"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5311
+msgid "Save as default"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5328
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5334
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5421
+msgid "Select questions"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5337
+msgid "For select questions click on question row and then click \"Select questions\" button"
+msgstr ""
+
+#: ../admin/partials/quizes/actions/quiz-maker-quizes-actions.php:5348
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:1003
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:1113
+msgid "Created"
+msgstr ""
+
+#: ../admin/partials/quizes/quiz-maker-quizes-display.php:42
+msgid "Build your quiz in a few minutes"
+msgstr ""
+
+#: ../admin/partials/quizes/quiz-maker-quizes-display.php:54
+msgid "If you haven't created questions yet, you need to do it first."
+msgstr ""
+
+#: ../admin/partials/quizes/quiz-maker-quizes-display.php:59
+msgid "For creating a question go"
+msgstr ""
+
+#: ../admin/partials/quizes/quiz-maker-quizes-display.php:78
+msgid "Search"
+msgstr ""
+
+#: ../admin/partials/quizes/quiz-maker-quizes-display.php:96
+msgid "Build your quiz in few seconds"
+msgstr ""
+
+#: ../admin/partials/quizes/quiz-maker-quizes-display.php:103
+#: ../pb_templates/quiz_maker_elementor.php:29
+msgid "Quiz Title"
+msgstr ""
+
+#: ../admin/partials/quizes/quiz-maker-quizes-display.php:111
+#: ../includes/lists/class-quiz-maker-quiz-categories-list-table.php:9
+msgid "Quiz Category"
+msgstr ""
+
+#: ../admin/partials/quizes/quiz-maker-quizes-display.php:233
+msgid "Submit"
+msgstr ""
+
+#: ../admin/partials/results/quiz-maker-results-display.php:10
+msgid "Export"
+msgstr ""
+
+#: ../admin/partials/results/quiz-maker-results-display.php:14
+msgid "Statistics"
+msgstr ""
+
+#: ../admin/partials/results/quiz-maker-results-display.php:15
+#: ../admin/partials/results/quiz-maker-results-display.php:61
+msgid "Leaderboard"
+msgstr ""
+
+#: ../admin/partials/results/quiz-maker-results-display.php:109
+msgid "Results for"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings-actions.php:309
+msgid "Changes saved."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings-actions.php:311
+msgid "Quiz attribute ."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings-actions.php:313
+msgid "Quiz attribute deleted."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:51
+#: ../admin/partials/settings/quiz-maker-settings.php:163
+msgid "Pos."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:55
+#: ../admin/partials/settings/quiz-maker-settings.php:65
+#: ../admin/partials/settings/quiz-maker-settings.php:167
+msgid "Points"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:59
+#: ../admin/partials/settings/quiz-maker-settings.php:104
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:149
+msgid "Quiz name"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:61
+#: ../admin/partials/settings/quiz-maker-settings.php:106
+#: ../admin/partials/settings/quiz-maker-settings.php:144
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:151
+msgid "End date"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:64
+msgid "Details"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:103
+#: ../admin/partials/settings/quiz-maker-settings.php:142
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:148
+msgid "User name"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:201
+#: ../admin/partials/settings/quiz-maker-settings.php:1135
+msgid "Shortcodes"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:204
+#: ../admin/partials/settings/quiz-maker-settings.php:2178
+msgid "Message variables"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:207
+msgid "Buttons Texts"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:218
+msgid "Default parameters for Quiz"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:223
+msgid "Questions default type"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:224
+msgid "You can choose default question type which will be selected in the Add new question page."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:246
+msgid "Answer default count"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:247
+msgid "You can write the default answer count which will be showing in the Add new question page (this will work only with radio, checkbox, and dropdown types)."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:259
+msgid "Questions default category"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:260
+msgid "Choose the category of the questions which will be selected by default each time you create a question by the Add New button."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:284
+msgid "WP Editor height"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:285
+msgid "Give the default value to the height of the WP Editor. It will apply to all WP Editors within the plugin on the dashboard."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:297
+msgid "Textarea height (public)"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:298
+msgid "Set the height of the textarea by entering a numeric value. It applies to Text question type textarea, Feedback texatarea and so on."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:310
+msgid "Enable answers allow HTML for new question"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:311
+msgid "Allow implementing HTML coding in answer boxes while adding new question. This works only for Radio and Checkbox (Multiple) questions."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:323
+msgid "Show quiz button to Admins only"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:324
+msgid "Allow only admins to see the Quiz Maker button within the WP Editor while adding/editing a new post/page."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:346
+msgid "Keyword default count"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:347
+msgid "Specify the default keyword count which will be selected while adding answers to your new question. It will apply to the previous questions and intervals as well."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:363
+msgid "Users IP adressess"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:366
+msgid "If this option is enabled then the 'Limitation by IP' option will not work!"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:372
+msgid "Do not store IP adressess"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:373
+msgid "After enabling this option, IP address of the users will not be stored in database. Note: If this option is enabled, then the `Limits user by IP` option will not work."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:387
+msgid "Quiz Right/Wrong answers sounds"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:392
+msgid "Sounds for right/wrong answers"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:393
+msgid "This option will work with Enable correct answers option."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:402
+msgid "Sounds for right answers"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:405
+#: ../admin/partials/settings/quiz-maker-settings.php:418
+msgid "Select sound"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:415
+msgid "Sounds for wrong answers"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:431
+msgid "Excerpt words count in list tables"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:436
+msgid "Questions list table"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:437
+msgid "Determine the length of the questions to be shown in the Questions List Table by putting your preferred count of words in the following field. (For example: if you put 10,  you will see the first 10 words of each question in the Questions page of your dashboard."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:449
+msgid "Quizzes list table"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:450
+msgid "Determine the length of the quizzes to be shown in the Quizzes List Table by putting your preferred count of words in the following field. (For example: if you put 10,  you will see the first 10 words of each quiz in the Quizzes page of your dashboard."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:462
+msgid "Results list table"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:463
+msgid "Determine the length of the results to be shown in the Results List Table by putting your preferred count of words in the following field. (For example: if you put 10,  you will see the first 10 words of each result in the Results page of your dashboard."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:477
+msgid "Start button activation"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:480
+msgid "Tick on the checkbox if you would like to show loader and \"Loading ...\" text over the start button while the JavaScript of the given webpage loads. As soon as the webpage completes its loading, the start button will become active."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:486
+msgid "Enable Start button loader"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:498
+msgid "Animation Top"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:503
+msgid "Scroll offset(px)"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:504
+msgid "Define the scroll offset of the quiz container after the animation starts. It works when the quiz container is visible on the screen partly and the user starts the quiz and moves from one question to another."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:518
+msgid "Erase Quiz data"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:529
+msgid "Delete results older than 'X' the month"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:530
+msgid "Specify count of months and save changes. Attention! it will remove submissions older than specified months permanently."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:544
+msgid "Who will have permission to Quiz menu"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:559
+msgid "Select user role for giving access to Quiz menu"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:560
+msgid "Give permissions to see only their own quizzes to these user roles."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:567
+#: ../admin/partials/settings/quiz-maker-settings.php:582
+msgid "Administrator"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:574
+msgid "Select user role for giving access to change all Quiz data"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:575
+msgid "Give permissions to manage all quizzes and results to these user roles. Please add the given user roles to the above field as well."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:587
+msgid "Control the access of the plugin from the dashboard and manage the capabilities of those user roles."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:589
+msgid "If you want to give a full control to the given user role, please add the role in both fields."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:601
+msgid "MailChimp"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:616
+msgid "MailChimp Username"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:631
+msgid "MailChimp API Key"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:643
+#: ../admin/partials/settings/quiz-maker-settings.php:1055
+#: ../admin/partials/settings/quiz-maker-settings.php:1089
+#: ../admin/partials/settings/quiz-maker-settings.php:1123
+msgid "You can get your API key from your "
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:652
+msgid "PayPal"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:660
+#: ../admin/partials/settings/quiz-maker-settings.php:714
+msgid "DEVELOPER version!!!"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:667
+msgid "Paypal Client ID"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:682
+#: ../admin/partials/settings/quiz-maker-settings.php:745
+msgid "Payment terms"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:688
+#: ../admin/partials/settings/quiz-maker-settings.php:751
+msgid "Lifetime payment"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:692
+#: ../admin/partials/settings/quiz-maker-settings.php:755
+msgid "Onetime payment"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:697
+msgid "You can get your Client ID from"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:706
+msgid "Stripe"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:723
+msgid "Publishable Key"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:734
+msgid "Secret Key"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:760
+msgid "You can get your Publishable and Secret keys on API Keys page on your Stripe dashboard."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:771
+msgid "Campaign Monitor"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:786
+msgid "Client ID"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:797
+#: ../admin/partials/settings/quiz-maker-settings.php:1048
+#: ../admin/partials/settings/quiz-maker-settings.php:1082
+msgid "API Key"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:805
+msgid "You can get your API key and Client ID from your Account Settings page"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:814
+msgid "Zapier"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:829
+msgid "Zapier Webhook URL"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:837
+#, php-format
+msgid "If you do not have any ZAP created, go <a href='%s' target='_blank'>%s</a>. Remember to choose Webhooks by Zapier as Trigger App."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:840
+msgid "We will send you all data from quiz information form with \"AysQuiz\" key by POST method"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:849
+msgid "ActiveCampaign"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:864
+msgid "API Access URL"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:875
+msgid "API Access Key"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:883
+msgid "Your API URL and Key can be found in your account on the My Settings page under the \"Developer\" tab"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:892
+msgid "Slack"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:907
+msgid "App Client ID"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:918
+msgid "Slack Authorization"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:923
+msgid "Authorize"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:931
+msgid "App Client Secret"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:942
+msgid "App Access Token"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:947
+msgid "Need Authorization"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:953
+msgid "You can get your App Client ID and Client Secret from your App's the Basic Information page"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:963
+msgid "Google Sheets"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:979
+msgid "Instructions"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:985
+msgid "Google Client ID"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:996
+msgid "Google Client Secret"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1009
+msgid "Connect"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1023
+msgid "Mad Mimi"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1039
+msgid "Username"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1066
+msgid "ConvertKit"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1100
+msgid "GetResponse"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1116
+msgid "GetResponse API Key"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1126
+msgid "For security reasons, unused API keys expire after 90 days. When that happens, you’ll need to generate a new key."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1140
+msgid "Individual Leaderboard Settings"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1159
+#: ../admin/partials/settings/quiz-maker-settings.php:1326
+#: ../admin/partials/settings/quiz-maker-settings.php:1481
+#: ../admin/partials/settings/quiz-maker-settings.php:1639
+#: ../admin/partials/settings/quiz-maker-settings.php:1712
+#: ../admin/partials/settings/quiz-maker-settings.php:1790
+#: ../admin/partials/settings/quiz-maker-settings.php:1821
+#: ../admin/partials/settings/quiz-maker-settings.php:1891
+#: ../admin/partials/settings/quiz-maker-settings.php:1961
+#: ../admin/partials/settings/quiz-maker-settings.php:2086
+#: ../includes/lists/class-quiz-maker-quiz-categories-list-table.php:323
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:1110
+msgid "Shortcode"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1169
+#: ../admin/partials/settings/quiz-maker-settings.php:1336
+#: ../admin/partials/settings/quiz-maker-settings.php:1494
+msgid "Users count"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1183
+#: ../admin/partials/settings/quiz-maker-settings.php:1350
+#: ../admin/partials/settings/quiz-maker-settings.php:1508
+msgid "Width"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1198
+#: ../admin/partials/settings/quiz-maker-settings.php:1523
+msgid "Group users by"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1215
+#: ../admin/partials/settings/quiz-maker-settings.php:1382
+#: ../admin/partials/settings/quiz-maker-settings.php:1543
+msgid "Show user’s result"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1221
+#: ../admin/partials/settings/quiz-maker-settings.php:1388
+#: ../admin/partials/settings/quiz-maker-settings.php:1552
+msgid "AVG"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1225
+#: ../admin/partials/settings/quiz-maker-settings.php:1392
+#: ../admin/partials/settings/quiz-maker-settings.php:1556
+msgid "MAX"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1232
+msgid "Show points"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1233
+msgid "Decide how to display the score. For instance, if you choose the correct answer count, the score will be shown in this format: 8/10."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1241
+msgid "Without maximum point"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1245
+msgid "With maximum point"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1252
+#: ../admin/partials/settings/quiz-maker-settings.php:1403
+#: ../admin/partials/settings/quiz-maker-settings.php:1567
+msgid "Color"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1263
+#: ../admin/partials/settings/quiz-maker-settings.php:1414
+#: ../admin/partials/settings/quiz-maker-settings.php:1581
+msgid "Field for entering your own CSS code"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1276
+#: ../admin/partials/settings/quiz-maker-settings.php:1428
+#: ../admin/partials/settings/quiz-maker-settings.php:1595
+msgid "Leaderboard Columns"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1277
+#: ../admin/partials/settings/quiz-maker-settings.php:1429
+#: ../admin/partials/settings/quiz-maker-settings.php:1596
+#: ../admin/partials/settings/quiz-maker-settings.php:1665
+#: ../admin/partials/settings/quiz-maker-settings.php:1850
+#: ../admin/partials/settings/quiz-maker-settings.php:1920
+msgid "You can sort table columns and select which columns must display on the front-end."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1307
+msgid "Global Leaderboard Settings"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1365
+msgid "Users order by"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1396
+#: ../admin/partials/settings/quiz-maker-settings.php:1560
+msgid "SUM"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1459
+msgid "Leaderboard By Quiz Category Settings"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1462
+msgid "It is designed for a particular quiz category results."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1482
+msgid "You can copy the shortcode and paste it to any post/page to see the list of the top user’s who passed any quiz."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1495
+msgid "How many users’ results will be shown in the leaderboard."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1509
+#, php-format
+msgid "The width of the Leaderboard box. It accepts only numeric values. For 100% leave it blank."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1524
+msgid "Select the way for grouping the results. If you want to make Leaderboard for logged in users, then choose ID. It will collect results by WP user ID. If you want to make Leaderboard for guests, then you need to choose Email and enable Information Form and Email, Name options from quiz settings. It will group results by emails and display guests Names."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1544
+msgid "Show the users’ Average, Maximum or Sum results in the leaderboard. SUM does not work with Score(table column)"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1568
+msgid "Top color of the leaderboard"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1624
+msgid "User Page Settings"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1650
+msgid "Hide correct answer"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1651
+msgid "Tick the checkbox if you want to hide the correct answers presented in the detailed report."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1664
+msgid "User Page results table columns"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1695
+msgid "Flash Cards Settings"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1713
+msgid "Paste the shortcode into any of your posts/pages to create flashcards in a question-and-answer format. Each flashcard shows a question on one side and a correct answer on the other."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1730
+#: ../admin/partials/settings/quiz-maker-settings.php:1979
+#, php-format
+msgid "%sBy%s"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1730
+msgid "Choose the method of filtering. Example: by=\"quiz\""
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1739
+#: ../admin/partials/settings/quiz-maker-settings.php:1988
+#: ../admin/partials/settings/quiz-maker-settings.php:2017
+#, php-format
+msgid "%squiz%s"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1739
+msgid " If you set the method as Quiz, it will show all questions added in the given quiz."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1748
+#, php-format
+msgid "%sategory%s"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1748
+msgid ""
+"If you set the method as Category, it will show all questions assigned to the given category.\n"
+"                                                                "
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1760
+#: ../admin/partials/settings/quiz-maker-settings.php:2008
+#: ../admin/partials/settings/quiz-maker-settings.php:2104
+#, php-format
+msgid "%sID%s"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1760
+msgid "Select a single ID or multiple IDs. List multiple IDs by separating them with commas. Example id=\"13,23,33\""
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1775
+msgid "Recent Quizzes Settings"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1793
+msgid "Copy the following shortcode, configure it based on your preferences and paste it into the post."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1795
+msgid "Random - If you set the ordering method as random and gave a value to count option, then it will randomly display that given amount of quizzes from your created quizzes."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1796
+msgid "Recent - If you set the ordering method as recent and gave a value to count option, then it will display that given amount of quizzes from your recently created quizzes."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1814
+msgid "All Results Settings"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1822
+msgid "You can copy the shortcode and insert it to any post to show all results."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1835
+#: ../admin/partials/settings/quiz-maker-settings.php:1905
+msgid "Show to guests too"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1836
+msgid "Show the All results table to guests as well. By default, it is displayed only for logged-in users. If this option is disabled, then only the logged-in users will be able to see the table. Note: Despite the fact of showing the table to the guests, the table will contain only info of the logged-in users."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1849
+#: ../admin/partials/settings/quiz-maker-settings.php:1919
+msgid "Table columns"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1884
+msgid "Single Quiz Results Settings"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1892
+msgid "You can copy the shortcode and insert it to any post to show quiz all results."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1906
+msgid "Show the Single quiz results table to guests as well. By default, it is displayed only for logged-in users. If this option is disabled, then only the logged-in users will be able to see the table. Note: Despite the fact of showing the table to the guests, the table will contain only info of the logged-in users."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1954
+msgid "Display Quiz Bank(questions)"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1962
+msgid "Paste the shortcode into any of your posts to show questions of a given quiz. Designed to show questions to students, earlier on, for preparing for the test."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1979
+msgid "Choose the method of filtering. Example: by=\"category\"."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1988
+msgid "If you set the method as Quiz, it will show all questions added in the given quiz."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1997
+#: ../admin/partials/settings/quiz-maker-settings.php:2026
+#, php-format
+msgid "%scategory%s"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:1997
+msgid "If you set the method as Category, it will show all questions assigned to the given category."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2008
+msgid "Select the ID. Example: id=\"23\"."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2017
+msgid "If you set the method as Quiz, please enter the ID of the given quiz."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2026
+msgid "If you set the method as Category, please enter the ID of the given category."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2037
+#, php-format
+msgid "%sOrderby%s"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2037
+msgid "Choose the way of ordering the questions. Example: orderby=\"ASC\"."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2046
+#, php-format
+msgid "%sASC%s"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2046
+msgid "The earliest created questions will appear at top of the list. The order will be classified based on question ID (oldest to newest)."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2055
+#, php-format
+msgid "%sDESC%s"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2055
+msgid "The latest created questions will appear at top of the list. The order will be classified based on question ID (newest to oldest)."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2064
+#, php-format
+msgid "%sdefault%s"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2064
+msgid "The order will be classified based on the reordering you have done while adding the questions to the quiz. It will work only with the by=\"quiz\" method. The by=\"category\" method will show the same order as orderby=\"ASC\"."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2079
+msgid "Quiz categories"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2087
+msgid "Copy the following shortcode, configure it based on your preferences and paste it into the post/page. Put the ID of your preferred category,  choose the method of displaying (all/random) and specify the count of quizzes."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2104
+msgid "Enter the ID of the category. Example: id=\"23\"."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2113
+#, php-format
+msgid "%sDisplay%s"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2113
+msgid "Choose the method of displaying. Example: display=\"random\" count=\"5\"."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2122
+#, php-format
+msgid "%sAll%s"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2122
+#, php-format
+msgid "If you set the method as All, it will show all quizzes from the given category. In this case, it is not required to fill the %sCount%s attribute. You can either remove it or the system will ignore the value given to it."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2133
+#, php-format
+msgid "%sRandom%s"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2133
+#, php-format
+msgid "If you set the method as Random, please give a value to %sCount%s option too, and it will randomly display that given amount of quizzes from the given category."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2146
+#, php-format
+msgid "%sLayout%s"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2146
+msgid "Choose the design of the layout. Example:layout=grid."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2155
+#, php-format
+msgid "%sList%s"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2155
+msgid "Choose the design of the layout as list․"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2164
+#, php-format
+msgid "%sGrid%s"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2164
+msgid "Choose the design of the layout as grid․"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2179
+#: ../admin/partials/settings/quiz-maker-settings.php:2187
+msgid "You can copy these variables and paste them in the following options from the quiz settings"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2201
+msgid "The name the user entered into information form"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2210
+msgid "The E-mail the user entered into information form"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2219
+msgid "The title of the quiz"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2228
+msgid "The score of quiz which got the user"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2237
+msgid "The date of the passing quiz"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2246
+msgid "The score of the quiz by a question categories which got the user"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2255
+msgid "The average score of the quiz of all time"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2264
+msgid "The average rate of the quiz of all time"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2273
+msgid "The time which spent that the user passed the quiz"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2282
+msgid "The time which must spend the user to the quiz"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2291
+msgid "The average score by the question category of the given quiz of the given user."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2300
+msgid "The number of correct answers of the user"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2309
+msgid "The number of wrong answers of the user."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2318
+msgid "The count of unanswered questions of the user."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2327
+msgid "The count of answered questions of the user."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2336
+msgid "The score of those questions which the given user answered(%). Skipped or unanswered questions will not be included in the calculation."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2345
+msgid "The user's first name that was filled in their WordPress site during registration."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2354
+msgid "The user's last name that was filled in their WordPress site during registration."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2380
+msgid "The points of quiz which got the user"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2389
+msgid "The number of questions that the user must pass."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2398
+msgid "Maximum points which can get the user"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2407
+msgid "The quiz image which used for quiz start page"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2416
+msgid "The message which must display on the result page depending from score"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2426
+msgid "You can use this unique code as an identifier. It is unique for every attempt."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2435
+msgid "You can use this variable to allow users to download their certificate after quiz completion."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2444
+msgid "The number of not answered of the user."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2453
+#, php-format
+msgid "The count of the selected keyword that the user answers during the quiz. For instance, %%keyword_count_A%%."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2462
+#, php-format
+msgid "The percentage of the selected keyword that the user answers during the quiz. For instance, %%keyword_percentage_A%%."
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2470
+msgid "Buttons texts"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2471
+msgid "If you make a change here, these words will not be translated either․"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2476
+msgid "If you make a change here, these words will not be translated either"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2482
+msgid "Start button"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2492
+msgid "Next button"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2502
+msgid "Previous button"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2512
+msgid "Clear button"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2522
+msgid "Finish button"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2532
+msgid "See Result button"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2542
+msgid "Restart quiz button"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2552
+msgid "Send feedback button"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2562
+msgid "Load more button"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2572
+msgid "Exit button"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2582
+msgid "Check button"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2592
+msgid "Log In button"
+msgstr ""
+
+#: ../admin/partials/settings/quiz-maker-settings.php:2607
+msgid "Save changes"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-question-categories-list-table.php:9
+msgid "Question Category"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-question-categories-list-table.php:42
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:101
+#: ../includes/lists/class-quiz-maker-quiz-categories-list-table.php:40
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:103
+#: ../includes/lists/class-quiz-maker-results-list-table.php:128
+msgid "All"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-question-categories-list-table.php:223
+msgid "There are no question categories yet."
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-question-categories-list-table.php:299
+#: ../includes/lists/class-quiz-maker-question-categories-list-table.php:302
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:936
+#: ../includes/lists/class-quiz-maker-quiz-categories-list-table.php:300
+msgid "Unublished"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-question-categories-list-table.php:325
+msgid "Questions Count"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-question-categories-list-table.php:435
+msgid "Question category created."
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-question-categories-list-table.php:437
+msgid "Question category saved."
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-question-categories-list-table.php:439
+msgid "Question category deleted."
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:62
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:66
+msgid "Select Category"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:72
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:76
+#: ../includes/lists/class-quiz-maker-results-list-table.php:100
+msgid "Clear filters"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:909
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:1018
+msgid "Duplicate"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:1002
+msgid "Answers Count"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:1034
+msgid "Publish"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:1035
+msgid "Unpublish"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:1150
+msgid "Question created."
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:1152
+msgid "Question saved."
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:1154
+msgid "Question duplicated."
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:1156
+msgid "Question(s) published."
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:1158
+msgid "Question(s) unpublished."
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-questions-list-table.php:1160
+msgid "Question deleted."
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-quiz-categories-list-table.php:219
+msgid "There are no quiz categories yet."
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-quiz-categories-list-table.php:324
+msgid "Quizzes Count"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-quiz-categories-list-table.php:436
+msgid "Quiz category created."
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-quiz-categories-list-table.php:438
+msgid "Quiz category saved."
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-quiz-categories-list-table.php:440
+msgid "Quiz category deleted."
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:955
+msgid "There are no quizzes yet."
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:1019
+msgid "View Results"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:1111
+msgid "Code include"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:1114
+msgid "Completed count"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:1227
+#: ../includes/lists/class-quiz-maker-results-list-table.php:663
+msgid "Quiz created."
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:1229
+#: ../includes/lists/class-quiz-maker-results-list-table.php:665
+msgid "Quiz saved."
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:1231
+msgid "Quiz duplicated."
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-quizes-list-table.php:1233
+msgid "Quiz deleted."
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-results-list-table.php:11
+msgid "Result"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-results-list-table.php:62
+#: ../pb_templates/quiz_maker_elementor.php:52
+msgid "Select Quiz"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-results-list-table.php:77
+msgid "Select User"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-results-list-table.php:129
+msgid "Readed"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-results-list-table.php:130
+msgid "Unreaded"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-results-list-table.php:298
+msgid "There are no results yet."
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-results-list-table.php:373
+msgid "Quiz has been deleted"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-results-list-table.php:452
+msgid "No data"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-results-list-table.php:472
+msgid "Passed"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-results-list-table.php:502
+msgid "WP User"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-results-list-table.php:503
+msgid "User IP"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-results-list-table.php:509
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:160
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:154
+msgid "End"
+msgstr ""
+
+#: ../includes/lists/class-quiz-maker-results-list-table.php:667
+msgid "Result(s) deleted."
+msgstr ""
+
+#: ../pb_templates/quiz_maker_elementor.php:32
+#: ../pb_templates/quiz_maker_elementor.php:33
+msgid "Enter the quiz title"
+msgstr ""
+
+#: ../pb_templates/quiz_maker_elementor.php:39
+msgid "Title Alignment"
+msgstr ""
+
+#: ../pb_templates/quiz_maker_wpbvc.php:25
+msgid "The Best Quiz Maker Ever"
+msgstr ""
+
+#: ../pb_templates/quiz_maker_wpbvc.php:26
+msgid "Quiz Maker by AYS"
+msgstr ""
+
+#: ../pb_templates/quiz_maker_wpbvc.php:36
+msgid "Please select your quiz from dropdown"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:131
+msgid "You have not answered this question"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:132
+msgid "Do you want to finish the quiz? Are you sure?"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:133
+#: ../public/class-quiz-maker-public.php:4522
+msgid "Select an answer"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:134
+msgid "Variants of the correct answer"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:135
+msgid "Share Dialog"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:137
+msgid "day"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:138
+msgid "days"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:139
+msgid "hour"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:140
+msgid "hours"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:141
+msgid "minute"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:142
+msgid "minutes"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:143
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:208
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:201
+msgid "second"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:144
+msgid "seconds"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:155
+#: ../public/class-quiz-maker-public.php:286
+#: ../public/partials/class-quiz-maker-category-shortcode.php:65
+#: ../public/partials/class-quiz-maker-category-shortcode.php:76
+#: ../public/partials/class-quiz-maker-display-questions-shortcode.php:172
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:240
+msgid "Wrong shortcode initialized"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:199
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:87
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:87
+msgid "Next"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:205
+msgid "Prev"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:211
+msgid "Clear"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:217
+msgid "Finish"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:223
+msgid "See Result"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:229
+msgid "Restart quiz"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:235
+msgid "Send feedback"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:241
+msgid "Load more"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:247
+msgid "Exit"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:253
+msgid "Check"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:259
+msgid "Log In"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:473
+#: ../public/class-quiz-maker-public.php:475
+msgid "Phone Number"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:859
+msgid "You need to add questions"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:884
+msgid "Loading ..."
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:935
+msgid "votes"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:935
+msgid "avg"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:991
+msgid "Created on"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:1013
+msgid "By"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:1015
+msgid "Created by"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:1532
+msgid "The average score is "
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:1543
+msgid "Your score is "
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:1854
+msgid "Redirecting after"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:1861
+#: ../public/class-quiz-maker-public.php:3596
+msgid "You have already passed this quiz."
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:1903
+msgid "You must log in to pass this quiz."
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:1916
+msgid "Permission Denied"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:1956
+msgid "This quiz is expired!"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:1985
+#: ../public/class-quiz-maker-public.php:2045
+msgid "The quiz has expired."
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:2009
+msgid "This Quiz will start on"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:2030
+msgid "The quiz will be available soon."
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:3261
+msgid "You can enter your answer explanation"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:4345
+#: ../public/class-quiz-maker-public.php:4408
+msgid "left"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:4624
+#, php-format
+msgid "%s days"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:4630
+#, php-format
+msgid "%s hours"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:4637
+#, php-format
+msgid "%s minutes"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:4644
+#, php-format
+msgid "%s seconds"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:4802
+msgid "Rated"
+msgstr ""
+
+#: ../public/class-quiz-maker-public.php:4846
+msgid "No more reviews"
+msgstr ""
+
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:73
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:73
+msgid "No data available in table"
+msgstr ""
+
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:74
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:74
+msgid "Showing _START_ to _END_ of _TOTAL_ entries"
+msgstr ""
+
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:75
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:75
+msgid "Showing 0 to 0 of 0 entries"
+msgstr ""
+
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:76
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:76
+msgid "(filtered from _MAX_ total entries)"
+msgstr ""
+
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:79
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:79
+msgid "Show _MENU_ entries"
+msgstr ""
+
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:80
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:80
+#: ../quiz/quiz-maker-block.js:141
+msgid "Loading..."
+msgstr ""
+
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:81
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:81
+msgid "Processing..."
+msgstr ""
+
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:82
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:82
+msgid "Search:"
+msgstr ""
+
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:84
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:84
+msgid "No matching records found"
+msgstr ""
+
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:85
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:85
+msgid "First"
+msgstr ""
+
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:86
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:86
+msgid "Last"
+msgstr ""
+
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:88
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:88
+msgid "Previous"
+msgstr ""
+
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:89
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:89
+msgid ": activate to sort column ascending"
+msgstr ""
+
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:90
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:90
+msgid ": activate to sort column descending"
+msgstr ""
+
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:157
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:152
+msgid "User Name"
+msgstr ""
+
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:158
+msgid "Quiz Name"
+msgstr ""
+
+#: ../public/partials/class-quiz-maker-all-results-shortcode.php:165
+#: ../public/partials/class-quiz-maker-quiz-all-results-shortcode.php:159
+msgid "You must log in to see your results."
+msgstr ""
+
+#: ../public/partials/class-quiz-maker-display-questions-shortcode.php:144
+msgid "There are no questions atteched yet."
+msgstr ""
+
+#: ../quiz-maker.php:220
+msgid "Wow!!! Excellent job!! Your quizzes was passed by more than "
+msgstr ""
+
+#: ../quiz-maker.php:224
+msgid "Rate Us"
+msgstr ""
+
+#: ../quiz/quiz-maker-block.js:135
+msgid "Something goes wrong please reload page"
+msgstr ""
+
+#: ../quiz/quiz-maker-block.js:148
+msgid "There are no quizzes yet"
+msgstr ""
+
+#: ../quiz/quiz-maker-block.js:155
+msgid "-Select Quiz-"
+msgstr ""
+
+#: ../quiz/quiz-maker-block.php:85
+msgid "Please select quiz"
+msgstr ""
