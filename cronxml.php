@@ -2,6 +2,28 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
+
+set_include_path('./phpseclib');   
+include('Net/SFTP.php');
+
+function uploadFileToSFTP($sourcePath,$destinationPath,$fileName) {
+	$host = "vcaggravation-dev.serverdatahost.com";
+	$port = 22;
+	$user = "vaggravation.com-virtual";
+	$pass = "aowreiuworewe";    
+
+	$sftp = new Net_SFTP($host);
+	if (!$sftp->login($user,$pass)) {
+	    exit('Login Failed');
+	}
+	$sftp->put($destinationPath.$fileName,$sourcePath.$fileName, NET_SFTP_LOCAL_FILE);
+	return true;
+}  
+
+$sourcePath = $_SERVER['DOCUMENT_ROOT'].'/seosets/';
+$destinationPath = '/mnt/volume_sfo2_07/vaggravation.com-virtual/public_html/';
+
+
 $orderID = 5355020;
 $orderDate = date("Y-m-d H:i:s");
 $status = 'open';
@@ -118,6 +140,16 @@ $totals->addChild('total',$total);
 
 
 Header('Content-type: text/xml');
-print($xml->asXML());
+$xmlString = $xml->asXML();
+
+$fileName = 'fileName.xml';
+$dom = new DOMDocument;
+$dom->preserveWhiteSpace = FALSE;
+$dom->loadXML($xmlString);
+$dom->save($fileName);
+
+uploadFileToSFTP($sourcePath,$destinationPath,$fileName);
+
+
 
 ?>
