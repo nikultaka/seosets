@@ -15,12 +15,12 @@ function custom_quiz_linking_menu()
 
     add_submenu_page(
         'video-linking', // parent slug
-        'SEO Pages', // page title
-        'SEO Pages', // menu title
+        'Paypal Payout', // page title
+        'Paypal Payout', // menu title
         'manage_options', // capability
-        'seo-pages', // slug
-        'payout' // callback
-    );
+        'paypal-payout', // slug
+        'payout' // callback 
+    );     
 }
 
 function display_video_linking()
@@ -62,21 +62,38 @@ function display_video_linking()
 
 function payout()          
 {
+    
+}
+
+function videoDashboard() {
     ob_start();
+    wp_enqueue_style('clone_style', plugins_url('../assets/css/style.css', __FILE__), false, '1.0.0', 'all');
+    wp_enqueue_script('datatable-script','https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js', array('jquery') );
+    wp_enqueue_script('bootstrap-script','https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js', array('jquery') );
+    wp_enqueue_script('sweetalert-script','//cdn.jsdelivr.net/npm/sweetalert2@10', array('jquery') );
+    wp_enqueue_script('script', plugins_url('../assets/js/script.js', __FILE__));
+
     global $wpdb;
-    $clone_table_name = $wpdb->prefix . "clone";
+    $table_name = $wpdb->prefix . "aysquiz_quizes";
+    $table_quiz_linking = $wpdb->prefix . "video_quiz_linking";
 
-    $query = "SELECT page_insert_id,clonename  FROM " . $clone_table_name . " as clone ";
+    $query = "SELECT * from ".$table_name;
+    $quizesData = $wpdb->get_results($query);
 
-    $pagessql = $wpdb->get_results($query);
-    if (is_array($pagessql)) {
-        $data['pagessql'] = $pagessql;
-    }
-    include(dirname(__FILE__) . "/html/clone_page_list.php");
+    $query = "SELECT ql.* from ".$table_quiz_linking." as ql 
+    left join ".$table_name." as aq on aq.id = ql.quiz_id
+    left join ".$table_name." as aq on aq.id = ql.quiz_id";
+    $tableData = $wpdb->get_results($query);
+
+    echo '<pre>'; print_r($tableData); exit;
+
+    include(dirname(__FILE__) . "/html/dashboard.php");
     $s = ob_get_contents();
     ob_end_clean();
     print $s;
+
 }
+add_shortcode('dashboard', 'videoDashboard');   
 
 
 class VideoLinkingController
