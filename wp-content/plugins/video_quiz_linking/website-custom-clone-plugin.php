@@ -24,6 +24,7 @@ function quizLinkingCreateTable() {
     global $db_table_name;
     $charset_collate = $wpdb->get_charset_collate();
     $db_table_name = $wpdb->prefix . 'video_quiz_linking';
+    $db_user_quiz = $wpdb->prefix . 'user_quiz';
 
     $sql = "CREATE TABLE `$db_table_name` (
         `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -40,6 +41,23 @@ function quizLinkingCreateTable() {
     if ($wpdb->get_var("SHOW TABLES LIKE '$db_table_name'") != $db_table_name) {
         require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
         dbDelta($sql);
-    }
+    }    
+
+    $sql = "CREATE TABLE `$db_user_quiz` (
+        `id` int(11) NOT NULL AUTO_INCREMENT,
+        `user_id` int(11) NOT NULL,    
+        `video_id` int(11) NOT NULL,
+        `is_paid` tinyint(1) NOT NULL,
+        `status` tinyint(1) NOT NULL,    
+        `created_at` datetime NULL DEFAULT CURRENT_TIMESTAMP,
+        `updated_at` datetime NULL DEFAULT CURRENT_TIMESTAMP,
+        PRIMARY KEY (`id`)
+    ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1";
+    
+    if ($wpdb->get_var("SHOW TABLES LIKE '$db_user_quiz'") != $db_table_name) {
+        require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+        dbDelta($sql);
+    }    
+
 
 }

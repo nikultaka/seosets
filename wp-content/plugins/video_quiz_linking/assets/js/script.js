@@ -2,6 +2,36 @@ jQuery(document).ready(function () {
     jQuery('#example').DataTable({
         dom: "Bfrtip",
     });
+    var video = document.getElementsByClassName('linkVid')[0];
+    var videoDataID = jQuery(video).attr('data_id');
+    //alert(videoDataID);    
+    console.log(video);
+    var supposedCurrentTime = 0;
+    video.addEventListener('timeupdate', function() {
+        if (!video.seeking) {  
+            supposedCurrentTime = video.currentTime;
+        }
+    });
+    video.addEventListener('seeking', function() {
+        return false;
+        var delta = video.currentTime - supposedCurrentTime;
+        if (Math.abs(delta) > 0.01) {
+            console.log("Seeking is disabled");
+            video.currentTime = supposedCurrentTime;
+        }
+    });    
+    video.addEventListener('ended', function() {
+        supposedCurrentTime = 0;
+        Swal.fire({
+            icon: 'success',
+            title: 'Thanks, you need to give answers for the quiz now!',
+            showConfirmButton: true,
+            timer: 1500
+        }).then(function () {
+            jQuery("#videoID_"+videoDataID).hide();
+            jQuery("#quizID_"+videoDataID).show();
+        });
+    });
 });
 
 function addVideo() {
@@ -168,4 +198,4 @@ function deleteVideo(id) {
 
 
 
-  
+

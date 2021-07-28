@@ -83,3 +83,13 @@ table.dataTable tbody td {
     width: 1200px !important; 
 } */
 
+.ays-quiz-social-shares {
+    display: none;
+}
+.ays_average {
+    display: none;   
+}
+
+.ays_restart_button_p {
+    display: none;
+}

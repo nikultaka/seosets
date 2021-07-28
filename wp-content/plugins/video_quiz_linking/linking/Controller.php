@@ -54,6 +54,8 @@ function display_video_linking()
 
     $attachments = get_posts( $args );
 
+    //echo '<pre>'; print_r($attachments); exit;
+
     include(dirname(__FILE__) . "/html/linking_quiz_form.php");
     $s = ob_get_contents();
     ob_end_clean();
@@ -62,10 +64,16 @@ function display_video_linking()
 
 function payout()          
 {
-    
+
 }
 
 function videoDashboard() {
+
+    if ( !is_user_logged_in()) {
+        wp_redirect(site_url()); 
+        exit;
+    }
+
     ob_start();
     wp_enqueue_style('clone_style', plugins_url('../assets/css/style.css', __FILE__), false, '1.0.0', 'all');
     wp_enqueue_script('datatable-script','https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js', array('jquery') );
@@ -76,16 +84,38 @@ function videoDashboard() {
     global $wpdb;
     $table_name = $wpdb->prefix . "aysquiz_quizes";
     $table_quiz_linking = $wpdb->prefix . "video_quiz_linking";
+    $table_user_quiz = $wpdb->prefix . 'user_quiz';
 
-    $query = "SELECT * from ".$table_name;
+    $query = "SELECT * from ".$table_name;  
     $quizesData = $wpdb->get_results($query);
 
     $query = "SELECT ql.* from ".$table_quiz_linking." as ql 
-    left join ".$table_name." as aq on aq.id = ql.quiz_id
-    left join ".$table_name." as aq on aq.id = ql.quiz_id";
+    left join ".$table_name." as aq on aq.id = ql.quiz_id order by id ASC";
     $tableData = $wpdb->get_results($query);
 
-    echo '<pre>'; print_r($tableData); exit;
+    $query = "SELECT * from ".$table_user_quiz." where user_id = ".get_current_user_id();
+    $userQuizData = $wpdb->get_results($query);
+
+    $completedVideo = array();
+    if(!empty($userQuizData)) {
+        foreach($userQuizData as $key => $value) {      
+            $completedVideo[] = $value->video_id;       
+        }  
+    }   
+
+    $frontendQuizData = array();
+    if(!empty($tableData)) {
+        foreach($tableData as $key => $value) {
+            $videoID = $value->id;
+            if(!in_array($videoID,$completedVideo)) {
+                $postData = get_post($value->video_url);
+                $videoURL = $postData->guid;
+                $value->link = $videoURL;        
+                $frontendQuizData = $value;
+                break;    
+            }
+        }
+    }
 
     include(dirname(__FILE__) . "/html/dashboard.php");
     $s = ob_get_contents();

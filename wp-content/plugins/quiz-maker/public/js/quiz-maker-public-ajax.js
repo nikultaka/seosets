@@ -645,7 +645,13 @@
         else {
             form.find('div.ays_message').html(response.text);
             form.find('p.ays_score').removeClass('ays_score_display_none');
-            form.find('p.ays_score').html(form.find('p.ays_score').text()+'<span class="ays_score_percent animated"> ' + response.score + '</span>');
+
+            if(response.score == '100') {
+                form.find('p.ays_score').html(form.find('p.ays_score').text()+'<span class="ays_score_percent animated"> ' + response.score + '</span>');    
+            } else {
+                form.find('p.ays_score').html(form.find('p.ays_score').text()+'<span class="ays_score_percent animated"> ' + response.score + '</span>');
+            }           
+            
         }
         form.find('div.ays_message').fadeIn(500);
         setTimeout(function () {

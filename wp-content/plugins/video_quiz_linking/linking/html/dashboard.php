@@ -38,18 +38,32 @@
                 <input type="text" class="form-control" name="videoName" id="videoName" placeholder="">
               </div>
             </div>  
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" onclick="saveVideo();">Save</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="saveVideo();">Save</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
-    <!-- End Modal -->
+  </div>
+  <!-- End Modal -->
 
 
+
+  <?php if(!empty($frontendQuizData)) { 
+    ?>
+    <div id="videoID_<?php echo $frontendQuizData->id; ?>">
+      <video id="linkVid_<?php echo $frontendQuizData->id; ?>" data_id="<?php echo $frontendQuizData->id; ?>" class="linkVid" width="320" height="240" controls style="<?php echo $style; ?>">
+        <source src="<?php echo $frontendQuizData->link; ?>">
+          Your browser does not support the video tag.
+        </video> 
+      </div>
+
+      <div id="quizID_<?php echo $frontendQuizData->id; ?>" style="display: none;">
+        <?php echo do_shortcode('[ays_quiz id="'.$frontendQuizData->quiz_id.'"]'); ?>
+      </div>  
+    <?php } ?>    
 
 
 
