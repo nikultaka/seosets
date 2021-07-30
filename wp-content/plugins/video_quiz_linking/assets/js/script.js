@@ -197,5 +197,49 @@ function deleteVideo(id) {
 }
 
 
+function doMassPayment() {
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You want to do mass payment ?",
+        icon: 'info',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes'
+    }).then((result) => {  
+        if (result.isConfirmed) {
+            jQuery.ajax({
+                url: ajaxurl,
+                type: 'POST',
+                data: {
+                    action: "VideoLinkingController::mass_payment"
+                },               
+                dataType: 'json',
+                success: function (response) {
+                    jQuery("#loader").removeClass('loader');
+                    if (response.status == '1') {
+                        location.reload();
+                    } else {
+                        Swal.fire(
+                            'Error!',
+                            data.msg,
+                            'error'
+                            )
+                    }
+                },
+                error: function (responce) {
+                    jQuery("#loader").removeClass('loader');
+                }
+            });
+
+        }
+    });
+}
+
+function payout(id) {
+    document.location.href = '?page=paypal-payout&id='+id;
+}      
+
+
 
 

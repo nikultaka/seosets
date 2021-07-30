@@ -1,4 +1,14 @@
 <?php
+error_reporting(E_ALL & ~E_NOTICE);
+ini_set('display_errors', '1');
+use PayPal\CoreComponentTypes\BasicAmountType;
+use PayPal\PayPalAPI\MassPayReq;
+use PayPal\PayPalAPI\MassPayRequestItemType;
+use PayPal\PayPalAPI\MassPayRequestType;
+use PayPal\Service\PayPalAPIInterfaceServiceService;
+use PayPal\Auth\PPSignatureCredential;
+use PayPal\Auth\PPTokenAuthorization;   
+
 add_action('admin_menu', 'custom_quiz_linking_menu');
 
 function custom_quiz_linking_menu()
@@ -14,7 +24,7 @@ function custom_quiz_linking_menu()
     );
 
     add_submenu_page(
-        'video-linking', // parent slug
+        'video-linking', // parent slug 
         'Paypal Payout', // page title
         'Paypal Payout', // menu title
         'manage_options', // capability
@@ -62,9 +72,33 @@ function display_video_linking()
     print $s;
 }
 
-function payout()          
-{
+function payout() {
+    ob_start();
+    wp_enqueue_style('clone_style', plugins_url('../assets/css/style.css', __FILE__), false, '1.0.0', 'all');
+    wp_enqueue_script('datatable-script','https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js', array('jquery') );
+    wp_enqueue_script('bootstrap-script','https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js', array('jquery') );
+    wp_enqueue_script('sweetalert-script','//cdn.jsdelivr.net/npm/sweetalert2@10', array('jquery') );
+    wp_enqueue_script('script', plugins_url('../assets/js/script.js', __FILE__));
 
+    global $wpdb;
+    $table_name = $wpdb->prefix . "aysquiz_quizes";
+    $table_users = $wpdb->prefix . "users";
+    $table_quiz_linking = $wpdb->prefix . "video_quiz_linking";
+    $table_user_quiz = $wpdb->prefix . "user_quiz";
+
+    $query = "SELECT ql.id,ql.video_name,ql.amount,aq.title,tuq.status,u.user_nicename
+    from ".$table_users." as u
+    inner join ".$table_user_quiz." as tuq on tuq.user_id = u.ID
+    inner join ".$table_quiz_linking." as ql on ql.id = tuq.video_id
+    inner join ".$table_name." as aq on aq.id = ql.quiz_id";
+    $tableData = $wpdb->get_results($query);    
+
+    //echo '<pre>'; print_r($tableData); exit;    
+
+    include(dirname(__FILE__) . "/html/payout.php");
+    $s = ob_get_contents();
+    ob_end_clean();
+    print $s;   
 }
 
 function videoDashboard() {
@@ -177,9 +211,35 @@ class VideoLinkingController
         exit();
     }
 
+    public function mass_payment() {
+        global $wpdb;
+        //$videoID = $_POST['id'];
+        $plugin_dir = ABSPATH . 'wp-content/plugins/video_quiz_linking/';
+        if(file_exists($plugin_dir.'merchant-sdk-php/vendor/autoload.php')) {
+            require $plugin_dir.'merchant-sdk-php/vendor/autoload.php';
+            require $plugin_dir.'merchant-sdk-php/samples/Configuration.php';
+        }
+        $massPayRequest = new MassPayRequestType();
+        $massPayRequest->MassPayItem = array();
+        $email = array('test@gmail.com','tako@gmail.com');
+        for($i=0; $i<count($email); $i++) {
+            $masspayItem = new MassPayRequestItemType();
+            $masspayItem->Amount = new BasicAmountType('USD',2);
+            $masspayItem->ReceiverEmail = $email[$i];
+            $massPayRequest->MassPayItem[] = $masspayItem;
+        }
+        $massPayReq = new MassPayReq();
+        $massPayReq->MassPayRequest = $massPayRequest;
+        $paypalService = new PayPalAPIInterfaceServiceService(Configuration::getAcctAndConfig());
+        $massPayResponse = $paypalService->MassPay($massPayReq);
+        echo json_encode(array('status'=>1,'data'=>$massPayResponse));
+        exit();
+    }     
+
 }
 
 $videoLinkingController = new VideoLinkingController();
 add_action('wp_ajax_VideoLinkingController::insert_video', array($videoLinkingController, 'insert_video'));
 add_action('wp_ajax_VideoLinkingController::get_data', array($videoLinkingController, 'get_data'));
 add_action('wp_ajax_VideoLinkingController::delete_record', array($videoLinkingController, 'delete_record'));
+add_action('wp_ajax_VideoLinkingController::mass_payment', array($videoLinkingController, 'mass_payment'));

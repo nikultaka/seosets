@@ -101,7 +101,7 @@
         <thead>
           <tr>
             <th>Video Name</th>
-            <th>Quize Title</th>
+            <th>Quiz Title</th>
             <th>Status</th>
             <th>Action</th>
           </tr>
@@ -122,6 +122,8 @@
                 <button type="button" class="btn btn-primary" onclick="editVideo(<?php echo $value->id; ?>);" name="editButton">Edit</button>  
                 &nbsp;
                 <button type="button" class="btn btn-danger" onclick="deleteVideo(<?php echo $value->id; ?>);" name="deleteButton">Delete</button>  
+                &nbsp;
+                <button type="button" class="btn btn-primary" onclick="payout(<?php echo $value->id; ?>);" name="payout">Payout</button>  
               </td>
             </tr>  
           <?php } } else { ?>  
