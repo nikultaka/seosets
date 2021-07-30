@@ -16,8 +16,9 @@ function uploadFileToSFTP($sourcePath,$destinationPath,$fileName,$orderID) {
 		exit('Login Failed');
 	}
 	$sftp->put($destinationPath.$fileName,$sourcePath.$fileName, NET_SFTP_LOCAL_FILE);
-	return true;
-}  
+	//mysql_query("insert into bluestar_sent_orders (order_id) values (".$orderID.") ");  
+	return true;       
+}      
 
 $sourcePath = $_SERVER["DOCUMENT_ROOT"]. "/../tmp/";
 $destinationPath = '/';   
