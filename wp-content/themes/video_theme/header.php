@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" style="background-color: #1abc9c;">
   <div class="container">
     <div class="navbar-header">
       <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> -->
@@ -10,8 +10,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">See video & Earn money</a></li>
-        <li><a href="#">Paypal Email</a></li>
+        <li><a href="<?php echo site_url('dashboard'); ?>">See video </a></li>
+        <li><a href="<?php echo site_url('paypalEmail'); ?>">Paypal Email</a></li>
+        <li><a href="<?php echo site_url('videoPaymentstatus'); ?>">Payment Status</a></li>
       </ul>
     </div>
   </div>

@@ -26,9 +26,9 @@
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
   <!-- <h3 class="">Play Video & Earn money</h3> -->
-  <div class="img-responsive" style="display:inline">
+  
         <?php the_content(); ?>
-  </div>
+  
 
   <!-- <h3>I'm an adventurer</h3> -->
 </div>

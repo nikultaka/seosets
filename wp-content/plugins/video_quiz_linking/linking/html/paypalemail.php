@@ -22,8 +22,6 @@
     </div>
 </div>
 
-
-
 <script>
     var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
     $('#paypalEmail_btn').on('click', function() {
