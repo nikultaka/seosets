@@ -1,4 +1,4 @@
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
 
@@ -16,7 +16,7 @@
       vertical-align: middle;
     }
   </style>
-  <!-- Modal -->
+  
 
   <div id="loader" style="z-index:9999999999;"></div>     
 
@@ -47,11 +47,29 @@
       </div>
     </div>
   </div>
-  <!-- End Modal -->
+  
 
 
 
-  <?php if(!empty($frontendQuizData)) { 
+  <?php // if(!empty($frontendQuizData)) { 
+    ?>
+    <div id="videoID_<?php // echo $frontendQuizData->id; ?>">
+      <video id="linkVid_<?php // echo $frontendQuizData->id; ?>" data_id="<?php // echo $frontendQuizData->id; ?>" class="linkVid" width="320" height="240" controls style="<?php echo $style; ?>">
+        <source src="<?php // echo $frontendQuizData->link; ?>">
+          Your browser does not support the video tag.
+        </video> 
+      </div>
+
+      <div id="quizID_<?php // echo $frontendQuizData->id; ?>" style="display: none;">
+        <?php //echo do_shortcode('[ays_quiz id="'.$frontendQuizData->quiz_id.'"]'); ?>
+      </div>  
+    <?php //} ?>     
+    <script type="text/javascript">
+      var ajaxurl = "<?php //cho admin_url('admin-ajax.php'); ?>";
+    </script> -->
+
+
+    <?php if(!empty($frontendQuizData)) { 
     ?>
     <div id="videoID_<?php echo $frontendQuizData->id; ?>">
       <video id="linkVid_<?php echo $frontendQuizData->id; ?>" data_id="<?php echo $frontendQuizData->id; ?>" class="linkVid" width="320" height="240" controls style="<?php echo $style; ?>">
@@ -63,11 +81,4 @@
       <div id="quizID_<?php echo $frontendQuizData->id; ?>" style="display: none;">
         <?php echo do_shortcode('[ays_quiz id="'.$frontendQuizData->quiz_id.'"]'); ?>
       </div>  
-    <?php } ?>    
-
-
-
-
-    <script type="text/javascript">
-      var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
-    </script>
+    <?php } ?> 
