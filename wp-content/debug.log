@@ -5802,3 +5802,533 @@ Stack trace:
 #4 {main}
   thrown in /var/www/html/seosets/wp-content/plugins/video_quiz_linking/linking/Controller.php on line 232
 >>>>>>> a36b7f8507d3ace524cef117d05f12637cb52eb1
+[30-Jul-2021 13:30:24 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[30-Jul-2021 13:31:25 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[30-Jul-2021 13:33:26 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[30-Jul-2021 13:35:27 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[30-Jul-2021 13:37:28 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[30-Jul-2021 13:39:29 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[30-Jul-2021 13:50:26 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[30-Jul-2021 13:51:41 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[30-Jul-2021 13:51:41 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[30-Jul-2021 13:51:41 UTC] PHP Stack trace:
+[30-Jul-2021 13:51:41 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[30-Jul-2021 13:51:41 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[30-Jul-2021 13:51:41 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[30-Jul-2021 13:51:41 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[30-Jul-2021 13:51:41 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[30-Jul-2021 13:51:41 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[30-Jul-2021 13:51:41 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[30-Jul-2021 13:51:41 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[30-Jul-2021 13:51:41 UTC] PHP   9. wp_robots_noindex_embeds() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[30-Jul-2021 13:51:41 UTC] PHP  10. is_embed() C:\wamp64\www\seosets\wp-includes\robots-template.php:93
+[30-Jul-2021 13:51:41 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:881
+[30-Jul-2021 13:51:41 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[30-Jul-2021 13:51:41 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[30-Jul-2021 13:51:41 UTC] PHP Stack trace:
+[30-Jul-2021 13:51:41 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[30-Jul-2021 13:51:41 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[30-Jul-2021 13:51:41 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[30-Jul-2021 13:51:41 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[30-Jul-2021 13:51:41 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[30-Jul-2021 13:51:41 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[30-Jul-2021 13:51:41 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[30-Jul-2021 13:51:41 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[30-Jul-2021 13:51:41 UTC] PHP   9. wp_robots_noindex_search() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[30-Jul-2021 13:51:41 UTC] PHP  10. is_search() C:\wamp64\www\seosets\wp-includes\robots-template.php:119
+[30-Jul-2021 13:51:41 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:699
+[30-Jul-2021 13:51:41 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[30-Jul-2021 14:19:22 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[30-Jul-2021 14:19:22 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[30-Jul-2021 14:19:22 UTC] PHP Stack trace:
+[30-Jul-2021 14:19:22 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[30-Jul-2021 14:19:22 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[30-Jul-2021 14:19:22 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[30-Jul-2021 14:19:22 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[30-Jul-2021 14:19:22 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[30-Jul-2021 14:19:22 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[30-Jul-2021 14:19:22 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[30-Jul-2021 14:19:22 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[30-Jul-2021 14:19:22 UTC] PHP   9. wp_robots_noindex_embeds() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[30-Jul-2021 14:19:22 UTC] PHP  10. is_embed() C:\wamp64\www\seosets\wp-includes\robots-template.php:93
+[30-Jul-2021 14:19:22 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:881
+[30-Jul-2021 14:19:22 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[30-Jul-2021 14:19:22 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[30-Jul-2021 14:19:22 UTC] PHP Stack trace:
+[30-Jul-2021 14:19:22 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[30-Jul-2021 14:19:22 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[30-Jul-2021 14:19:22 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[30-Jul-2021 14:19:22 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[30-Jul-2021 14:19:22 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[30-Jul-2021 14:19:22 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[30-Jul-2021 14:19:22 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[30-Jul-2021 14:19:22 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[30-Jul-2021 14:19:22 UTC] PHP   9. wp_robots_noindex_search() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[30-Jul-2021 14:19:22 UTC] PHP  10. is_search() C:\wamp64\www\seosets\wp-includes\robots-template.php:119
+[30-Jul-2021 14:19:22 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:699
+[30-Jul-2021 14:19:22 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[30-Jul-2021 14:19:28 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[30-Jul-2021 14:19:28 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[30-Jul-2021 14:19:28 UTC] PHP Stack trace:
+[30-Jul-2021 14:19:28 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[30-Jul-2021 14:19:28 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[30-Jul-2021 14:19:28 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[30-Jul-2021 14:19:28 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[30-Jul-2021 14:19:28 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[30-Jul-2021 14:19:28 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[30-Jul-2021 14:19:28 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[30-Jul-2021 14:19:28 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[30-Jul-2021 14:19:28 UTC] PHP   9. wp_robots_noindex_embeds() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[30-Jul-2021 14:19:28 UTC] PHP  10. is_embed() C:\wamp64\www\seosets\wp-includes\robots-template.php:93
+[30-Jul-2021 14:19:28 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:881
+[30-Jul-2021 14:19:28 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[30-Jul-2021 14:19:28 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[30-Jul-2021 14:19:28 UTC] PHP Stack trace:
+[30-Jul-2021 14:19:28 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[30-Jul-2021 14:19:28 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[30-Jul-2021 14:19:28 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[30-Jul-2021 14:19:28 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[30-Jul-2021 14:19:28 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[30-Jul-2021 14:19:28 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[30-Jul-2021 14:19:28 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[30-Jul-2021 14:19:28 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[30-Jul-2021 14:19:28 UTC] PHP   9. wp_robots_noindex_search() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[30-Jul-2021 14:19:28 UTC] PHP  10. is_search() C:\wamp64\www\seosets\wp-includes\robots-template.php:119
+[30-Jul-2021 14:19:28 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:699
+[30-Jul-2021 14:19:28 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[30-Jul-2021 14:19:30 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[30-Jul-2021 14:19:30 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[30-Jul-2021 14:19:30 UTC] PHP Stack trace:
+[30-Jul-2021 14:19:30 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[30-Jul-2021 14:19:30 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[30-Jul-2021 14:19:30 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[30-Jul-2021 14:19:30 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[30-Jul-2021 14:19:30 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[30-Jul-2021 14:19:30 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[30-Jul-2021 14:19:30 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[30-Jul-2021 14:19:30 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[30-Jul-2021 14:19:30 UTC] PHP   9. wp_robots_noindex_embeds() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[30-Jul-2021 14:19:30 UTC] PHP  10. is_embed() C:\wamp64\www\seosets\wp-includes\robots-template.php:93
+[30-Jul-2021 14:19:30 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:881
+[30-Jul-2021 14:19:30 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[30-Jul-2021 14:19:30 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[30-Jul-2021 14:19:30 UTC] PHP Stack trace:
+[30-Jul-2021 14:19:30 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[30-Jul-2021 14:19:30 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[30-Jul-2021 14:19:30 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[30-Jul-2021 14:19:30 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[30-Jul-2021 14:19:30 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[30-Jul-2021 14:19:30 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[30-Jul-2021 14:19:30 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[30-Jul-2021 14:19:30 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[30-Jul-2021 14:19:30 UTC] PHP   9. wp_robots_noindex_search() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[30-Jul-2021 14:19:30 UTC] PHP  10. is_search() C:\wamp64\www\seosets\wp-includes\robots-template.php:119
+[30-Jul-2021 14:19:30 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:699
+[30-Jul-2021 14:19:30 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[30-Jul-2021 14:19:32 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[30-Jul-2021 14:19:32 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[30-Jul-2021 14:19:32 UTC] PHP Stack trace:
+[30-Jul-2021 14:19:32 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[30-Jul-2021 14:19:32 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[30-Jul-2021 14:19:32 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[30-Jul-2021 14:19:32 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[30-Jul-2021 14:19:32 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[30-Jul-2021 14:19:32 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[30-Jul-2021 14:19:32 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[30-Jul-2021 14:19:32 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[30-Jul-2021 14:19:32 UTC] PHP   9. wp_robots_noindex_embeds() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[30-Jul-2021 14:19:32 UTC] PHP  10. is_embed() C:\wamp64\www\seosets\wp-includes\robots-template.php:93
+[30-Jul-2021 14:19:32 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:881
+[30-Jul-2021 14:19:32 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[30-Jul-2021 14:19:32 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[30-Jul-2021 14:19:32 UTC] PHP Stack trace:
+[30-Jul-2021 14:19:32 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[30-Jul-2021 14:19:32 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[30-Jul-2021 14:19:32 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[30-Jul-2021 14:19:32 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[30-Jul-2021 14:19:32 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[30-Jul-2021 14:19:32 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[30-Jul-2021 14:19:32 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[30-Jul-2021 14:19:32 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[30-Jul-2021 14:19:32 UTC] PHP   9. wp_robots_noindex_search() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[30-Jul-2021 14:19:32 UTC] PHP  10. is_search() C:\wamp64\www\seosets\wp-includes\robots-template.php:119
+[30-Jul-2021 14:19:32 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:699
+[30-Jul-2021 14:19:32 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[30-Jul-2021 14:19:32 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[30-Jul-2021 14:19:32 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[30-Jul-2021 14:19:32 UTC] PHP Stack trace:
+[30-Jul-2021 14:19:32 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[30-Jul-2021 14:19:32 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[30-Jul-2021 14:19:32 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[30-Jul-2021 14:19:32 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[30-Jul-2021 14:19:32 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[30-Jul-2021 14:19:32 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[30-Jul-2021 14:19:32 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[30-Jul-2021 14:19:32 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[30-Jul-2021 14:19:32 UTC] PHP   9. wp_robots_noindex_embeds() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[30-Jul-2021 14:19:32 UTC] PHP  10. is_embed() C:\wamp64\www\seosets\wp-includes\robots-template.php:93
+[30-Jul-2021 14:19:32 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:881
+[30-Jul-2021 14:19:32 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[30-Jul-2021 14:19:32 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[30-Jul-2021 14:19:32 UTC] PHP Stack trace:
+[30-Jul-2021 14:19:32 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[30-Jul-2021 14:19:32 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[30-Jul-2021 14:19:32 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[30-Jul-2021 14:19:32 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[30-Jul-2021 14:19:32 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[30-Jul-2021 14:19:32 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[30-Jul-2021 14:19:32 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[30-Jul-2021 14:19:32 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[30-Jul-2021 14:19:32 UTC] PHP   9. wp_robots_noindex_search() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[30-Jul-2021 14:19:32 UTC] PHP  10. is_search() C:\wamp64\www\seosets\wp-includes\robots-template.php:119
+[30-Jul-2021 14:19:32 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:699
+[30-Jul-2021 14:19:32 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[30-Jul-2021 14:19:32 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[30-Jul-2021 14:19:32 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[30-Jul-2021 14:19:32 UTC] PHP Stack trace:
+[30-Jul-2021 14:19:32 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[30-Jul-2021 14:19:32 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[30-Jul-2021 14:19:32 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[30-Jul-2021 14:19:32 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[30-Jul-2021 14:19:32 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[30-Jul-2021 14:19:32 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[30-Jul-2021 14:19:32 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[30-Jul-2021 14:19:32 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[30-Jul-2021 14:19:32 UTC] PHP   9. wp_robots_noindex_embeds() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[30-Jul-2021 14:19:32 UTC] PHP  10. is_embed() C:\wamp64\www\seosets\wp-includes\robots-template.php:93
+[30-Jul-2021 14:19:32 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:881
+[30-Jul-2021 14:19:32 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[30-Jul-2021 14:19:32 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[30-Jul-2021 14:19:32 UTC] PHP Stack trace:
+[30-Jul-2021 14:19:32 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[30-Jul-2021 14:19:32 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[30-Jul-2021 14:19:32 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[30-Jul-2021 14:19:32 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[30-Jul-2021 14:19:32 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[30-Jul-2021 14:19:32 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[30-Jul-2021 14:19:32 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[30-Jul-2021 14:19:32 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[30-Jul-2021 14:19:32 UTC] PHP   9. wp_robots_noindex_search() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[30-Jul-2021 14:19:32 UTC] PHP  10. is_search() C:\wamp64\www\seosets\wp-includes\robots-template.php:119
+[30-Jul-2021 14:19:32 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:699
+[30-Jul-2021 14:19:32 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[30-Jul-2021 14:19:32 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[30-Jul-2021 14:19:32 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[30-Jul-2021 14:19:32 UTC] PHP Stack trace:
+[30-Jul-2021 14:19:32 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[30-Jul-2021 14:19:32 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[30-Jul-2021 14:19:32 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[30-Jul-2021 14:19:32 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[30-Jul-2021 14:19:32 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[30-Jul-2021 14:19:32 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[30-Jul-2021 14:19:32 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[30-Jul-2021 14:19:32 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[30-Jul-2021 14:19:32 UTC] PHP   9. wp_robots_noindex_embeds() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[30-Jul-2021 14:19:32 UTC] PHP  10. is_embed() C:\wamp64\www\seosets\wp-includes\robots-template.php:93
+[30-Jul-2021 14:19:32 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:881
+[30-Jul-2021 14:19:32 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[30-Jul-2021 14:19:32 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[30-Jul-2021 14:19:32 UTC] PHP Stack trace:
+[30-Jul-2021 14:19:32 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[30-Jul-2021 14:19:32 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[30-Jul-2021 14:19:32 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[30-Jul-2021 14:19:32 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[30-Jul-2021 14:19:32 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[30-Jul-2021 14:19:32 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[30-Jul-2021 14:19:32 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[30-Jul-2021 14:19:32 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[30-Jul-2021 14:19:32 UTC] PHP   9. wp_robots_noindex_search() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[30-Jul-2021 14:19:32 UTC] PHP  10. is_search() C:\wamp64\www\seosets\wp-includes\robots-template.php:119
+[30-Jul-2021 14:19:32 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:699
+[30-Jul-2021 14:19:32 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[31-Jul-2021 04:25:45 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[31-Jul-2021 04:25:45 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[31-Jul-2021 04:25:45 UTC] PHP Stack trace:
+[31-Jul-2021 04:25:45 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[31-Jul-2021 04:25:45 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[31-Jul-2021 04:25:45 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[31-Jul-2021 04:25:45 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[31-Jul-2021 04:25:45 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[31-Jul-2021 04:25:45 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[31-Jul-2021 04:25:45 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[31-Jul-2021 04:25:45 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[31-Jul-2021 04:25:45 UTC] PHP   9. wp_robots_noindex_embeds() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[31-Jul-2021 04:25:45 UTC] PHP  10. is_embed() C:\wamp64\www\seosets\wp-includes\robots-template.php:93
+[31-Jul-2021 04:25:45 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:881
+[31-Jul-2021 04:25:45 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[31-Jul-2021 04:25:45 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[31-Jul-2021 04:25:45 UTC] PHP Stack trace:
+[31-Jul-2021 04:25:45 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[31-Jul-2021 04:25:45 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[31-Jul-2021 04:25:45 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[31-Jul-2021 04:25:45 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[31-Jul-2021 04:25:45 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[31-Jul-2021 04:25:45 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[31-Jul-2021 04:25:45 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[31-Jul-2021 04:25:45 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[31-Jul-2021 04:25:45 UTC] PHP   9. wp_robots_noindex_search() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[31-Jul-2021 04:25:45 UTC] PHP  10. is_search() C:\wamp64\www\seosets\wp-includes\robots-template.php:119
+[31-Jul-2021 04:25:45 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:699
+[31-Jul-2021 04:25:45 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[31-Jul-2021 04:28:09 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[31-Jul-2021 04:28:09 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[31-Jul-2021 04:28:09 UTC] PHP Stack trace:
+[31-Jul-2021 04:28:09 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[31-Jul-2021 04:28:09 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[31-Jul-2021 04:28:09 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[31-Jul-2021 04:28:09 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[31-Jul-2021 04:28:09 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[31-Jul-2021 04:28:09 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[31-Jul-2021 04:28:09 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[31-Jul-2021 04:28:09 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[31-Jul-2021 04:28:09 UTC] PHP   9. wp_robots_noindex_embeds() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[31-Jul-2021 04:28:09 UTC] PHP  10. is_embed() C:\wamp64\www\seosets\wp-includes\robots-template.php:93
+[31-Jul-2021 04:28:09 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:881
+[31-Jul-2021 04:28:09 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[31-Jul-2021 04:28:09 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[31-Jul-2021 04:28:09 UTC] PHP Stack trace:
+[31-Jul-2021 04:28:09 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[31-Jul-2021 04:28:09 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[31-Jul-2021 04:28:09 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[31-Jul-2021 04:28:09 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[31-Jul-2021 04:28:09 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[31-Jul-2021 04:28:09 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[31-Jul-2021 04:28:09 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[31-Jul-2021 04:28:09 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[31-Jul-2021 04:28:09 UTC] PHP   9. wp_robots_noindex_search() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[31-Jul-2021 04:28:09 UTC] PHP  10. is_search() C:\wamp64\www\seosets\wp-includes\robots-template.php:119
+[31-Jul-2021 04:28:09 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:699
+[31-Jul-2021 04:28:09 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[31-Jul-2021 04:28:10 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[31-Jul-2021 04:28:10 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[31-Jul-2021 04:28:10 UTC] PHP Stack trace:
+[31-Jul-2021 04:28:10 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[31-Jul-2021 04:28:10 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[31-Jul-2021 04:28:10 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[31-Jul-2021 04:28:10 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[31-Jul-2021 04:28:10 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[31-Jul-2021 04:28:10 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[31-Jul-2021 04:28:10 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[31-Jul-2021 04:28:10 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[31-Jul-2021 04:28:10 UTC] PHP   9. wp_robots_noindex_embeds() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[31-Jul-2021 04:28:10 UTC] PHP  10. is_embed() C:\wamp64\www\seosets\wp-includes\robots-template.php:93
+[31-Jul-2021 04:28:10 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:881
+[31-Jul-2021 04:28:10 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[31-Jul-2021 04:28:10 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[31-Jul-2021 04:28:10 UTC] PHP Stack trace:
+[31-Jul-2021 04:28:10 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[31-Jul-2021 04:28:10 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[31-Jul-2021 04:28:10 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[31-Jul-2021 04:28:10 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[31-Jul-2021 04:28:10 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[31-Jul-2021 04:28:10 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[31-Jul-2021 04:28:10 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[31-Jul-2021 04:28:10 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[31-Jul-2021 04:28:10 UTC] PHP   9. wp_robots_noindex_search() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[31-Jul-2021 04:28:10 UTC] PHP  10. is_search() C:\wamp64\www\seosets\wp-includes\robots-template.php:119
+[31-Jul-2021 04:28:10 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:699
+[31-Jul-2021 04:28:10 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[31-Jul-2021 04:28:10 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[31-Jul-2021 04:28:10 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[31-Jul-2021 04:28:10 UTC] PHP Stack trace:
+[31-Jul-2021 04:28:10 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[31-Jul-2021 04:28:10 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[31-Jul-2021 04:28:10 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[31-Jul-2021 04:28:10 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[31-Jul-2021 04:28:10 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[31-Jul-2021 04:28:10 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[31-Jul-2021 04:28:10 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[31-Jul-2021 04:28:10 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[31-Jul-2021 04:28:10 UTC] PHP   9. wp_robots_noindex_embeds() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[31-Jul-2021 04:28:10 UTC] PHP  10. is_embed() C:\wamp64\www\seosets\wp-includes\robots-template.php:93
+[31-Jul-2021 04:28:10 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:881
+[31-Jul-2021 04:28:10 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[31-Jul-2021 04:28:10 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[31-Jul-2021 04:28:10 UTC] PHP Stack trace:
+[31-Jul-2021 04:28:10 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[31-Jul-2021 04:28:10 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[31-Jul-2021 04:28:10 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[31-Jul-2021 04:28:10 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[31-Jul-2021 04:28:10 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[31-Jul-2021 04:28:10 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[31-Jul-2021 04:28:10 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[31-Jul-2021 04:28:10 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[31-Jul-2021 04:28:10 UTC] PHP   9. wp_robots_noindex_search() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[31-Jul-2021 04:28:10 UTC] PHP  10. is_search() C:\wamp64\www\seosets\wp-includes\robots-template.php:119
+[31-Jul-2021 04:28:10 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:699
+[31-Jul-2021 04:28:10 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[31-Jul-2021 04:28:10 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[31-Jul-2021 04:28:10 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[31-Jul-2021 04:28:10 UTC] PHP Stack trace:
+[31-Jul-2021 04:28:10 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[31-Jul-2021 04:28:10 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[31-Jul-2021 04:28:10 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[31-Jul-2021 04:28:10 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[31-Jul-2021 04:28:10 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[31-Jul-2021 04:28:10 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[31-Jul-2021 04:28:10 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[31-Jul-2021 04:28:10 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[31-Jul-2021 04:28:10 UTC] PHP   9. wp_robots_noindex_embeds() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[31-Jul-2021 04:28:10 UTC] PHP  10. is_embed() C:\wamp64\www\seosets\wp-includes\robots-template.php:93
+[31-Jul-2021 04:28:10 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:881
+[31-Jul-2021 04:28:10 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[31-Jul-2021 04:28:10 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[31-Jul-2021 04:28:10 UTC] PHP Stack trace:
+[31-Jul-2021 04:28:10 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[31-Jul-2021 04:28:10 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[31-Jul-2021 04:28:10 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[31-Jul-2021 04:28:10 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[31-Jul-2021 04:28:10 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[31-Jul-2021 04:28:10 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[31-Jul-2021 04:28:10 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[31-Jul-2021 04:28:10 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[31-Jul-2021 04:28:10 UTC] PHP   9. wp_robots_noindex_search() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[31-Jul-2021 04:28:10 UTC] PHP  10. is_search() C:\wamp64\www\seosets\wp-includes\robots-template.php:119
+[31-Jul-2021 04:28:10 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:699
+[31-Jul-2021 04:28:10 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[31-Jul-2021 04:28:10 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[31-Jul-2021 04:28:10 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[31-Jul-2021 04:28:10 UTC] PHP Stack trace:
+[31-Jul-2021 04:28:10 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[31-Jul-2021 04:28:10 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[31-Jul-2021 04:28:10 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[31-Jul-2021 04:28:10 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[31-Jul-2021 04:28:10 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[31-Jul-2021 04:28:10 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[31-Jul-2021 04:28:10 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[31-Jul-2021 04:28:10 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[31-Jul-2021 04:28:10 UTC] PHP   9. wp_robots_noindex_embeds() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[31-Jul-2021 04:28:10 UTC] PHP  10. is_embed() C:\wamp64\www\seosets\wp-includes\robots-template.php:93
+[31-Jul-2021 04:28:10 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:881
+[31-Jul-2021 04:28:10 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[31-Jul-2021 04:28:10 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[31-Jul-2021 04:28:10 UTC] PHP Stack trace:
+[31-Jul-2021 04:28:10 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[31-Jul-2021 04:28:10 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[31-Jul-2021 04:28:10 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[31-Jul-2021 04:28:10 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[31-Jul-2021 04:28:10 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[31-Jul-2021 04:28:10 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[31-Jul-2021 04:28:10 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[31-Jul-2021 04:28:10 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[31-Jul-2021 04:28:10 UTC] PHP   9. wp_robots_noindex_search() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[31-Jul-2021 04:28:10 UTC] PHP  10. is_search() C:\wamp64\www\seosets\wp-includes\robots-template.php:119
+[31-Jul-2021 04:28:10 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:699
+[31-Jul-2021 04:28:10 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[31-Jul-2021 04:28:13 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[31-Jul-2021 04:28:13 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[31-Jul-2021 04:28:13 UTC] PHP Stack trace:
+[31-Jul-2021 04:28:13 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[31-Jul-2021 04:28:13 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[31-Jul-2021 04:28:13 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[31-Jul-2021 04:28:13 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[31-Jul-2021 04:28:13 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[31-Jul-2021 04:28:13 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[31-Jul-2021 04:28:13 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[31-Jul-2021 04:28:13 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[31-Jul-2021 04:28:13 UTC] PHP   9. wp_robots_noindex_embeds() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[31-Jul-2021 04:28:13 UTC] PHP  10. is_embed() C:\wamp64\www\seosets\wp-includes\robots-template.php:93
+[31-Jul-2021 04:28:13 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:881
+[31-Jul-2021 04:28:13 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[31-Jul-2021 04:28:13 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[31-Jul-2021 04:28:13 UTC] PHP Stack trace:
+[31-Jul-2021 04:28:13 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[31-Jul-2021 04:28:13 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[31-Jul-2021 04:28:13 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[31-Jul-2021 04:28:13 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[31-Jul-2021 04:28:13 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[31-Jul-2021 04:28:13 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[31-Jul-2021 04:28:13 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[31-Jul-2021 04:28:13 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[31-Jul-2021 04:28:13 UTC] PHP   9. wp_robots_noindex_search() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[31-Jul-2021 04:28:13 UTC] PHP  10. is_search() C:\wamp64\www\seosets\wp-includes\robots-template.php:119
+[31-Jul-2021 04:28:13 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:699
+[31-Jul-2021 04:28:13 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[31-Jul-2021 04:28:13 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[31-Jul-2021 04:28:13 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[31-Jul-2021 04:28:13 UTC] PHP Stack trace:
+[31-Jul-2021 04:28:13 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[31-Jul-2021 04:28:13 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[31-Jul-2021 04:28:13 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[31-Jul-2021 04:28:13 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[31-Jul-2021 04:28:13 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[31-Jul-2021 04:28:13 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[31-Jul-2021 04:28:13 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[31-Jul-2021 04:28:13 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[31-Jul-2021 04:28:13 UTC] PHP   9. wp_robots_noindex_embeds() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[31-Jul-2021 04:28:13 UTC] PHP  10. is_embed() C:\wamp64\www\seosets\wp-includes\robots-template.php:93
+[31-Jul-2021 04:28:13 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:881
+[31-Jul-2021 04:28:13 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[31-Jul-2021 04:28:13 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[31-Jul-2021 04:28:13 UTC] PHP Stack trace:
+[31-Jul-2021 04:28:13 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[31-Jul-2021 04:28:13 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[31-Jul-2021 04:28:13 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[31-Jul-2021 04:28:13 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[31-Jul-2021 04:28:13 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[31-Jul-2021 04:28:13 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[31-Jul-2021 04:28:13 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[31-Jul-2021 04:28:13 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[31-Jul-2021 04:28:13 UTC] PHP   9. wp_robots_noindex_search() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[31-Jul-2021 04:28:13 UTC] PHP  10. is_search() C:\wamp64\www\seosets\wp-includes\robots-template.php:119
+[31-Jul-2021 04:28:13 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:699
+[31-Jul-2021 04:28:13 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[31-Jul-2021 04:28:13 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[31-Jul-2021 04:28:13 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[31-Jul-2021 04:28:13 UTC] PHP Stack trace:
+[31-Jul-2021 04:28:13 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[31-Jul-2021 04:28:13 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[31-Jul-2021 04:28:13 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[31-Jul-2021 04:28:13 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[31-Jul-2021 04:28:13 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[31-Jul-2021 04:28:13 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[31-Jul-2021 04:28:13 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[31-Jul-2021 04:28:13 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[31-Jul-2021 04:28:13 UTC] PHP   9. wp_robots_noindex_embeds() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[31-Jul-2021 04:28:13 UTC] PHP  10. is_embed() C:\wamp64\www\seosets\wp-includes\robots-template.php:93
+[31-Jul-2021 04:28:13 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:881
+[31-Jul-2021 04:28:13 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[31-Jul-2021 04:28:13 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[31-Jul-2021 04:28:13 UTC] PHP Stack trace:
+[31-Jul-2021 04:28:13 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[31-Jul-2021 04:28:13 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[31-Jul-2021 04:28:13 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[31-Jul-2021 04:28:13 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[31-Jul-2021 04:28:13 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[31-Jul-2021 04:28:13 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[31-Jul-2021 04:28:13 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[31-Jul-2021 04:28:13 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[31-Jul-2021 04:28:13 UTC] PHP   9. wp_robots_noindex_search() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[31-Jul-2021 04:28:13 UTC] PHP  10. is_search() C:\wamp64\www\seosets\wp-includes\robots-template.php:119
+[31-Jul-2021 04:28:13 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:699
+[31-Jul-2021 04:28:13 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[31-Jul-2021 04:28:14 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 253
+[31-Jul-2021 04:28:14 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[31-Jul-2021 04:28:14 UTC] PHP Stack trace:
+[31-Jul-2021 04:28:14 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[31-Jul-2021 04:28:14 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[31-Jul-2021 04:28:14 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[31-Jul-2021 04:28:14 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[31-Jul-2021 04:28:14 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[31-Jul-2021 04:28:14 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[31-Jul-2021 04:28:14 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[31-Jul-2021 04:28:14 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[31-Jul-2021 04:28:14 UTC] PHP   9. wp_robots_noindex_embeds() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[31-Jul-2021 04:28:14 UTC] PHP  10. is_embed() C:\wamp64\www\seosets\wp-includes\robots-template.php:93
+[31-Jul-2021 04:28:14 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:881
+[31-Jul-2021 04:28:14 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[31-Jul-2021 04:28:14 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\wamp64\www\seosets\wp-includes\functions.php on line 5313
+[31-Jul-2021 04:28:14 UTC] PHP Stack trace:
+[31-Jul-2021 04:28:14 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:0
+[31-Jul-2021 04:28:14 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:57
+[31-Jul-2021 04:28:14 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:152
+[31-Jul-2021 04:28:14 UTC] PHP   4. wp_die() C:\wamp64\www\seosets\wp-includes\class-wp-fatal-error-handler.php:233
+[31-Jul-2021 04:28:14 UTC] PHP   5. _default_wp_die_handler() C:\wamp64\www\seosets\wp-includes\functions.php:3421
+[31-Jul-2021 04:28:14 UTC] PHP   6. wp_robots() C:\wamp64\www\seosets\wp-includes\functions.php:3497
+[31-Jul-2021 04:28:14 UTC] PHP   7. apply_filters() C:\wamp64\www\seosets\wp-includes\robots-template.php:32
+[31-Jul-2021 04:28:14 UTC] PHP   8. WP_Hook->apply_filters() C:\wamp64\www\seosets\wp-includes\plugin.php:212
+[31-Jul-2021 04:28:14 UTC] PHP   9. wp_robots_noindex_search() C:\wamp64\www\seosets\wp-includes\class-wp-hook.php:292
+[31-Jul-2021 04:28:14 UTC] PHP  10. is_search() C:\wamp64\www\seosets\wp-includes\robots-template.php:119
+[31-Jul-2021 04:28:14 UTC] PHP  11. _doing_it_wrong() C:\wamp64\www\seosets\wp-includes\query.php:699
+[31-Jul-2021 04:28:14 UTC] PHP  12. trigger_error() C:\wamp64\www\seosets\wp-includes\functions.php:5313
+[31-Jul-2021 04:47:07 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL), expecting end of file in C:\wamp64\www\seosets\wp-content\plugins\video_quiz_linking\linking\Controller.php on line 286

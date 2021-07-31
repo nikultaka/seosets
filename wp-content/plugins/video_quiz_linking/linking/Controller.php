@@ -250,10 +250,8 @@ class VideoLinkingController
         exit();
     }
 
-<<<<<<< HEAD
 
 
-=======
     public function mass_payment() {
         global $wpdb;
         //$videoID = $_POST['id'];
@@ -278,7 +276,6 @@ class VideoLinkingController
         echo json_encode(array('status'=>1,'data'=>$massPayResponse));
         exit();
     }     
->>>>>>> a36b7f8507d3ace524cef117d05f12637cb52eb1
 
 }
 
@@ -286,9 +283,6 @@ $videoLinkingController = new VideoLinkingController();
 add_action('wp_ajax_VideoLinkingController::insert_video', array($videoLinkingController, 'insert_video'));
 add_action('wp_ajax_VideoLinkingController::get_data', array($videoLinkingController, 'get_data'));
 add_action('wp_ajax_VideoLinkingController::delete_record', array($videoLinkingController, 'delete_record'));
-<<<<<<< HEAD
 add_action('wp_ajax_VideoLinkingController::insert_paypalEmail', array($videoLinkingController, 'insert_paypalEmail'));
 
-=======
 add_action('wp_ajax_VideoLinkingController::mass_payment', array($videoLinkingController, 'mass_payment'));
->>>>>>> a36b7f8507d3ace524cef117d05f12637cb52eb1
