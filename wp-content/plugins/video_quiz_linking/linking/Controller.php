@@ -265,6 +265,8 @@ class VideoLinkingController
         }
         $massPayRequest = new MassPayRequestType();
         $massPayRequest->MassPayItem = array();
+        $table_user_quiz = $wpdb->prefix.'user_quiz';
+
         $email = array('test@gmail.com', 'tako@gmail.com');
         for ($i = 0; $i < count($email); $i++) {
             $masspayItem = new MassPayRequestItemType();
