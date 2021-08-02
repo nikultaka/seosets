@@ -109,7 +109,15 @@ function videoDashboard(){
 
     ob_start();
     wp_enqueue_style('clone_style', plugins_url('../assets/css/style.css', __FILE__), false, '1.0.0', 'all');
+    wp_enqueue_style('dashboard', plugins_url('../assets/css/dashboard.css', __FILE__), false, '1.0.0', 'all');
+
+    wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.0.6/css/all.css');
+    wp_enqueue_style('googleapis', 'https://fonts.googleapis.com/css?family=Montserrat:400,700,200');
+    wp_enqueue_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css');
+    wp_enqueue_style('dataTables', 'https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css');
+
     wp_enqueue_script('datatable-script', 'https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js', array('jquery'));
+    wp_enqueue_script('validate-script', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js', array('jquery'));
     wp_enqueue_script('bootstrap-script', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js', array('jquery'));
     wp_enqueue_script('sweetalert-script', '//cdn.jsdelivr.net/npm/sweetalert2@10', array('jquery'));
     wp_enqueue_script('script', plugins_url('../assets/js/script.js', __FILE__));
@@ -118,10 +126,20 @@ function videoDashboard(){
     $table_name = $wpdb->prefix . "aysquiz_quizes";
     $table_quiz_linking = $wpdb->prefix . "video_quiz_linking";
     $table_user_quiz = $wpdb->prefix . 'user_quiz';
+    $usersTable = $wpdb->prefix . "users";
+    $loginUserID =  get_current_user_id();
+   
+    $userquizSql =    "SELECT  " . $table_quiz_linking . ".video_name, " . $table_user_quiz . ".user_id, " . $usersTable . ".user_nicename,
+                ". $table_user_quiz . ".video_id, " . $table_user_quiz . ".is_paid, " . $table_user_quiz . ".status, " . $table_user_quiz . ".created_at FROM " . $table_user_quiz . " 
+                 left JOIN " . $usersTable . " ON " . $usersTable . ".ID = " . $table_user_quiz . ".user_id 
+                 LEFT JOIN " . $table_quiz_linking . " ON " . $table_quiz_linking . ".id = " . $table_user_quiz . ".video_id
+                 WHERE $usersTable.ID = $loginUserID";
+    
+    $userquizSqlData = $wpdb->get_results($userquizSql);
+
 
     $query = "SELECT * from " . $table_name;
     $quizesData = $wpdb->get_results($query);
-
     $query = "SELECT ql.* from " . $table_quiz_linking . " as ql 
     left join " . $table_name . " as aq on aq.id = ql.quiz_id order by id ASC";
     $tableData = $wpdb->get_results($query);
@@ -157,55 +175,6 @@ function videoDashboard(){
 }
 add_shortcode('dashboard', 'videoDashboard');
 
-function paypalEmail()
-{
-    if (!is_user_logged_in()) {
-        wp_redirect(site_url());
-        exit;
-    }
-
-    ob_start();
-    wp_enqueue_script('script', plugins_url('../assets/js/script.js', __FILE__));
-    wp_enqueue_script('script', plugins_url('../assets/js/script.js', __FILE__));
-    include(dirname(__FILE__) . "/html/paypalemail.php");
-    $s = ob_get_contents();
-    ob_end_clean();
-    print $s;
-}
-add_shortcode('paypalEmail', 'paypalEmail');
-
-
-function videoPaymentstatus(){
-    if (!is_user_logged_in()) {
-        wp_redirect(site_url());
-        exit;
-    }
-    ob_start();
-    wp_enqueue_script('script', plugins_url('../assets/js/script.js', __FILE__));
-    wp_enqueue_script('script', plugins_url('../assets/js/script.js', __FILE__));
-    global $wpdb;
-    $userquizTable = $wpdb->prefix . "user_quiz";
-    $usersTable = $wpdb->prefix . "users";
-    $videoquizlinkingTable = $wpdb->prefix . "video_quiz_linking";
-    $loginUserID =  get_current_user_id();
-   
-    $query =    "SELECT  " . $videoquizlinkingTable . ".video_name, " . $userquizTable . ".user_id, " . $usersTable . ".user_nicename,
-                " . $userquizTable . ".video_id, " . $userquizTable . ".is_paid, " . $userquizTable . ".status, " . $userquizTable . ".created_at FROM " . $userquizTable . " 
-                 left JOIN " . $usersTable . " ON " . $usersTable . ".ID = " . $userquizTable . ".user_id 
-                 LEFT JOIN " . $videoquizlinkingTable . " ON " . $videoquizlinkingTable . ".id = " . $userquizTable . ".video_id
-                 WHERE $usersTable.ID = $loginUserID";
-    
-    $tableData = $wpdb->get_results($query);
-    include(dirname(__FILE__) . "/html/videoPaymentstatus.php");
-    $s = ob_get_contents();
-    ob_end_clean();
-    print $s;
-}
-add_shortcode('videoPaymentstatus', 'videoPaymentstatus');
-
-
-
-
 class VideoLinkingController
 {
     public function insert_video()
@@ -239,12 +208,12 @@ class VideoLinkingController
     public function insert_paypalEmail()
     {
         global $wpdb;
-        $paypalEmail = $_POST['paypalEmail'];
+        $paypalEmail = $_POST['paypalEmail'];   
         $loginUserID =  get_current_user_id();
         $data['status'] = 0;
         $data['msg'] = "Something went wrong please try again";
         $usermetaTable = $wpdb->prefix . "usermeta";
-        $userMetadata = $wpdb->get_results("SELECT * FROM $usermetaTable WHERE user_id = 1 AND meta_key = 'userpaypalEmail' ");
+        $userMetadata = $wpdb->get_results("SELECT * FROM $usermetaTable WHERE user_id = $loginUserID AND meta_key = 'userpaypalEmail' ");
 
         if ($paypalEmail != '' && $paypalEmail != null) {
             if (empty($userMetadata)) {
