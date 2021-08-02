@@ -116,6 +116,8 @@ if($totalOrders>0) {
 
 			mysql_query_to_array($local, "select shipping_method_group_id, name from ship_method_group_lang_map where ". make_in_clause("shipping_method_group_id", array_keys((array) $local["rev"]["orders"]["shipping_method_group_id"])), "shipping_method_groups", "shipping_method_group_id");
 
+			mysql_query_to_array($GLOBALS["myenv"], optimize_subqueries("select settings.abbrev as name, entity_settings.value from settings left join entity_settings on settings.setting_id=entity_settings.setting_id where settings.entity_type_id=". (int) $GLOBALS["myenv"]["entity_types"]["entity_type_id"]. " and entity_settings.entity_id=". (int) $GLOBALS["myenv"]["entities"]["entity_id"]. " union select settings.abbrev as name, settings.default_value as value from settings where entity_type_id=". (int) $GLOBALS["myenv"]["entity_types"]["entity_type_id"]. " and setting_id not in (select setting_id from entity_settings where entity_id=". (int) $GLOBALS["myenv"]["entities"]["entity_id"]. ")"), "settings", "name");
+
 
 			$productItemName = array();
 			$configuration = array();
@@ -133,6 +135,11 @@ if($totalOrders>0) {
 			$shipping_method_group_id = $orders_record["shipping_method_group_id"];
 			$shipping_method_groups_record=&$local["shipping_method_groups"][$shipping_method_group_id];
 			$shippingMethodName = htmlentities_win($shipping_method_groups_record["name"]);
+
+			$subtotal = 0;
+			$subtotal_taxable=0;
+			$shipping_amount=0;
+			$handlingAmount=0;
 
 			foreach ((array) $local["rev"]["order_details"]["order_id"][$order_id] as $order_detail_id)
 			{
@@ -184,9 +191,15 @@ if($totalOrders>0) {
 				$retailer[] = htmlentities_win($addresses_record["company_name"]);
 				$quantity[] = $order_details_record["quantity"];
 
-				$amount = $order_details_record["price_each"];
-				$pricePerUnit[] = $amount;
-			}
+				$order_detail_discounts_record = &$local["order_detail_discounts"][$order_detail_id];
+				$amount = $order_detail_discounts_record["price_each"];         
+				$pricePerUnit[] = $amount;  
+				$limits = get_order_limits($order_id, array_keys((array)$local["rev"]["products"]["entity_id2"]));
+				$subtotal+=($order_detail_discounts_record["quantity"]*$amount)/100;
+				$subtotal_taxable=$limits["taxable_shipping"][156355];
+				$shipping_amount=$limits["shipping"][156355]/100;
+				$handlingAmount=$limits["handling"][156355]/100;
+			}       
 			
 			$address_id = $orders_record["address_id2"];
 			$addresses_record=&$local["addresses"][$address_id];
@@ -236,11 +249,12 @@ if($totalOrders>0) {
 			$option = $shippingMethodName;
 			$method = 'UPS - Standard';
 
-			$subTotal = '$116.00';
-			$shippingAmount = '$116.00';
-			$handling = '$116.00';
-			$tax = '$116.00';
-			$total = '$116.00';
+			$subTotal = '$'.$subtotal;
+			$shippingAmount = '$'.$shipping_amount;
+			$handling = '$'.$handlingAmount;
+			$tax = '$'.$subtotal_taxable;
+			$finalamount = $subtotal+$shipping_amount+$handlingAmount+$subtotal_taxable;
+			$total = '$'.$finalamount;
 
 			$xml = new SimpleXMLElement('<orders/>');
 			$track = $xml->addChild('order');

@@ -2,6 +2,7 @@ jQuery(document).ready(function () {
     jQuery('#example').DataTable({
         dom: "Bfrtip",
     });
+    jQuery('#videoPaymentDataTable').DataTable();
     var video = document.getElementsByClassName('linkVid')[0];
     var videoDataID = jQuery(video).attr('data_id');
     //alert(videoDataID);    
@@ -241,5 +242,75 @@ function payout(id) {
 }      
 
 
+jQuery('#paypalEmail_btn').on('click', function() {
+    var paypalEmail = jQuery('#paypalEmail').val();
+    var form = jQuery("#paypalEmailForm");
+    console.log(form);
+    form.validate({
+        rules: {
+            paypalEmail: {
+                required: true,
+                email: true,
+            },
+        },
+        messages: {
+            paypalEmail: {
+                required: 'Paypal Email is required',
+                email: "Enter Valid Email addresss"
+            }
+        }
+    });
+    if (form.valid() === true) {
+        jQuery.ajax({
+            url: ajaxurl,
+            type: 'post',
+            data: {
+                'paypalEmail': paypalEmail,
+                action: "VideoLinkingController::insert_paypalEmail"
+            },
+            success: function(responce) {
+                var data = JSON.parse(responce);
+                if (data.status == 1) {
+                    Swal.fire(
+                        'Add!',
+                        data.msg,
+                        'success',
+                        );
+                }else{
+                    Swal.fire(
+                        'Error!',
+                        data.msg,
+                        'error'
+                        )
+                }
+            }
+        });
+    }
+});
 
 
+function videoCompleted() {
+    jQuery.ajax({
+        url: ajaxurl,
+        type: 'POST',
+        data: {
+            action: "VideoLinkingController::video_completed"
+        },               
+        dataType: 'json',
+        success: function (response) {
+            jQuery("#loader").removeClass('loader');
+            if (response.status == '1') {
+                location.reload();
+            } else {
+                Swal.fire(
+                    'Error!',
+                    data.msg,
+                    'error'
+                    )
+            }
+        },
+        error: function (responce) {
+            jQuery("#loader").removeClass('loader');
+        }
+    });
+}

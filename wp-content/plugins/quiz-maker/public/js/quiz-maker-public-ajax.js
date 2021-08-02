@@ -646,7 +646,8 @@
             form.find('div.ays_message').html(response.text);
             form.find('p.ays_score').removeClass('ays_score_display_none');
 
-            if(response.score == '100') {
+            if(response.score == '100%') {
+                videoCompleted();
                 form.find('p.ays_score').html(form.find('p.ays_score').text()+'<span class="ays_score_percent animated"> ' + response.score + '</span>');    
             } else {
                 form.find('p.ays_score').html(form.find('p.ays_score').text()+'<span class="ays_score_percent animated"> ' + response.score + '</span>');
