@@ -86,14 +86,12 @@ function payout()
     $table_quiz_linking = $wpdb->prefix . "video_quiz_linking";
     $table_user_quiz = $wpdb->prefix . "user_quiz";
 
-    $query = "SELECT ql.id,ql.video_name,ql.amount,aq.title,tuq.status,u.user_nicename
+    $query = "SELECT ql.id,ql.video_name,ql.amount,aq.title,tuq.status,u.user_nicename,tuq.is_paid
     from " . $table_users . " as u
     inner join " . $table_user_quiz . " as tuq on tuq.user_id = u.ID
     inner join " . $table_quiz_linking . " as ql on ql.id = tuq.video_id
     inner join " . $table_name . " as aq on aq.id = ql.quiz_id";
     $tableData = $wpdb->get_results($query);
-
-    //echo '<pre>'; print_r($tableData); exit;    
 
     include(dirname(__FILE__) . "/html/payout.php");
     $s = ob_get_contents();
@@ -128,12 +126,12 @@ function videoDashboard(){
     $table_user_quiz = $wpdb->prefix . 'user_quiz';
     $usersTable = $wpdb->prefix . "users";
     $loginUserID =  get_current_user_id();
-   
+
     $userquizSql =    "SELECT  " . $table_quiz_linking . ".video_name, " . $table_user_quiz . ".user_id, " . $usersTable . ".user_nicename,
-                ". $table_user_quiz . ".video_id, " . $table_user_quiz . ".is_paid, " . $table_user_quiz . ".status, " . $table_user_quiz . ".created_at FROM " . $table_user_quiz . " 
-                 left JOIN " . $usersTable . " ON " . $usersTable . ".ID = " . $table_user_quiz . ".user_id 
-                 LEFT JOIN " . $table_quiz_linking . " ON " . $table_quiz_linking . ".id = " . $table_user_quiz . ".video_id
-                 WHERE $usersTable.ID = $loginUserID";
+    ". $table_user_quiz . ".video_id, " . $table_user_quiz . ".is_paid, " . $table_user_quiz . ".status, " . $table_user_quiz . ".created_at FROM " . $table_user_quiz . " 
+    left JOIN " . $usersTable . " ON " . $usersTable . ".ID = " . $table_user_quiz . ".user_id 
+    LEFT JOIN " . $table_quiz_linking . " ON " . $table_quiz_linking . ".id = " . $table_user_quiz . ".video_id
+    WHERE $usersTable.ID = $loginUserID";
     
     $userquizSqlData = $wpdb->get_results($userquizSql);
 
@@ -270,20 +268,38 @@ class VideoLinkingController
         $massPayRequest = new MassPayRequestType();
         $massPayRequest->MassPayItem = array();
         $table_user_quiz = $wpdb->prefix.'user_quiz';
+        $table_users = $wpdb->prefix.'users';
+        $table_users_meta = $wpdb->prefix.'usermeta';
 
-        $email = array('test@gmail.com', 'tako@gmail.com');
-        for ($i = 0; $i < count($email); $i++) {
-            $masspayItem = new MassPayRequestItemType();
-            $masspayItem->Amount = new BasicAmountType('USD', 2);
-            $masspayItem->ReceiverEmail = $email[$i];
-            $massPayRequest->MassPayItem[] = $masspayItem;
-        }
-        $massPayReq = new MassPayReq();
-        $massPayReq->MassPayRequest = $massPayRequest;
-        $paypalService = new PayPalAPIInterfaceServiceService(Configuration::getAcctAndConfig());
-        $massPayResponse = $paypalService->MassPay($massPayReq);
-        echo json_encode(array('status' => 1, 'data' => $massPayResponse));
-        exit();
+        $sql = "select wuq.user_id,tum.meta_value from  ".$table_user_quiz." as wuq 
+        inner join ".$table_users." as tu on tu.ID = wuq.user_id
+        inner join ".$table_users_meta." as tum on tum.meta_key = 'userpaypalEmail' and tum.user_id = tu.ID
+        ";   
+        $usersData = $wpdb->get_results($sql);
+
+        $userID = array();
+        $email = array();
+        if(!empty($usersData)) {
+            foreach($usersData as $key => $value) {
+                $email[] = $value->meta_value;
+                $userID[] = $value->user_id; 
+            }
+            for ($i = 0; $i < count($email); $i++) {
+                $masspayItem = new MassPayRequestItemType();
+                $masspayItem->Amount = new BasicAmountType('USD', 2);
+                $masspayItem->ReceiverEmail = $email[$i];
+                $massPayRequest->MassPayItem[] = $masspayItem;
+            }
+            $massPayReq = new MassPayReq();
+            $massPayReq->MassPayRequest = $massPayRequest;
+            $paypalService = new PayPalAPIInterfaceServiceService(Configuration::getAcctAndConfig());
+            $massPayResponse = $paypalService->MassPay($massPayReq);
+            $userID = implode(",",$userID);
+            $wpdb->query("update ".$table_user_quiz." set is_paid = 1,status=0 where user_id in (".$userID.") ");        
+        }       
+
+        echo json_encode(array('status' => 1, 'data' => $massPayResponse));   
+        exit();   
     }
 
     public function video_completed() {

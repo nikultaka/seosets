@@ -42,7 +42,7 @@
      <?php if(!empty($tableData)) { 
       foreach($tableData as $key => $value) { 
         $status = 'Paid';
-        if($value->status == '0') {
+        if($value->is_paid == '0') {
           $status = 'Processing';
         }     
         ?>

@@ -23,11 +23,10 @@ jQuery(document).ready(function () {
     });    
     video.addEventListener('ended', function() {
         supposedCurrentTime = 0;
-        Swal.fire({
+        return Swal.fire({
             icon: 'success',
             title: 'Thanks, you need to give answers for the quiz now!',
             showConfirmButton: true,
-            timer: 1500
         }).then(function () {
             jQuery("#videoID_"+videoDataID).hide();
             jQuery("#quizID_"+videoDataID).show();
@@ -209,6 +208,7 @@ function doMassPayment() {
         confirmButtonText: 'Yes'
     }).then((result) => {  
         if (result.isConfirmed) {
+            jQuery("#loader").addClass('loader');
             jQuery.ajax({
                 url: ajaxurl,
                 type: 'POST',
@@ -300,7 +300,13 @@ function videoCompleted() {
         success: function (response) {
             jQuery("#loader").removeClass('loader');
             if (response.status == '1') {
-                location.reload();
+                Swal.fire({       
+                    icon: 'success',
+                    title: 'Thanks, try another video now!',
+                    showConfirmButton: true
+                }).then(function () {
+                    location.reload();
+                });             
             } else {
                 Swal.fire(
                     'Error!',
