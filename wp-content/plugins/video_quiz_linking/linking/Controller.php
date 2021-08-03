@@ -321,3 +321,14 @@ add_action('wp_ajax_VideoLinkingController::insert_paypalEmail', array($videoLin
 
 add_action('wp_ajax_VideoLinkingController::mass_payment', array($videoLinkingController, 'mass_payment'));
 add_action('wp_ajax_VideoLinkingController::video_completed', array($videoLinkingController, 'video_completed'));
+
+
+function disable_plugin_updates( $value ) {
+    if ( isset($value) && is_object($value) ) {
+        if ( isset( $value->response['quiz-maker/quiz-maker.php'] ) ) {
+          unset( $value->response['quiz-maker/quiz-maker.php'] );
+      }     
+  }
+  return $value;
+}
+add_filter( 'site_transient_update_plugins', 'disable_plugin_updates' );
