@@ -6599,3 +6599,9 @@ svg {
 .gallery-item > div > a:focus {
   box-shadow: 0 0 0 2px #0073aa;
 }
+
+
+.it_epoll_container  {
+	max-width: 100% !important;
+	width: 100% !important;
+}

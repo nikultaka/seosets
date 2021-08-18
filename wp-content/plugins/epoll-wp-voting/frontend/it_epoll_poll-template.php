@@ -7,6 +7,14 @@ while ( have_posts() ) : the_post();
 			if(get_post_meta( get_the_id(), 'it_epoll_poll_option', true )){
 				$it_epoll_option_names = get_post_meta( get_the_id(), 'it_epoll_poll_option', true );
 			}
+
+
+			
+
+
+
+
+
 			$it_epoll_option_imgs = array();
 			$it_epoll_option_imgs = get_post_meta( get_the_id(), 'it_epoll_poll_option_img', true );
 			$it_epoll_poll_option_cover_img = array();
@@ -43,11 +51,15 @@ while ( have_posts() ) : the_post();
 			}
 			$it_epoll_poll_vote_percentage = (int)$it_epoll_poll_vote_percentage;
 			?>
-			<?php if($it_epoll_poll_style == 'list'){?>
+			<?php if($it_epoll_poll_style == 'list'){  ?>
 				<li class="it_epoll_survey-item">
 			<div class="it_epoll_survey-item-inner">
 				<div class="it_epoll_survey-name">
 				  <?php echo $it_epoll_option_name;?>
+				</div>
+
+				<div class="it_epoll_survey-name">
+				  Launch Date : <?php echo $it_epoll_poll_launch_date;?>
 				</div>
 
 			<div class="it_epoll_survey-item-action <?php if(it_epoll_check_for_unique_voting(get_the_id(),$it_epoll_poll_option_id[$i])) echo 'it_epoll_survey-item-action-disabled';?>">
@@ -92,7 +104,7 @@ while ( have_posts() ) : the_post();
 				</div>
 				</div>
 		  </li>
-			<?php }else{?>
+			<?php }else{ ?>
 		  <li class="it_epoll_survey-item">
 
 			<div class="it_epoll_survey-item-inner it_epoll_card_front">
@@ -123,6 +135,10 @@ while ( have_posts() ) : the_post();
 				<?php }?>
 				<div class="it_epoll_survey-name">
 				  <?php echo $it_epoll_option_name;?>
+				</div>
+
+				<div class="it_epoll_survey-name">
+				  Launch Date : <?php echo $it_epoll_poll_launch_date;?>
 				</div>
 
 				<div class="it_epoll_survey-item-action<?php if(it_epoll_check_for_unique_voting(get_the_id(),$it_epoll_poll_option_id[$i])) echo ' it_epoll_survey-item-action-disabled';?>">

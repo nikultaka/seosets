@@ -28,6 +28,34 @@ if ( $it_epoll_post_query->have_posts()) {
 			if(get_post_meta( get_the_id(), 'it_epoll_poll_option', true )){
 				$it_epoll_option_names = get_post_meta( get_the_id(), 'it_epoll_poll_option', true );
 			}
+
+
+
+			$it_epoll_poll_launch_date = array();
+			if(get_post_meta( get_the_id(), 'it_epoll_poll_launch_date', true )){
+				$it_epoll_poll_launch_date = get_post_meta( get_the_id(), 'it_epoll_poll_launch_date', true );
+			}
+
+			$it_epoll_poll_audited_by = array();
+			if(get_post_meta( get_the_id(), 'it_epoll_poll_audited_by', true )){
+				$it_epoll_poll_audited_by = get_post_meta( get_the_id(), 'it_epoll_poll_audited_by', true );
+			}
+
+			$it_epoll_poll_official_website = array();
+			if(get_post_meta( get_the_id(), 'it_epoll_poll_official_website', true )){
+				$it_epoll_poll_official_website = get_post_meta( get_the_id(), 'it_epoll_poll_official_website', true );
+			}
+
+			$it_epoll_poll_social_link = array();
+			if(get_post_meta( get_the_id(), 'it_epoll_poll_social_link', true )){
+				$it_epoll_poll_social_link = get_post_meta( get_the_id(), 'it_epoll_poll_social_link', true );
+			}
+
+
+
+
+
+
 			$it_epoll_option_imgs = array();
 			$it_epoll_option_imgs = get_post_meta( get_the_id(), 'it_epoll_poll_option_img', true );
 			$it_epoll_poll_option_cover_img = array();
@@ -68,12 +96,25 @@ if ( $it_epoll_post_query->have_posts()) {
 			}
 			$it_epoll_poll_vote_percentage = (int)$it_epoll_poll_vote_percentage;
 			?>
-			<?php if($it_epoll_poll_style == 'list'){?>
+			<?php if($it_epoll_poll_style == 'list'){  ?>
 				<li class="it_epoll_survey-item">
 			<div class="it_epoll_survey-item-inner">
 				<div class="it_epoll_survey-name">
 				  <?php echo $it_epoll_option_name;?>
 				</div>
+
+				<div class="it_epoll_survey-name">
+				  Launch Date : <?php echo date("d F Y",strtotime($it_epoll_poll_launch_date[$i])); ?>
+				</div>
+				<div class="it_epoll_survey-name">
+				  Audited By : <?php echo $it_epoll_poll_audited_by[$i]; ?>
+				</div>
+				<div class="it_epoll_survey-name">
+				  Official Website : <?php echo $it_epoll_poll_official_website[$i]; ?>
+				</div>
+				<div class="it_epoll_survey-name">
+				  Social Link : <?php echo $it_epoll_poll_social_link[$i]; ?>
+				</div>     
 
 			<div class="it_epoll_survey-item-action <?php if(it_epoll_check_for_unique_voting(get_the_id(),$it_epoll_poll_option_id[$i])) echo 'it_epoll_survey-item-action-disabled';?>">
 				<?php if(!it_epoll_check_for_unique_voting(get_the_id(),$it_epoll_poll_option_id[$i])):?>
@@ -117,7 +158,7 @@ if ( $it_epoll_post_query->have_posts()) {
 				</div>
 				</div>
 		  </li>
-			<?php }else{?>
+			<?php }else{ ?>
 		  <li class="it_epoll_survey-item">
 			<div class="it_epoll_survey-item-inner">
 				<div class="it_epoll_big_cover">
@@ -147,6 +188,19 @@ if ( $it_epoll_post_query->have_posts()) {
 				<?php }?>
 				<div class="it_epoll_survey-name">
 				  <?php echo $it_epoll_option_name;?>
+				</div>
+
+				<div class="it_epoll_survey-name">
+				  Launch Date : <?php echo date("d F Y",strtotime($it_epoll_poll_launch_date[$i])); ?>
+				</div>
+				<div class="it_epoll_survey-name">
+				  Audited By : <?php echo $it_epoll_poll_audited_by[$i]; ?>
+				</div>
+				<div class="it_epoll_survey-name">
+				  Official Website : <?php echo $it_epoll_poll_official_website[$i]; ?>
+				</div>
+				<div class="it_epoll_survey-name">
+				  Social Link : <?php echo $it_epoll_poll_social_link[$i]; ?>
 				</div>
 
 				<div class="it_epoll_survey-item-action<?php if(it_epoll_check_for_unique_voting(get_the_id(),$it_epoll_poll_option_id[$i])) echo ' it_epoll_survey-item-action-disabled';?>">
