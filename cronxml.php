@@ -142,6 +142,8 @@ $totals->addChild('total',$total);
 Header('Content-type: text/xml');
 $xmlString = $xml->asXML();
 
+echo $xmlString; die;     
+
 $fileName = 'fileName.xml';
 $dom = new DOMDocument;
 $dom->preserveWhiteSpace = FALSE;

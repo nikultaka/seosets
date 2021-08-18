@@ -5,21 +5,6 @@ error_reporting(E_ERROR | E_PARSE);
 set_include_path($_SERVER["DOCUMENT_ROOT"].'/phpseclib');   
 require_once('Net/SFTP.php');
 
-function uploadFileToSFTP($sourcePath,$destinationPath,$fileName,$orderID) {
-	$host = "cfsgroupinc-ftp.exavault.com";
-	$port = 22;
-	$user = "PrizerWebCart";
-	$pass = "YZOKmD2m9SG1P86a5QeC"; 
-
-	$sftp = new Net_SFTP($host);
-	if (!$sftp->login($user,$pass)) {
-		exit('Login Failed');
-	}
-	$sftp->put($destinationPath.$fileName,$sourcePath.$fileName, NET_SFTP_LOCAL_FILE);
-	//mysql_query("insert into bluestar_sent_orders (order_id) values (".$orderID.") ");  
-	return true;       
-}      
-
 $sourcePath = $_SERVER["DOCUMENT_ROOT"]. "/../tmp/";
 $destinationPath = '/';   
 
@@ -43,6 +28,54 @@ define("WSDOMAIN", implode(".", array_slice($tmp, 1)));
 define("WORKSPACE", implode(".", array_slice($tmp, 1, -2)));
 
 
+define('SFTP_HOST','cfsgroupinc-ftp.exavault.com');
+define('SFTP_PORT',22);
+define('SFTP_USER','PrizerWebCart');
+define('SFTP_PASS','YZOKmD2m9SG1P86a5QeC');
+
+function removeOrdersFromSFTP() {
+	$host = SFTP_HOST;
+	$port = SFTP_PORT;
+	$user = SFTP_USER;
+	$pass = SFTP_PASS; 
+
+	$sftp = new Net_SFTP($host);
+	if (!$sftp->login($user,$pass)) {
+		exit('Login Failed');
+	}
+	$result = mysql_query("select * from bluestar_sent_orders");
+	if(mysql_num_rows($result) > 0) {
+		while($row = mysql_fetch_assoc($result)) {
+			$sftp->delete('/'.$row['order_id'].'.xml');	
+		}   	
+	} 
+	mysql_query("delete from bluestar_sent_orders");  
+	return true;
+}
+
+
+if(isset($_GET['is_remove']) && $_GET['is_remove'] == '1') {
+	removeOrdersFromSFTP();	
+	exit;
+}
+
+
+function uploadFileToSFTP($sourcePath,$destinationPath,$fileName,$orderID) {
+	$host = SFTP_HOST;
+	$port = SFTP_PORT;
+	$user = SFTP_USER;
+	$pass = SFTP_PASS; 
+
+	$sftp = new Net_SFTP($host);
+	if (!$sftp->login($user,$pass)) {
+		exit('Login Failed');
+	}
+	$sftp->put($destinationPath.$fileName,$sourcePath.$fileName, NET_SFTP_LOCAL_FILE);
+	mysql_query("insert into bluestar_sent_orders (order_id) values (".$orderID.") ");  
+	return true;       
+}              
+
+
 $orderData = mysql_query_to_array($localorders, optimize_subqueries("select * from orders where status = 'open' and order_id in (select order_id from order_details where exact_product_id in (select exact_product_id from exact_products where product_id in (select product_id from products where entity_id2=156355))) "), "orders", "order_id", array("address_id", "address_id2", "phone_number_id", "email_id", "shipping_method_group_id", "user_id"));
 
 
@@ -51,6 +84,17 @@ $totalOrders = count($localorders['orders']);
 if($totalOrders>0) {
 	foreach($localorders['orders'] as $key =>  $value) {
 		$order_id = $key;
+
+		$result = mysql_query("select * from bluestar_sent_orders where order_id =".$order_id);
+		$countExistingRow = 0;
+		$existingOrder = mysql_num_rows($result);
+
+		if($existingOrder == 1) {
+			continue;
+		}
+
+		//echo '<pre>'; print_r($existingOrder); exit;  
+
 		if (!empty($value))
 		{
 			$allOrders = $localorders;
@@ -325,10 +369,19 @@ if($totalOrders>0) {
 
 			$totals = $xml->addChild('totals');
 			$totals->addChild('subtotal',$subTotal);
-			$totals->addChild('shipping',$shippingAmount);
-			$totals->addChild('handling',$handling);
+
+			$expenses = $totals->addChild('expenses');
+			$expenses->addChild('type','shipping');
+			$expenses->addChild('amount',$shippingAmount);
+
+			$expensesHandling = $totals->addChild('expenses');
+			$expensesHandling->addChild('type','handling');
+			$expensesHandling->addChild('amount',$handling);
+
+			//$totals->addChild('shipping',$shippingAmount);
+			//$totals->addChild('handling',$handling);
 			$totals->addChild('tax',$tax);
-			$totals->addChild('total',$total);
+			$totals->addChild('total',$total);    
 
 
 			Header('Content-type: text/xml');
